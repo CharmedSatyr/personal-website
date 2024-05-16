@@ -1,7 +1,7 @@
 "use client";
 
 import SectionContainer from "components/SectionContainer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dotenv from "dotenv";
 import Link from "components/Link";
 
@@ -32,16 +32,27 @@ export default () => {
 	);
 };
 
-const MailLink = ({ proof }: { proof: string }) => {
-	if (
-		proof.length < process.env.NEXT_PUBLIC_PROOF.length ||
-		proof !== process.env.NEXT_PUBLIC_PROOF
-	) {
+const MailLink = ({ proof = "" }: { proof: string }) => {
+	const [user, setUser] = useState("");
+	const [domain, setDomain] = useState("");
+
+	const isValid = proof === process.env.NEXT_PUBLIC_PROOF;
+
+	useEffect(() => {
+		if (!isValid) {
+			return;
+		}
+
+		setUser(process.env.NEXT_PUBLIC_USERNAME);
+		setDomain(process.env.NEXT_PUBLIC_DOMAIN);
+	}, [isValid]);
+
+	if (!isValid) {
 		return null;
 	}
 
 	return (
-		<Link href="mailto:email@email.com" className="btn rounded p-2 text-2xl font-bold outline">
+		<Link href={`mailto:${user}@${domain}`} className="btn rounded p-2 text-2xl font-bold outline">
 			OK, that was easy.
 		</Link>
 	);
