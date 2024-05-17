@@ -27,29 +27,18 @@ const Moon = () => (
 		<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
 	</svg>
 );
-let count = 0;
+
 const ThemeSwitch = () => {
 	const [mounted, setMounted] = useState(false);
-	//const { theme, setTheme, resolvedTheme } = useTheme();
+	const { theme, setTheme } = useTheme();
 
-	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), []);
 
-	//const Component = () => (resolvedTheme === "dark" ? <Moon /> : <Sun />);
+	const Component = () => (theme === "dark" ? <Moon /> : <Sun />);
 
 	return mounted ? (
-		<button
-			type="button"
-			style={{ border: "1px solid red" }}
-			className="p-1"
-			onClick={() => {
-				count++;
-				console.log("hi. click.", count);
-				//setTheme(resolvedTheme === "dark" ? "light" : "dark")
-			}}
-		>
-			text
-			{/* <Component /> */}
+		<button type="button" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+			<Component />
 		</button>
 	) : null;
 };

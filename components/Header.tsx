@@ -35,9 +35,10 @@ const Header = () => {
 				{siteMetadata.headerTitle}
 			</Link>
 
-			{/* <ThemeSwitch /> */}
-
-			<NavLinks />
+			<div className="flex space-x-4">
+				<NavLinks />
+				<ThemeSwitch />
+			</div>
 		</header>
 	);
 };
