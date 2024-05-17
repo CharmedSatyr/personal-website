@@ -7,7 +7,7 @@ export default () => {
 			<h1 className="mb-8 text-4xl md:text-6xl font-bold text-indigo-200">Now</h1>
 
 			<aside className="mb-8 text-xl md:text-2xl">
-				This is my <Link href="https://nownownow.com/about">Now</Link> page.
+				This is my <Link href="https://nownownow.com/about">Now</Link> page, last updated 2024-05-16.
 			</aside>
 
 			<ol className="list-decimal text-xl md:text-2xl leading-relaxed">

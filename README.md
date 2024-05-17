@@ -9,7 +9,6 @@
 - Tests
 - GitHub or something else?
 - Redirect all other domains to josephwolfe.com
-- Mobile fixes
 - Use mask to draw face in Satyr
 - Light mode
 - Subtle patterns
@@ -18,4 +17,3 @@
 - <filter-function> for inverting colors
 - Host a GitLab!
 - Each page should have a different background color
-- Include last updated date on Now page
