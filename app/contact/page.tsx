@@ -17,7 +17,7 @@ const Contact = () => {
 			<form>
 				<label>
 					Wait a minute... Are you a human? Please type my first name if you are.
-					<br/>
+					<br />
 					(It's spelled out just above.)
 					<input
 						className="focus:shadow-outline mb-10 mt-8 block appearance-none rounded py-2 md:px-3"
