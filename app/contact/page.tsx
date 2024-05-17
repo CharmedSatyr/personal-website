@@ -12,14 +12,15 @@ const Contact = () => {
 
 	return (
 		<SectionContainer>
-			<h1 className="mb-8 text-4xl font-bold text-indigo-200 md:text-6xl">Contact</h1>
+			<h1 className="mb-8">Contact</h1>
 
 			<form>
-				<label className="text-xl md:text-2xl">
-					Wait a minute... Are you a human? Please type my first name if you are. (It's spelled out
-					just above.)
+				<label>
+					Wait a minute... Are you a human? Please type my first name if you are.
+					<br/>
+					(It's spelled out just above.)
 					<input
-						className="focus:shadow-outline my-8 mb-10 block appearance-none rounded bg-white py-2 text-gray-700 md:px-3"
+						className="focus:shadow-outline mb-10 mt-8 block appearance-none rounded py-2 md:px-3"
 						onChange={(e) => setProof(e.target.value)}
 						type="text"
 						required

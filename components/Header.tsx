@@ -20,7 +20,7 @@ const NavLinks = () => {
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)
 				.map((link) => (
-					<Link className="text-indigo-300" key={link.title} href={link.href}>
+					<Link className="highlighted" key={link.title} href={link.href}>
 						{link.title}
 					</Link>
 				))}
@@ -31,7 +31,7 @@ const NavLinks = () => {
 const Header = () => {
 	return (
 		<header className="flex items-center justify-between px-8 py-4 text-xl md:text-2xl">
-			<Link className="text-indigo-300" href="/">
+			<Link className="highlighted" href="/">
 				{siteMetadata.headerTitle}
 			</Link>
 

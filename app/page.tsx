@@ -5,7 +5,7 @@ import Link from "components/Link";
 const Root = () => {
 	return (
 		<SectionContainer>
-			<h1 className="mb-16 text-4xl font-bold leading-tight text-indigo-200 md:text-6xl">
+			<h1>
 				I'm a software developer, game designer, and writer in Seattle, Washington.
 				<Image
 					alt="tree"
@@ -17,12 +17,11 @@ const Root = () => {
 				/>
 			</h1>
 
-			<p className="my-12 text-2xl">
-				{" "}
+			<p>
 				See what I'm working on <Link href="/now">now</Link>.
 			</p>
 
-			<p className="my-12 text-2xl">
+			<p>
 				Send me a <Link href="/contact">message</Link>.
 			</p>
 		</SectionContainer>

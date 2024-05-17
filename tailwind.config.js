@@ -1,3 +1,5 @@
+import colors from "tailwindcss/colors";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: "class",
@@ -10,7 +12,13 @@ module.exports = {
 		container: {
 			center: true,
 		},
-		extend: {},
+		extend: {
+			colors: {
+				primary: colors.indigo,
+				secondary: colors.teal,
+				accent: colors.amber,
+			},
+		},
 	},
 	plugins: [],
 };

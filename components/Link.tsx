@@ -8,16 +8,14 @@ const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnch
 	const isAnchorLink = href && href.startsWith("#");
 
 	if (isInternalLink) {
-		return <Link className="text-amber-200" href={href} {...rest} />;
+		return <Link href={href} {...rest} />;
 	}
 
 	if (isAnchorLink) {
-		return <a className="text-amber-200" href={href} {...rest} />;
+		return <a href={href} {...rest} />;
 	}
 
-	return (
-		<a className="text-amber-200" target="_blank" rel="noopener noreferrer" href={href} {...rest} />
-	);
+	return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
 };
 
 export default CustomLink;

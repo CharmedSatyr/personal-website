@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.highlighted {
+		@apply text-primary-600 dark:text-primary-200;
+	}
+
+	body {
+		@apply bg-primary-100 text-primary-700 dark:bg-primary-950 dark:text-primary-300;
+	}
+
+	h1 {
+		@apply highlighted mb-8 text-4xl font-bold md:text-6xl;
+	}
+
+	aside,
+	label,
+	p,
+	ol {
+		@apply mb-8 text-xl md:text-2xl;
+	}
+
+	ol {
+		@apply leading-relaxed marker:text-secondary-500 dark:marker:text-accent-200;
+	}
+
+	input {
+		@apply appearance-none bg-primary-50 text-slate-900 rounded shadow-inner border-2 border-primary-300 focus:outline-none focus:border-primary-700;
+	}
+
+	a {
+		@apply text-secondary-500 dark:text-accent-200;
+	}
+
+	li,
+	p {
+		@apply mb-8;
+	}
+
+	svg {
+		@apply highlighted h-6 w-6;
+	}
+}

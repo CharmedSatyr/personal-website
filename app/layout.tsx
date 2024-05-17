@@ -8,10 +8,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 		<html lang="en" suppressHydrationWarning>
 			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
 
-			<body className="bg-indigo-200 dark:bg-indigo-950 text-indigo-300">
+			<body>
 				<ThemeProviders>
 					<Header />
-					<main className="flex justify-center m-10 md:m-20">{children}</main>
+					<main className="m-10 flex justify-center md:m-20">{children}</main>
 				</ThemeProviders>
 			</body>
 		</html>
