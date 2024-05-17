@@ -23,15 +23,15 @@
 	}
 
 	ol {
-		@apply leading-relaxed marker:text-accent-500 dark:marker:text-secondary-200;
+		@apply leading-relaxed marker:text-secondary-500 dark:marker:text-accent-300;
 	}
 
 	input {
-		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-slate-900 shadow-inner focus:border-primary-700 focus:outline-none dark:border-secondary-500;
+		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-slate-900 shadow-inner focus:border-primary-700 focus:outline-none dark:border-accent-300;
 	}
 
 	a {
-		@apply text-secondary-500 dark:text-accent-200;
+		@apply text-accent-500 dark:text-secondary-200;
 	}
 
 	li,
@@ -40,6 +40,6 @@
 	}
 
 	svg {
-		@apply highlighted h-6 w-6;
+		@apply h-6 w-6 text-secondary-600 dark:text-accent-300;
 	}
 }
