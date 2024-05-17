@@ -9,10 +9,10 @@ const Root = () => {
 				I'm a software developer, game designer, and writer in Seattle, Washington.
 				<Image
 					alt="tree"
-					className="-mt-4 inline pl-2"
-					src="/static/images/tree.png"
-					width={40}
-					height={40}
+					className="-mt-4 inline"
+					src="/static/images/tree.webp"
+					width={50}
+					height={50}
 					priority
 				/>
 			</h1>
