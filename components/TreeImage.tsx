@@ -23,6 +23,7 @@ const TreeImage = () => {
 			src={`/static/images/${theme === Mode.dark ? "tree" : "tree-contrast"}.webp`}
 			width={50}
 			height={50}
+			priority
 		/>
 	);
 };
