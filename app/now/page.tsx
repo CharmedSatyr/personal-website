@@ -4,13 +4,13 @@ import Link from "components/Link";
 export default () => {
 	return (
 		<SectionContainer>
-			<h1 className="mb-8 text-6xl font-bold text-indigo-200">Now</h1>
+			<h1 className="mb-8 text-4xl md:text-6xl font-bold text-indigo-200">Now</h1>
 
-			<aside className="mb-8 text-2xl">
+			<aside className="mb-8 text-xl md:text-2xl">
 				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>
 
-			<ol className="list-decimal text-2xl leading-relaxed">
+			<ol className="list-decimal text-xl md:text-2xl leading-relaxed">
 				<li className="my-8">
 					In January, my amazing partner Inga{" "}
 					<span role="img" aria-label="heart">

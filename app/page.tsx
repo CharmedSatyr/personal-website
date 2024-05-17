@@ -5,7 +5,7 @@ import Link from "components/Link";
 export default () => {
 	return (
 		<SectionContainer>
-			<h1 className="mb-16 text-6xl font-bold leading-tight text-indigo-200">
+			<h1 className="mb-16 text-4xl md:text-6xl font-bold leading-tight text-indigo-200">
 				I'm a software developer, game designer, and writer in Seattle, Washington.
 				<Image
 					alt="tree"

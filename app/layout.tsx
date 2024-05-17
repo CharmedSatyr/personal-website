@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className="bg-indigo-950 text-indigo-300">
 				<ThemeProviders>
 					<Header />
-					<main className="m-20 flex justify-center">{children}</main>
+					<main className="m-12 md:m-20 flex justify-center">{children}</main>
 				</ThemeProviders>
 			</body>
 		</html>
