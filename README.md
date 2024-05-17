@@ -1,6 +1,7 @@
 # personal-website
 
 ## TODO
+
 - Footer links
 - SEO
 - favicon
