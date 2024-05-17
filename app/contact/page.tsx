@@ -7,19 +7,19 @@ import Link from "components/Link";
 
 dotenv.config();
 
-export default () => {
+const Contact = () => {
 	const [proof, setProof] = useState("");
 
 	return (
 		<SectionContainer>
-			<h1 className="mb-8 text-4xl md:text-6xl font-bold text-indigo-200">Contact</h1>
+			<h1 className="mb-8 text-4xl font-bold text-indigo-200 md:text-6xl">Contact</h1>
 
 			<form>
 				<label className="text-xl md:text-2xl">
 					Wait a minute... Are you a human? Please type my first name if you are. (It's spelled out
 					just above.)
 					<input
-						className="focus:shadow-outline my-8 mb-10 block appearance-none rounded bg-white md:px-3 py-2 text-gray-700"
+						className="focus:shadow-outline my-8 mb-10 block appearance-none rounded bg-white py-2 text-gray-700 md:px-3"
 						onChange={(e) => setProof(e.target.value)}
 						type="text"
 						required
@@ -47,6 +47,7 @@ const MailLink = ({ proof = "" }: { proof: string }) => {
 
 		setUser(process.env.NEXT_PUBLIC_USERNAME);
 		setDomain(process.env.NEXT_PUBLIC_DOMAIN);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isValid]);
 
 	if (!isValid) {
@@ -54,8 +55,13 @@ const MailLink = ({ proof = "" }: { proof: string }) => {
 	}
 
 	return (
-		<Link href={`mailto:${user}@${domain}`} className="btn rounded p-2 text-xl md:text-2xl font-bold outline">
+		<Link
+			href={`mailto:${user}@${domain}`}
+			className="btn rounded p-2 text-xl font-bold outline md:text-2xl"
+		>
 			OK, that was easy.
 		</Link>
 	);
 };
+
+export default Contact;

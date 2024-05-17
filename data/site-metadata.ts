@@ -1,6 +1,6 @@
 const siteMetadata = {
 	headerTitle: "Joseph Wolfe",
-	theme: "system",
+	theme: "dark",
 };
 
 export default siteMetadata;

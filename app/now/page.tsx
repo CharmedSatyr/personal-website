@@ -1,16 +1,19 @@
 import SectionContainer from "components/SectionContainer";
 import Link from "components/Link";
 
-export default () => {
+const Now = () => {
 	return (
 		<SectionContainer>
-			<h1 className="mb-8 text-4xl md:text-6xl font-bold text-indigo-200">Now</h1>
+			<h1 className="mb-8 text-4xl font-bold text-indigo-600 dark:text-indigo-200 md:text-6xl">
+				Now
+			</h1>
 
-			<aside className="mb-8 text-xl md:text-2xl italic">
-				This is my <Link href="https://nownownow.com/about">Now</Link> page, last updated 2024-05-16.
+			<aside className="mb-8 text-xl italic md:text-2xl">
+				This is my <Link href="https://nownownow.com/about">Now</Link> page, last updated
+				2024-05-16.
 			</aside>
 
-			<ol className="list-decimal text-xl md:text-2xl leading-relaxed">
+			<ol className="list-decimal text-xl leading-relaxed md:text-2xl">
 				<li className="my-8">
 					In January, my amazing partner Inga{" "}
 					<span role="img" aria-label="heart">
@@ -39,3 +42,5 @@ export default () => {
 		</SectionContainer>
 	);
 };
+
+export default Now;

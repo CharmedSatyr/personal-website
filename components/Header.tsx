@@ -3,20 +3,9 @@
 import { usePathname } from "next/navigation";
 
 import Link from "components/Link";
-import siteMetadata from "data/site-metadata";
+import ThemeSwitch from "components/ThemeSwitch";
 import headerNavLinks from "data/header-nav-links";
-
-export default () => {
-	return (
-		<header className="flex items-center justify-between px-8 py-4 text-xl md:text-2xl">
-			<Link className="text-indigo-300" href="/">
-				{siteMetadata.headerTitle}
-			</Link>
-
-			<NavLinks />
-		</header>
-	);
-};
+import siteMetadata from "data/site-metadata";
 
 const NavLinks = () => {
 	const pathName = usePathname();
@@ -38,3 +27,19 @@ const NavLinks = () => {
 		</nav>
 	);
 };
+
+const Header = () => {
+	return (
+		<header className="flex items-center justify-between px-8 py-4 text-xl md:text-2xl">
+			<Link className="text-indigo-300" href="/">
+				{siteMetadata.headerTitle}
+			</Link>
+
+			<ThemeSwitch />
+
+			<NavLinks />
+		</header>
+	);
+};
+
+export default Header;

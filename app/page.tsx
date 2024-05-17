@@ -2,10 +2,10 @@ import SectionContainer from "components/SectionContainer";
 import Image from "components/Image";
 import Link from "components/Link";
 
-export default () => {
+const Root = () => {
 	return (
 		<SectionContainer>
-			<h1 className="mb-16 text-4xl md:text-6xl font-bold leading-tight text-indigo-200">
+			<h1 className="mb-16 text-4xl font-bold leading-tight text-indigo-200 md:text-6xl">
 				I'm a software developer, game designer, and writer in Seattle, Washington.
 				<Image
 					alt="tree"
@@ -28,3 +28,5 @@ export default () => {
 		</SectionContainer>
 	);
 };
+
+export default Root;
