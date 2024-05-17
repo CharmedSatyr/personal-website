@@ -6,7 +6,7 @@ import siteMetadata from "@/data/site-metadata";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang={siteMetadata.locale} suppressHydrationWarning>
 			<head>
 				<title>{siteMetadata.title}</title>
 				<meta name="description" content={siteMetadata.description} />
