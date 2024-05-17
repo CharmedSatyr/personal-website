@@ -30,7 +30,11 @@ const ThemeSwitch = () => {
 	const Component = () => (theme === Mode.dark ? <Moon /> : <Sun />);
 
 	return mounted ? (
-		<button type="button" onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}>
+		<button
+			aria-label="Theme Switch"
+			type="button"
+			onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}
+		>
 			<Component />
 		</button>
 	) : null;
