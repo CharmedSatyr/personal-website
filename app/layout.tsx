@@ -6,7 +6,7 @@ import Header from "components/Header";
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
+			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.webp" />
 
 			<body>
 				<ThemeProviders>
