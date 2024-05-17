@@ -35,7 +35,7 @@ const Header = () => {
 				{siteMetadata.headerTitle}
 			</Link>
 
-			<ThemeSwitch />
+			{/* <ThemeSwitch /> */}
 
 			<NavLinks />
 		</header>
