@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
+import { Mode } from "constants/mode";
+
 const Sun = () => (
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 		<path
@@ -24,10 +26,10 @@ const ThemeSwitch = () => {
 
 	useEffect(() => setMounted(true), []);
 
-	const Component = () => (theme === "dark" ? <Moon /> : <Sun />);
+	const Component = () => (theme === Mode.dark ? <Moon /> : <Sun />);
 
 	return mounted ? (
-		<button type="button" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+		<button type="button" onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}>
 			<Component />
 		</button>
 	) : null;
