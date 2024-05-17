@@ -6,7 +6,7 @@ export default () => {
 		<SectionContainer>
 			<h1 className="mb-8 text-4xl md:text-6xl font-bold text-indigo-200">Now</h1>
 
-			<aside className="mb-8 text-xl md:text-2xl">
+			<aside className="mb-8 text-xl md:text-2xl italic">
 				This is my <Link href="https://nownownow.com/about">Now</Link> page, last updated 2024-05-16.
 			</aside>
 
