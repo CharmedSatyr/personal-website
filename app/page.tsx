@@ -1,20 +1,13 @@
 import SectionContainer from "components/SectionContainer";
-import Image from "components/Image";
 import Link from "components/Link";
+import TreeImage from "components/TreeImage";
 
 const Root = () => {
 	return (
 		<SectionContainer>
 			<h1>
 				I'm a software developer, game designer, and writer in Seattle, Washington.
-				<Image
-					alt="tree"
-					className="-mt-4 inline"
-					src="/static/images/tree.webp"
-					width={50}
-					height={50}
-					priority
-				/>
+				<TreeImage />
 			</h1>
 
 			<p>
