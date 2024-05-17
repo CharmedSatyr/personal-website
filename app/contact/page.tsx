@@ -39,7 +39,9 @@ const MailLink = ({ proof = "" }: { proof: string }) => {
 	const isValid = proof === process.env.NEXT_PUBLIC_PROOF;
 
 	useEffect(() => {
-		if (!isValid) {
+		if (!isValid && (user !== "" || domain !== "")) {
+			setUser("");
+			setDomain("");
 			return;
 		}
 
