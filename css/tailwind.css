@@ -31,7 +31,7 @@
 	}
 
 	a {
-		@apply text-accent-500 underline dark:text-secondary-200;
+		@apply text-accent-500 underline dark:text-secondary-200 decoration-secondary-500 dark:decoration-accent-300;
 	}
 
 	li,
