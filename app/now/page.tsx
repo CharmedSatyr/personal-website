@@ -1,5 +1,8 @@
+import genPageMetadata from "app/seo";
 import SectionContainer from "components/SectionContainer";
 import Link from "components/Link";
+
+export const metadata = genPageMetadata({ title: "Now" });
 
 const Now = () => {
 	return (
