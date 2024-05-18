@@ -8,7 +8,6 @@ const robots = (): MetadataRoute.Robots => {
 			userAgent: "*",
 			allow: "/",
 		},
-		//sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
 		host: siteMetadata.siteUrl,
 	};
 };
