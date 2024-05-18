@@ -5,7 +5,6 @@ import { Metadata } from "next";
 import ThemeProviders from "app/theme-providers";
 import Header from "components/Header";
 import siteMetadata from "data/site-metadata";
-import Head from "next/head";
 
 /**
  * See https://nextjs.org/docs/app/building-your-application/optimizing/metadata
@@ -25,12 +24,12 @@ export const metadata: Metadata = {
 		locale: "en_US",
 		type: "website",
 	},
-	alternates: {
-		canonical: "./",
-		types: {
-			"application/rss+xml": `${siteMetadata.siteUrl}/feed.xml`,
-		},
-	},
+	// alternates: {
+	// 	canonical: "./",
+	// 	types: {
+	// 		"application/rss+xml": `${siteMetadata.siteUrl}/feed.xml`,
+	// 	},
+	// },
 	robots: {
 		index: true,
 		follow: true,
@@ -47,14 +46,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang={siteMetadata.locale} suppressHydrationWarning>
-			<Head>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/static/favicons/favicon-32x32.webp"
-				/>
-			</Head>
+			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.webp" />
 
 			<body>
 				<ThemeProviders>
