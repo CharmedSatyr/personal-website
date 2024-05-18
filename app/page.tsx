@@ -11,7 +11,7 @@ const Root = () => {
 			</h1>
 
 			<p>
-				See what I'm working on <Link href="/now">now</Link>.
+				See what I'm up to <Link href="/now">now</Link>.
 			</p>
 
 			<p>
