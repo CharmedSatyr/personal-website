@@ -3,7 +3,7 @@
 ## TODO
 
 - Footer links
-- SEO
+- Open Graph
 - Tests
 - GitHub or something else?
 - Redirect all other domains to josephwolfe.com
@@ -12,4 +12,3 @@
 - Tech page - go-to stack
 - Rose petals or other particle effects behind the word, gradually introduced
 - <filter-function> for inverting colors
-- Lighthouse rating.

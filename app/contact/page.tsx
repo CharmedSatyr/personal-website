@@ -58,7 +58,7 @@ const MailLink = ({ proof = "" }: { proof: string }) => {
 	return (
 		<Link
 			href={`mailto:${user}@${domain}`}
-			className="btn rounded p-2 text-xl font-bold outline md:text-2xl"
+			className="btn rounded p-2 text-xl font-bold outline-accent-600 md:text-2xl no-underline outline dark:outline-accent-200 dark:text-dark-accent-200"
 		>
 			OK, that was easy.
 		</Link>

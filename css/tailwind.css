@@ -4,11 +4,11 @@
 
 @layer base {
 	.highlighted {
-		@apply text-primary-600 dark:text-primary-200;
+		@apply text-primary-800 dark:text-dark-primary-200;
 	}
 
 	body {
-		@apply bg-primary-100 text-primary-700 dark:bg-primary-950 dark:text-primary-300;
+		@apply bg-primary-50 text-primary-700 dark:bg-dark-primary-950 dark:text-dark-primary-300;
 	}
 
 	h1 {
@@ -23,15 +23,15 @@
 	}
 
 	ol {
-		@apply leading-relaxed marker:text-secondary-500 dark:marker:text-accent-300;
+		@apply leading-relaxed marker:text-secondary-500 dark:marker:text-dark-accent-300;
 	}
 
 	input {
-		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-slate-900 shadow-inner focus:border-primary-700 focus:outline-none dark:border-accent-300;
+		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-grayscale-900 shadow-inner focus:border-accent-600 focus:outline-none dark:border-dark-accent-300;
 	}
 
 	a {
-		@apply text-accent-500 underline dark:text-secondary-200 decoration-secondary-500 dark:decoration-accent-300;
+		@apply text-accent-600 underline decoration-secondary-500 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 
 	li,
@@ -40,6 +40,6 @@
 	}
 
 	svg {
-		@apply h-6 w-6 text-secondary-600 dark:text-accent-300;
+		@apply h-6 w-6 text-secondary-600 dark:text-dark-secondary-300;
 	}
 }
