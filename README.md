@@ -3,7 +3,7 @@
 ## TODO
 
 - Footer links
-    - colophon: See https://eryc.cc/colophon/
+  - colophon: See https://eryc.cc/colophon/
 - Tests
 - Use mask to draw face in Satyr
 - Subtle patterns

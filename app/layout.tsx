@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import {Poppins} from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import "css/tailwind.css";
 import ThemeProviders from "app/theme-providers";
