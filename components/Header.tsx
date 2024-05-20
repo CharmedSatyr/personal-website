@@ -15,7 +15,7 @@ const NavLinks = () => {
 	}
 
 	return (
-		<nav>
+		<nav className="space-x-4">
 			{headerNavLinks
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)
