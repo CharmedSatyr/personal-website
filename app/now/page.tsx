@@ -10,8 +10,7 @@ const Now = () => {
 			<h1>Now</h1>
 
 			<aside className="italic">
-				This is my <Link href="https://nownownow.com/about">Now</Link> page, last updated
-				2024-05-16.
+				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>
 
 			<ol className="list-decimal">
