@@ -6,7 +6,7 @@ const Root = () => {
 	return (
 		<SectionContainer>
 			<h1>
-				I'm a software developer, game designer, and writer in Seattle, Washington.
+				I'm a software developer, game designer, and writer in Seattle.
 				<TreeImage />
 			</h1>
 
