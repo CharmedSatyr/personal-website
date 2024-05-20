@@ -9,10 +9,8 @@ const getBuildDate = () => {
 };
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
 	env: {
 		lastUpdated: getBuildDate(),
 	},
 };
-
-module.exports = nextConfig;
