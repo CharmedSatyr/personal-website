@@ -27,7 +27,7 @@ const ThemeSwitch = () => {
 
 	useEffect(() => setMounted(true), []);
 
-	const Component = () => (theme === Mode.dark ? <Moon /> : <Sun />);
+	const SwitchIcon = () => (theme === Mode.light ? <Sun /> : <Moon />);
 
 	return mounted ? (
 		<button
@@ -35,7 +35,7 @@ const ThemeSwitch = () => {
 			type="button"
 			onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}
 		>
-			<Component />
+			<SwitchIcon />
 		</button>
 	) : null;
 };
