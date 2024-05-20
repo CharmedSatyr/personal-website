@@ -5,7 +5,7 @@ import TreeImage from "components/TreeImage";
 const Root = () => {
 	return (
 		<SectionContainer>
-			<h1>
+			<h1 className="leading-tight">
 				I'm a software developer, game designer, and writer in Seattle.
 				<TreeImage />
 			</h1>
