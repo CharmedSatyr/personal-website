@@ -13,6 +13,9 @@ module.exports = {
 			center: true,
 		},
 		extend: {
+			fontFamily: {
+				sans: ["var(--font-poppins)"],
+			},
 			colors: {
 				dark: {
 					primary: colors.indigo,
