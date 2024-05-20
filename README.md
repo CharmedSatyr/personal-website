@@ -3,9 +3,8 @@
 ## TODO
 
 - Footer links
+    - colophon: See https://eryc.cc/colophon/
 - Tests
-- GitHub or something else?
-- Redirect all other domains to josephwolfe.com
 - Use mask to draw face in Satyr
 - Subtle patterns
 - Tech page - go-to stack
