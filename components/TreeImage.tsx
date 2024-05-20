@@ -19,10 +19,10 @@ const TreeImage = () => {
 	return (
 		<Image
 			alt="tree"
-			className="-mt-4 inline"
+			className="-mt-3 inline"
 			src={`/static/images/${theme === Mode.dark ? "tree" : "tree-contrast"}.webp`}
-			width={50}
-			height={50}
+			width={45}
+			height={45}
 			priority
 		/>
 	);

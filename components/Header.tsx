@@ -30,14 +30,13 @@ const NavLinks = () => {
 
 const Header = () => {
 	return (
-		<header className="flex items-center justify-between px-8 py-4 text-xl md:text-2xl">
+		<header className="flex items-center justify-between px-8 py-4">
 			<Link className="highlighted" href="/">
 				{siteMetadata.headerTitle}
 			</Link>
 
 			<div className="flex items-center space-x-4">
 				<NavLinks />
-				<ThemeSwitch />
 			</div>
 		</header>
 	);

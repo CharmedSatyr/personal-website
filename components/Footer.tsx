@@ -1,7 +1,13 @@
+import ThemeSwitch from "components/ThemeSwitch";
+
 const Footer = () => {
 	return (
-		<footer className="flex items-center justify-center px-8 py-4 text-xs md:text-sm">
+		<footer className="flex items-center justify-center space-x-2 px-8 py-4">
 			<div>{`Copyright © ${new Date().getFullYear()}`}</div>
+			<div> • </div>
+			<div>
+				<ThemeSwitch />
+			</div>
 		</footer>
 	);
 };
