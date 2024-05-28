@@ -11,3 +11,6 @@
 - Rose petals or other particle effects behind the word, gradually introduced
 - <filter-function> for inverting colors
 - gpg key
+- Mention things you like
+  - Penn
+  - WOFF
