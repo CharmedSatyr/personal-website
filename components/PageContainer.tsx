@@ -5,7 +5,7 @@ interface Props {
 }
 
 const PageContainer = ({ children }: Props) => {
-	return <section className="container max-w-2xl">{children}</section>;
+	return <section className="container max-w-3xl">{children}</section>;
 };
 
 export default PageContainer;
