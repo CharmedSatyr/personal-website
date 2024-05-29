@@ -10,7 +10,7 @@ const ProveHuman = () => {
 	return (
 		<form>
 			<label>
-				Wait a minute... Are you a human? Please type my first name if you are.
+				Wait a minute... Are you a human? Please type my first name.
 				<br />
 				(It's spelled out just above.)
 				<input
