@@ -28,9 +28,7 @@ const Now = () => {
 				</li>
 				<li>
 					I am writing an adventure module for{" "}
-					<Link href="https://dnd.wizards.com/how-to-play">Dungeons & Dragons 5e</Link>. When it's
-					done, I think it would be fun to publish it on the{" "}
-					<Link href="https://www.dmsguild.com">Dungeon Master's Guild</Link>.{" "}
+					<Link href="https://dnd.wizards.com/how-to-play">Dungeons & Dragons 5e</Link>.
 				</li>
 				<li>
 					I have an idea for a digital game and some early prototypes built in{" "}
