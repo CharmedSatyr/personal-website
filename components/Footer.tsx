@@ -1,9 +1,9 @@
-import siteMetadata from "@/data/site-metadata";
 import ThemeSwitch from "components/ThemeSwitch";
+import siteMetadata from "data/site-metadata";
 
 const Footer = () => {
 	return (
-		<footer className="flex items-center justify-center space-x-2 px-8 py-4">
+		<footer className="flex items-center justify-center space-x-2 text-nowrap px-8 py-4">
 			<div>
 				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
 			</div>
