@@ -1,12 +1,12 @@
 import genPageMetadata from "app/seo";
-import SectionContainer from "components/SectionContainer";
+import PageContainer from "components/PageContainer";
 import Link from "components/Link";
 
 export const metadata = genPageMetadata({ title: "Now" });
 
 const Now = () => {
 	return (
-		<SectionContainer>
+		<PageContainer>
 			<h1>Now</h1>
 
 			<aside className="italic">
@@ -37,7 +37,7 @@ const Now = () => {
 					<Link href="https://learn.unity.com">Unity</Link>.
 				</li>
 			</ol>
-		</SectionContainer>
+		</PageContainer>
 	);
 };
 

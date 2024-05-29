@@ -1,10 +1,10 @@
-import SectionContainer from "components/SectionContainer";
+import PageContainer from "components/PageContainer";
 import Link from "components/Link";
 import TreeImage from "components/TreeImage";
 
 const Root = () => {
 	return (
-		<SectionContainer>
+		<PageContainer>
 			<h1 className="leading-tight">
 				I'm a software developer, game designer, and writer in Seattle.
 				<TreeImage />
@@ -17,7 +17,7 @@ const Root = () => {
 			<p>
 				Send me a <Link href="/contact">message</Link>.
 			</p>
-		</SectionContainer>
+		</PageContainer>
 	);
 };
 
