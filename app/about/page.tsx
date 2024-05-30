@@ -1,4 +1,5 @@
 import genPageMetadata from "app/seo";
+import Link from "components/Link";
 import PageContainer from "components/PageContainer";
 
 export const metadata = genPageMetadata({ title: "About" });
@@ -8,22 +9,34 @@ const About = () => {
 		<PageContainer>
 			<h1 className="mb-8">About</h1>
 
-			<p>In Progress...</p>
-			{/*
-			<h2>a</h2>
-
-			<h2>Interests</h2>
 			<p>
-				I love to travel. I've visited 29 countries. I spent 6 weeks in an apartment in Prague last
-				summer, and this summer I have tickets for the Paris Olympics.
+				When my wife and I were dating, we read{" "}
+				<Link href="https://www.gottman.com/eight-dates/">a book</Link> that prompted us to discuss
+				two of our highest values. She said{" "}
+				<span className="text-accent-600 dark:text-dark-accent-300">Growth</span> and{" "}
+				<span className="text-accent-600 dark:text-dark-accent-300">Humor</span>. I said{" "}
+				<span className="text-accent-600 dark:text-dark-accent-300">Adventure</span> and{" "}
+				<span className="text-accent-600 dark:text-dark-accent-300">Discovery</span>!
 			</p>
 
-			<h2>Uses</h2>
+			<p>
+				I love learning, traveling, and a different point of view. I have visited 29 countries,
+				lived in several, and prefer not to own too many things. I've worked in politics in
+				Washington, D.C., taught English in South Korea, and managed software developers in Seattle.
+				My favorite days involve sailing or open-fire cooking. I order the thing on the menu that
+				I've never had, extra spicy.
+			</p>
 
-			<h2>Go-To Stack</h2>
+			<p>
+				The people I admire most tend to lead multi-chapter lives. They are dynamic, mindful, and
+				hard workers. They change not only because their circumstances change but because their
+				relationships with themselves change. They keep moving not to run away from something or
+				because they always want more; they keep moving because it's more interesting to do so.
+			</p>
 
-			<p></p>
-		*/}
+			{/*<h2>Uses</h2>
+
+	<h2>Go-To Stack</h2>*/}
 		</PageContainer>
 	);
 };
