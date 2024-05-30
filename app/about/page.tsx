@@ -13,10 +13,11 @@ const About = () => {
 			<div className="space-between flex flex-col md:flex-row">
 				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:-ml-40 md:mt-2">
 					<Image
-						alt="Joseph looking out a castle window."
+						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
 						src={"/static/images/joseph.webp"}
 						height={900}
 						width={1200}
+						priority
 					/>
 				</div>
 
