@@ -3,9 +3,20 @@
 import { usePathname } from "next/navigation";
 
 import Link from "components/Link";
-import ThemeSwitch from "components/ThemeSwitch";
 import headerNavLinks from "data/header-nav-links";
 import siteMetadata from "data/site-metadata";
+
+const sortNavLinksAlphaAsc = (a, b) => {
+	if (a.title > b.title) {
+		return 1;
+	}
+
+	if (a.title < b.title) {
+		return -1;
+	}
+
+	return 0;
+};
 
 const NavLinks = () => {
 	const pathName = usePathname();
@@ -19,6 +30,17 @@ const NavLinks = () => {
 			{headerNavLinks
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)
+				.sort((a, b) => {
+					if (a.title > b.title) {
+						return 1;
+					}
+
+					if (a.title < b.title) {
+						return -1;
+					}
+
+					return 0;
+				})
 				.map((link) => (
 					<Link className="highlighted" key={link.title} href={link.href}>
 						{link.title}
