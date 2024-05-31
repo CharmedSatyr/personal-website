@@ -15,8 +15,8 @@ const About = () => {
 					<Image
 						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
 						src={"/static/images/joseph-blurry.webp"}
-						height={900}
-						width={1200}
+						height={450}
+						width={600}
 						priority
 						placeholder="blur"
 						blurDataURL="/static/images/tree.webp"
