@@ -14,7 +14,7 @@ const About = () => {
 				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
 					<Image
 						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
-						src={"/static/images/joseph-blurry.webp"}
+						src={"/static/images/joseph.webp"}
 						height={450}
 						width={600}
 						priority
