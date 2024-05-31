@@ -2,6 +2,7 @@ import genPageMetadata from "app/seo";
 import Image from "components/Image";
 import Link from "components/Link";
 import PageContainer from "components/PageContainer";
+import joseph from "public/static/images/joseph";
 
 export const metadata = genPageMetadata({ title: "About" });
 
@@ -19,7 +20,7 @@ const About = () => {
 						width={600}
 						priority
 						placeholder="blur"
-						blurDataURL="/static/images/tree.webp"
+						blurDataURL={joseph}
 					/>
 				</div>
 
