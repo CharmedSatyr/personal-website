@@ -21,10 +21,6 @@ const sortNavLinksAlphaAsc = (a, b) => {
 const NavLinks = () => {
 	const pathName = usePathname();
 
-	if (!pathName || pathName === "/") {
-		return null;
-	}
-
 	return (
 		<nav className="space-x-4">
 			{headerNavLinks
