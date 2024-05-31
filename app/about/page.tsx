@@ -9,7 +9,7 @@ export const metadata = genPageMetadata({ title: "About" });
 const About = () => {
 	return (
 		<PageContainer>
-			<h1 className="mb-8 ml-6">About</h1>
+			<h1 className="mb-8">About</h1>
 
 			<div className="space-between flex flex-col md:flex-row">
 				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
