@@ -18,6 +18,8 @@ const About = () => {
 						height={900}
 						width={1200}
 						priority
+						placeholder="blur"
+						blurDataURL="/static/images/joseph-blurry.webp"
 					/>
 				</div>
 
