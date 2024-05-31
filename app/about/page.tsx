@@ -14,12 +14,12 @@ const About = () => {
 				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
 					<Image
 						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
-						src={"/static/images/joseph.webp"}
+						src={"/static/images/joseph-blurry.webp"}
 						height={900}
 						width={1200}
 						priority
 						placeholder="blur"
-						blurDataURL="/static/images/joseph-blurry.webp"
+						blurDataURL="/static/images/tree.webp"
 					/>
 				</div>
 
