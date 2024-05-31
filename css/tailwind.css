@@ -35,7 +35,7 @@
 	li,
 	p,
 	ol {
-		@apply mb-8;
+		@apply mb-8 text-justify;
 	}
 
 	ol {
@@ -46,7 +46,8 @@
 		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-grayscale-900 shadow-inner focus:border-secondary-700 focus:outline-none dark:border-dark-accent-300;
 	}
 
-	a {
+	a,
+	.fake-link {
 		@apply text-secondary-700 underline decoration-accent-600 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 

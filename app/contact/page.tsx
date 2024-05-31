@@ -1,8 +1,11 @@
 import dotenv from "dotenv";
 
 import genPageMetadata from "app/seo";
-import ProveHuman from "app/contact/ProveHuman";
+import MailLink from "app/contact/MailLink";
+import { LinkedIn } from "app/contact/social-icons";
+import Link from "components/Link";
 import PageContainer from "components/PageContainer";
+import siteMetadata from "data/site-metadata";
 
 dotenv.config();
 
@@ -12,8 +15,16 @@ const Contact = () => {
 	return (
 		<PageContainer>
 			<h1 className="mb-8">Contact</h1>
-
-			<ProveHuman />
+			<ol className="w-max">
+				<li>
+					<Link href={siteMetadata.linkedin}>
+						<LinkedIn className="inline h-8 w-8" /> Connect on LinkedIn
+					</Link>
+				</li>
+				<li>
+					<MailLink />
+				</li>
+			</ol>
 		</PageContainer>
 	);
 };
