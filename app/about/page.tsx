@@ -11,7 +11,7 @@ const About = () => {
 			<h1 className="mb-8 ml-6">About</h1>
 
 			<div className="space-between flex flex-col md:flex-row">
-				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:-ml-40 md:mt-2">
+				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
 					<Image
 						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
 						src={"/static/images/joseph.webp"}
@@ -21,8 +21,8 @@ const About = () => {
 					/>
 				</div>
 
-				<div className="md:ml-6 md:max-w-lg">
-					<p className="text-justify text-lg">
+				<div className="md:ml-6 md:max-w-lg lg:-mr-10">
+					<p className="text-lg">
 						When my wife and I were dating, we read{" "}
 						<Link href="https://www.gottman.com/eight-dates/">a book</Link> that prompted us to
 						discuss two of our highest values. She said{" "}
@@ -32,7 +32,7 @@ const About = () => {
 						<span className="text-accent-600 dark:text-dark-accent-300">Discovery</span>!
 					</p>
 
-					<p className="text-justify text-lg">
+					<p className="text-lg">
 						I love learning, traveling, and a different point of view. I have visited 29 countries,
 						lived in several, and prefer not to own too many things. I've worked in politics in
 						Washington, D.C., taught English in South Korea, and managed software developers in
@@ -40,8 +40,8 @@ const About = () => {
 						menu that I've never had, extra spicy.
 					</p>
 
-					<p className="text-justify text-lg">
-						The people I admire most tend to lead multi-chapter lives. They are and hard workers,
+					<p className="text-lg">
+						The people I admire most tend to lead multi-chapter lives. They are hard workers,
 						mindful, and dynamic. They change not only because their circumstances change but
 						because their relationships with themselves change. They keep moving not to run away
 						from something or because they always want more; they keep moving because it's more
