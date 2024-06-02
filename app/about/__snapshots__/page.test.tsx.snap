@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should match the last snapshot 1`] = `
+<div>
+  <section
+    class="container min-h-96 max-w-3xl"
+  >
+    <h1
+      class="mb-8"
+    >
+      About
+    </h1>
+    <div
+      class="space-between flex flex-col md:flex-row"
+    >
+      <div
+        class="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20"
+      >
+        <img
+          alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height="450"
+          src="/_next/image?url=%2Fstatic%2Fimages%2Fjoseph.webp&w=1200&q=75"
+          srcset="/_next/image?url=%2Fstatic%2Fimages%2Fjoseph.webp&w=640&q=75 1x, /_next/image?url=%2Fstatic%2Fimages%2Fjoseph.webp&w=1200&q=75 2x"
+          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="600"
+        />
+      </div>
+      <div
+        class="md:ml-6 md:max-w-lg lg:-mr-10"
+      >
+        <p
+          class="text-lg"
+        >
+          When my wife and I were dating, we read
+           
+          <a
+            href="https://www.gottman.com/eight-dates/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            a book
+          </a>
+           that prompted us to discuss two of our highest values. She said
+           
+          <span
+            class="text-accent-600 dark:text-dark-accent-300"
+          >
+            Growth
+          </span>
+           and
+           
+          <span
+            class="text-accent-600 dark:text-dark-accent-300"
+          >
+            Humor
+          </span>
+          . I said
+           
+          <span
+            class="text-accent-600 dark:text-dark-accent-300"
+          >
+            Adventure
+          </span>
+           and
+           
+          <span
+            class="text-accent-600 dark:text-dark-accent-300"
+          >
+            Discovery
+          </span>
+          !
+        </p>
+        <p
+          class="text-lg"
+        >
+          I love learning, traveling, and a different point of view. I have visited 29 countries, lived in several, and prefer not to own too many things. I've worked in politics in Washington, D.C., taught English in South Korea, and managed software developers in Seattle. My favorite days involve sailing or open-fire cooking. I order the thing on the menu that I've never had, extra spicy.
+        </p>
+        <p
+          class="text-lg"
+        >
+          The people I admire most tend to lead multi-chapter lives. They are hard workers, mindful, and dynamic. They change not only because their circumstances change but because their relationships with themselves change. They keep moving not to run away from something or because they always want more; they keep moving because it's more interesting to do so.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
