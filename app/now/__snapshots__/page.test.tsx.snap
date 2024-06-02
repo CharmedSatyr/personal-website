@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Now should match the last snapshot 1`] = `
+<div>
+  <section
+    class="container min-h-96 max-w-3xl"
+  >
+    <h1>
+      Now
+    </h1>
+    <aside
+      class="italic"
+    >
+      This is my 
+      <a
+        href="https://nownownow.com/about"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Now
+      </a>
+       page.
+    </aside>
+    <ol
+      class="list-decimal"
+    >
+      <li>
+        In January, my amazing partner Inga
+         
+        <span
+          aria-label="heart"
+          role="img"
+        >
+          ♥️
+        </span>
+         
+        and I got married in an unplanned ceremony in Las Vegas.
+      </li>
+      <li>
+        I am looking for work as a software developer.
+         
+        <a
+          href="/contact"
+        >
+          Send me a message
+        </a>
+         if you think I might be right for a project or role you're hiring for.
+      </li>
+      <li>
+        I am writing an adventure module for
+         
+        <a
+          href="https://dnd.wizards.com/how-to-play"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Dungeons & Dragons 5e
+        </a>
+        .
+      </li>
+      <li>
+        I have an idea for a digital game and some early prototypes built in
+         
+        <a
+          href="https://learn.unity.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Unity
+        </a>
+        .
+      </li>
+    </ol>
+  </section>
+</div>
+`;
