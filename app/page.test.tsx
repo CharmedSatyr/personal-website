@@ -3,6 +3,10 @@ import { render, screen } from "@testing-library/react";
 import Home from "app/page";
 
 describe("Home", () => {
+	test.todo("has a header");
+
+	test.todo("has a footer");
+
 	it("renders a heading", () => {
 		render(<Home />);
 

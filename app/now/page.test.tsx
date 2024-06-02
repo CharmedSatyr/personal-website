@@ -3,6 +3,10 @@ import { render, screen } from "@testing-library/react";
 import Now from "app/now/page";
 
 describe("Now", () => {
+	test.todo("has a header");
+
+	test.todo("has a footer");
+
 	it("renders a heading", () => {
 		render(<Now />);
 
