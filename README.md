@@ -1,5 +1,7 @@
 # personal-website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/25314436-70b2-4c2a-9f5c-c00a36c2ea1b/deploy-status)](https://app.netlify.com/sites/josephwolfe/deploys)
+
 ## TODO
 
 - Footer links
