@@ -1,11 +1,8 @@
 import { render, screen } from "@testing-library/react";
+
 import About from "app/about/page";
 
 describe("About", () => {
-	test.todo("has a header");
-
-	test.todo("has a footer");
-
 	it("renders a heading", () => {
 		render(<About />);
 
