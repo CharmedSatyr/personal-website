@@ -12,7 +12,8 @@
 		"prepare": "husky",
 		"prettier": "npx prettier --write .",
 		"start": "next start",
-		"test": "jest"
+		"test": "jest",
+		"test:watch": "jest --watch"
 	},
 	"license": "GPL-3.0",
 	"dependencies": {
