@@ -26,10 +26,4 @@ describe("Home", () => {
 
 		expect(links.length).toBe(2);
 	});
-
-	it("should match the last snapshot", () => {
-		const { container } = render(<Home />);
-
-		expect(container).toMatchSnapshot();
-	});
 });

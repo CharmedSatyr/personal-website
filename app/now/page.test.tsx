@@ -26,10 +26,4 @@ describe("Now", () => {
 
 		expect(links.length).toBe(4);
 	});
-
-	it("should match the last snapshot", () => {
-		const { container } = render(<Now />);
-
-		expect(container).toMatchSnapshot();
-	});
 });

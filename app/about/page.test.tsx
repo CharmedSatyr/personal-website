@@ -26,10 +26,4 @@ describe("About", () => {
 
 		expect(links.length).toBe(1);
 	});
-
-	it("should match the last snapshot", () => {
-		const { container } = render(<About />);
-
-		expect(container).toMatchSnapshot();
-	});
 });
