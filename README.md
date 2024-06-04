@@ -4,6 +4,9 @@
 
 ## TODO
 
+- Bee flying, bee splat or osmething when you click it. Maybe a cache that shows count of bee splats.
+- Satyr logo
+- Collapsible mobile menu
 - Footer links
   - colophon: See https://eryc.cc/colophon/
 - Tests
@@ -13,6 +16,7 @@
 - Rose petals or other particle effects behind the word, gradually introduced
 - <filter-function> for inverting colors
 - gpg key
+- A Lists page
 - Mention things you like
   - Penn
   - WOFF
