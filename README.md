@@ -20,3 +20,8 @@
 - Mention things you like
   - Penn
   - WOFF
+
+Add a blog! Possible entries:
+
+- How I learned to code
+- How I lost 100 pounds
