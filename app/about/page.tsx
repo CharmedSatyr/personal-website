@@ -39,8 +39,9 @@ const About = () => {
 						I love learning, traveling, and a different point of view. I have visited 29 countries,
 						lived in several, and prefer not to own too many things. I've worked in politics in
 						Washington, D.C., taught English in South Korea, and managed software developers in
-						Seattle. My favorite days involve sailing or open-fire cooking. I order the thing on the
-						menu that I've never had, extra spicy.
+						Seattle. I have a master's degree in Philosophy and Public Policy. My favorite days
+						involve sailing or open-fire cooking. I order the thing on the menu that I've never had,
+						extra spicy.
 					</p>
 
 					<p className="text-lg">
