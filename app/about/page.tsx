@@ -45,10 +45,9 @@ const About = () => {
 
 					<p className="text-lg">
 						The people I admire most tend to lead multi-chapter lives. They are hard workers,
-						mindful, and dynamic. They change not only because their circumstances change but
-						because their relationships with themselves change. They keep moving not to run away
-						from something or because they always want more; they keep moving because it's more
-						interesting to do so.
+						mindful, and dynamic. They are motivated by process rather than outcomes. They change
+						not only because their circumstances change but because their relationships with
+						themselves change.
 					</p>
 				</div>
 				{/*<h2>Uses</h2>
