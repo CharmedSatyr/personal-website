@@ -5,23 +5,16 @@ import { useState } from "react";
 import ProveHuman from "app/contact/ProveHuman";
 import { Mail } from "app/contact/social-icons";
 
-const MailComponent = ({ clicked }) => {
+const EmailMeLink = () => {
+	const [clicked, setClicked] = useState(false);
+
 	if (clicked) {
 		return <ProveHuman />;
 	}
 
 	return (
-		<div className="fake-link">
-			<Mail className="inline h-8 w-8" /> Send me an email
-		</div>
-	);
-};
-
-const MailLink = () => {
-	const [clicked, setClicked] = useState(false);
-
-	return (
 		<button
+			className="fake-link"
 			onClick={(e) => {
 				// After initial click, let the mailto: work
 				if (!clicked) {
@@ -31,9 +24,9 @@ const MailLink = () => {
 				setClicked(true);
 			}}
 		>
-			<MailComponent clicked={clicked} />
+			<Mail className="inline h-8 w-8" /> Send me an email
 		</button>
 	);
 };
 
-export default MailLink;
+export default EmailMeLink;

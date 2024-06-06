@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 
 import genPageMetadata from "app/seo";
-import MailLink from "app/contact/MailLink";
+import EmailMeLink from "app/contact/EmailMeLink";
 import { LinkedIn } from "app/contact/social-icons";
 import Link from "components/Link";
 import PageContainer from "components/PageContainer";
@@ -22,7 +22,7 @@ const Contact = () => {
 					</Link>
 				</li>
 				<li>
-					<MailLink />
+					<EmailMeLink />
 				</li>
 			</ol>
 		</PageContainer>
