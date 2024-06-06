@@ -35,8 +35,8 @@ describe("Link", () => {
 
 		expect(link).toBeInTheDocument();
 		expect(link).toHaveProperty("href", "mailto:test@test.com");
-		expect(link).toHaveProperty("target", "");
-		expect(link).toHaveProperty("rel", "");
+		expect(link).toHaveProperty("target", "_blank");
+		expect(link).toHaveProperty("rel", "noopener noreferrer");
 	});
 
 	it("should render external links as expected", () => {
