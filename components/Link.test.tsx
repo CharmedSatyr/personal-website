@@ -27,6 +27,18 @@ describe("Link", () => {
 		expect(link).toHaveProperty("rel", "");
 	});
 
+	it("should render `mailto:` links as expected", () => {
+		const props = { href: "mailto:test@test.com" };
+		render(<Link {...props} />);
+
+		const link = screen.getByRole("link");
+
+		expect(link).toBeInTheDocument();
+		expect(link).toHaveProperty("href", "mailto:test@test.com");
+		expect(link).toHaveProperty("target", "");
+		expect(link).toHaveProperty("rel", "");
+	});
+
 	it("should render external links as expected", () => {
 		const props = { href: "https://test.com" };
 		render(<Link {...props} />);

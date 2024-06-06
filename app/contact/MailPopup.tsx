@@ -40,7 +40,10 @@ const MailPopup = ({ proof = "" }: { proof: string }) => {
 
 	return (
 		<button className="btn rounded p-2 text-xl font-bold outline outline-accent-600 dark:outline-accent-200 md:text-2xl">
-			<Link className="no-underline dark:text-dark-accent-200" href={`mailto:${user}@${domain}`}>
+			<Link
+				className="py-3 no-underline dark:text-dark-accent-200"
+				href={`mailto:${user}@${domain}`}
+			>
 				OK, that was easy
 			</Link>
 		</button>

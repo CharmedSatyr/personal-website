@@ -20,6 +20,7 @@
 - Mention things you like
   - Penn
   - WOFF
+- Contact form could probably be a state machine
 
 Add a blog! Possible entries:
 
