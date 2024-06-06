@@ -21,8 +21,19 @@
   - Penn
   - WOFF
 - Contact form could probably be a state machine
+- Bee
+
+  - Flying
+  - Splat or alt
+  - Satyr logo
+  - Small menu - https://dribbble.com/shots/1746065-Floating-burger-2-0
+
+- Ask to have your site added to:
+  - Now.com
+  - Conent Layer - https://github.com/timlrx/contentlayer2?tab=readme-ov-file#community
 
 Add a blog! Possible entries:
 
 - How I learned to code
-- How I lost 100 pounds
+- Figuring out what's next? - Why I quit my last job, what I'm doing next.
+- How I lost 100 pounds\*
