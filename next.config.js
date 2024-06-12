@@ -1,3 +1,5 @@
+const withMDX = require("@next/mdx")();
+
 const getBuildDate = () => {
 	const date = new Date();
 
@@ -9,8 +11,11 @@ const getBuildDate = () => {
 };
 
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
+	pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 	env: {
 		lastUpdated: getBuildDate(),
 	},
 };
+
+module.exports = withMDX(nextConfig);

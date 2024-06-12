@@ -30,7 +30,8 @@
 		"**/*.js",
 		"**/*.ts",
 		"**/*.tsx",
-		"**/*.json"
+		"**/*.json",
+		"**/*.mdx"
 	],
 	"exclude": ["node_modules"]
 }
