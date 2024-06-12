@@ -32,6 +32,7 @@ const MailPopup = ({ proof = "" }: { proof: string }) => {
 			setPopup(true);
 			router.push(`mailto:${user}@${domain}`);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [domain, isValid, user, popup]);
 
 	if (!isValid) {
