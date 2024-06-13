@@ -12,7 +12,7 @@ const About = () => {
 			<h1 className="mb-8">About</h1>
 
 			<div className="space-between flex flex-col md:flex-row">
-				<div className="mx-auto mb-6 max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
+				<div className="mx-auto mb-6 min-h-max max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
 					<Image
 						alt="Joseph looking out a window at Karlštejn Castle, Czech Republic."
 						src={"/static/images/joseph.webp"}
