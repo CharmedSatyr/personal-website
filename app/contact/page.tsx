@@ -4,7 +4,7 @@ import genPageMetadata from "app/seo";
 import EmailMeLink from "app/contact/EmailMeLink";
 import { LinkedIn } from "app/contact/social-icons";
 import Link from "components/Link";
-import PageContainer from "components/PageContainer";
+import PageTitle from "components/PageTitle";
 import siteMetadata from "data/site-metadata";
 
 dotenv.config();
@@ -13,7 +13,8 @@ export const metadata = genPageMetadata({ title: "Contact" });
 
 const Contact = () => {
 	return (
-		<PageContainer title="Contact">
+		<>
+			<PageTitle title="Contact" />
 			<ol className="w-max">
 				<li>
 					<Link href={siteMetadata.linkedin}>
@@ -24,7 +25,7 @@ const Contact = () => {
 					<EmailMeLink />
 				</li>
 			</ol>
-		</PageContainer>
+		</>
 	);
 };
 

@@ -61,11 +61,18 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 			/>
 
 			<body
-				className={`${poppins.variable} flex h-screen flex-col justify-between font-sans`}
+				className={`${poppins.variable} flex h-screen flex-col justify-center justify-between font-sans`}
 			>
 				<ThemeProviders>
 					<Header />
-					<main className="m-8 flex justify-center">{children}</main>
+
+					<main
+						className="mx-8 mb-auto pt-10 md:pt-20"
+						style={{ border: "1px solid red" }}
+					>
+						<div className="container min-h-96 max-w-3xl">{children}</div>
+					</main>
+
 					<Footer />
 				</ThemeProviders>
 			</body>

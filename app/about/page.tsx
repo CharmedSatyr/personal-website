@@ -1,14 +1,16 @@
 import genPageMetadata from "app/seo";
 import Image from "components/Image";
 import Link from "components/Link";
-import PageContainer from "components/PageContainer";
 import joseph from "public/static/images/joseph";
+import PageTitle from "components/PageTitle";
 
 export const metadata = genPageMetadata({ title: "About" });
 
 const About = () => {
 	return (
-		<PageContainer title="About">
+		<>
+			<PageTitle title="About" />
+
 			<div className="space-between flex flex-col md:flex-row">
 				<div className="mx-auto mb-6 min-h-max max-w-sm rounded-md border border-primary-800 dark:border-dark-primary-200 md:my-auto md:mt-2 lg:-ml-20">
 					<Image
@@ -63,11 +65,8 @@ const About = () => {
 						change.
 					</p>
 				</div>
-				{/*<h2>Uses</h2>
-
-	<h2>Go-To Stack</h2>*/}
 			</div>
-		</PageContainer>
+		</>
 	);
 };
 

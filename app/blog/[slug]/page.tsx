@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { blogDir } from "app/blog/page";
+import PageTitle from "@/components/PageTitle";
 
 export const generateStaticParams = async () => {
 	const files = fs.readdirSync(path.join(blogDir));
@@ -35,9 +36,7 @@ const Post = ({ params }) => {
 
 	return (
 		<>
-			<h1 className="highlighted mb-8 text-3xl font-bold md:text-5xl">
-				{props.frontMatter.title}
-			</h1>
+			<PageTitle title={props.frontMatter.title} />
 
 			<MDXRemote source={props.content} />
 		</>

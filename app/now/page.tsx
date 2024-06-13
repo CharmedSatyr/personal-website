@@ -1,12 +1,14 @@
 import genPageMetadata from "app/seo";
-import PageContainer from "components/PageContainer";
 import Link from "components/Link";
+import PageTitle from "components/PageTitle";
 
 export const metadata = genPageMetadata({ title: "Now" });
 
 const Now = () => {
 	return (
-		<PageContainer title="Now">
+		<>
+			<PageTitle title="Now" />
+
 			<aside className="italic">
 				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>
@@ -36,7 +38,7 @@ const Now = () => {
 					<Link href="https://learn.unity.com">Unity</Link>.
 				</li>
 			</ol>
-		</PageContainer>
+		</>
 	);
 };
 

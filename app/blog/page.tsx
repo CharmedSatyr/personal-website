@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 import Link from "components/Link";
-import PageContainer from "@/components/PageContainer";
+import PageTitle from "components/PageTitle";
 
 export const blogDir = "data/blog";
 
@@ -26,7 +26,9 @@ const Blog = () => {
 	const blogs = getBlogs();
 
 	return (
-		<PageContainer title="Blog">
+		<>
+			<PageTitle title="Blog" />
+
 			<section>
 				{blogs.map((blog) => (
 					<Link
@@ -41,7 +43,7 @@ const Blog = () => {
 					</Link>
 				))}
 			</section>
-		</PageContainer>
+		</>
 	);
 };
 
