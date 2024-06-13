@@ -6,9 +6,7 @@ export const metadata = genPageMetadata({ title: "Now" });
 
 const Now = () => {
 	return (
-		<PageContainer>
-			<h1 className="highlighted mb-8 font-bold">Now</h1>
-
+		<PageContainer title="Now">
 			<aside className="italic">
 				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>

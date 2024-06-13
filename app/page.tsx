@@ -4,8 +4,8 @@ import TreeImage from "components/TreeImage";
 
 const Root = () => {
 	return (
-		<PageContainer>
-			<h1 className="highlighted mb-8 font-bold leading-tight">
+		<PageContainer title="">
+			<h1 className="highlighted mb-8 text-3xl font-bold leading-tight md:text-5xl">
 				I'm a software developer, game designer, and writer in Seattle.
 				<TreeImage />
 			</h1>

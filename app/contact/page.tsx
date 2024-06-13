@@ -13,8 +13,7 @@ export const metadata = genPageMetadata({ title: "Contact" });
 
 const Contact = () => {
 	return (
-		<PageContainer>
-			<h1 className="highlighted mb-8 font-bold">Contact</h1>
+		<PageContainer title="Contact">
 			<ol className="w-max">
 				<li>
 					<Link href={siteMetadata.linkedin}>
