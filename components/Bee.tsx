@@ -1,6 +1,9 @@
 //<!--<?xml version="1.0" encoding="utf-8"?> -->
+
+import { SVGProps } from "react";
+
 //<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-export const Bee = () => (
+export const Bee = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		version="1.1"
 		id="katman_1"
@@ -8,8 +11,8 @@ export const Bee = () => (
 		//xmlns:xlink="http://www.w3.org/1999/xlink"
 		x="0px"
 		y="0px"
-		width="700px"
-		height="700px"
+		width={props.width}
+		height={props.height}
 		viewBox="0 0 700 700"
 		//style="enable-background:new 0 0 700 700;"
 		//xml:space="preserve"

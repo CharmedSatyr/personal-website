@@ -39,6 +39,7 @@ const ThemeSwitch = () => {
 
 	return mounted ? (
 		<button
+			className="h-5 w-5 text-accent-600 dark:text-dark-accent-300"
 			aria-label="Theme Switch"
 			type="button"
 			onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}

@@ -1,18 +1,21 @@
+import Bee from "components/Bee";
 import ThemeSwitch from "components/ThemeSwitch";
 import siteMetadata from "data/site-metadata";
 
 const Footer = () => {
 	return (
 		<footer className="flex w-screen items-center justify-center space-x-2 text-nowrap px-8 py-4 text-xs md:text-sm">
-			<div>
+			<section>
 				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
-			</div>
-			<div> • </div>
+			</section>
+
+			<Bee height={15} width={15} />
+
 			<div>Updated {process.env.lastUpdated}</div>
-			<div> • </div>
-			<div>
-				<ThemeSwitch />
-			</div>
+
+			<Bee height={15} width={15} />
+
+			<ThemeSwitch />
 		</footer>
 	);
 };
