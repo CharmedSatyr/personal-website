@@ -19,7 +19,8 @@ const Contact = () => {
 			<ol>
 				<li>
 					<Link href={siteMetadata.linkedin}>
-						<LinkedIn className="inline h-8 w-8" /> Connect on LinkedIn
+						<LinkedIn className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
+						Connect on LinkedIn
 					</Link>
 				</li>
 				<li>

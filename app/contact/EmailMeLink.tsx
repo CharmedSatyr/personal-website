@@ -24,7 +24,8 @@ const EmailMeLink = () => {
 				setClicked(true);
 			}}
 		>
-			<Mail className="inline h-8 w-8" /> Send me an email
+			<Mail className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
+			Send me an email
 		</button>
 	);
 };
