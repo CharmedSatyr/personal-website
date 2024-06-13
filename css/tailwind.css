@@ -18,10 +18,6 @@
 		@apply text-primary-800 dark:text-dark-primary-200;
 	}
 
-	body {
-		@apply bg-primary-50 text-primary-700 dark:bg-dark-primary-950 dark:text-dark-primary-300;
-	}
-
 	aside,
 	label,
 	li,
@@ -40,9 +36,5 @@
 
 	.hyperlink {
 		@apply text-secondary-700 underline decoration-accent-600 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
-	}
-
-	svg {
-		@apply h-5 w-5 text-accent-600 dark:text-dark-accent-300;
 	}
 }

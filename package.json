@@ -59,9 +59,11 @@
 	},
 	"lint-staged": {
 		"*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-			"eslint --fix",
 			"prettier --write",
 			"npm run test:staged"
+		],
+		"*.+(js|jsx|ts|tsx|json|md|mdx)": [
+			"eslint --fix"
 		]
 	}
 }
