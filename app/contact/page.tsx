@@ -15,7 +15,8 @@ const Contact = () => {
 	return (
 		<>
 			<PageTitle title="Contact" />
-			<ol className="w-max">
+
+			<ol>
 				<li>
 					<Link href={siteMetadata.linkedin}>
 						<LinkedIn className="inline h-8 w-8" /> Connect on LinkedIn

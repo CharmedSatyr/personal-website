@@ -36,7 +36,7 @@ const NavLinks = () => {
 
 const Header = () => {
 	return (
-		<header className="flex items-center justify-between px-8 py-4">
+		<header className="flex w-screen items-center justify-between px-8 py-4">
 			<Link href="/">{siteMetadata.headerTitle}</Link>
 
 			<div className="flex items-center space-x-4">

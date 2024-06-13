@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-import { blogDir } from "app/blog/page";
+import { blogDir } from "app/blog/constants";
 import PageTitle from "@/components/PageTitle";
 
 export const generateStaticParams = async () => {
