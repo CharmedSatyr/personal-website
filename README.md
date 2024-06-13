@@ -10,7 +10,6 @@
 - Collapsible mobile menu
 - Footer links
   - colophon: See https://eryc.cc/colophon/
-- Tests
 - Use mask to draw face in Satyr
 - Subtle patterns
 - Tech page - go-to stack
@@ -22,7 +21,6 @@
   - Penn
   - WOFF
 - Contact form could probably be a state machine
-- Bee
 
   - Flying
   - Splat or alt
