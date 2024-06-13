@@ -22,7 +22,7 @@ const About = () => {
 				blurDataURL={joseph}
 			/>
 
-			<p className="text-base">
+			<p className="text-base lg:text-xl">
 				When my wife and I were dating, we read{" "}
 				<Link href="https://www.gottman.com/eight-dates/">a book</Link> that
 				prompted us to discuss two of our highest values. She said{" "}
@@ -42,7 +42,7 @@ const About = () => {
 				!
 			</p>
 
-			<p className="text-base">
+			<p className="text-base lg:text-xl">
 				I love learning, traveling, and a different point of view. I have
 				visited 29 countries, lived in several, and prefer not to own too many
 				things. I've worked in politics in Washington, D.C., taught English in
@@ -52,7 +52,7 @@ const About = () => {
 				I've never had, extra spicy.
 			</p>
 
-			<p className="text-base">
+			<p className="text-base lg:text-xl">
 				The people I admire most tend to lead multi-chapter lives. They are hard
 				workers, mindful, and dynamic. They are motivated by process rather than
 				outcomes. They change not only because their circumstances change but
