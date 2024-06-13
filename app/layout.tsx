@@ -66,10 +66,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 				<ThemeProviders>
 					<Header />
 
-					<main
-						className="mx-8 mb-auto pt-10 md:pt-20"
-						style={{ border: "1px solid red" }}
-					>
+					<main className="mx-8 mb-auto pt-10 md:pt-20">
 						<div className="container min-h-96 max-w-3xl">{children}</div>
 					</main>
 
