@@ -23,12 +23,15 @@ const Now = () => {
 				</li>
 				<li>
 					I am looking for work as a software developer.{" "}
-					<Link href="/contact">Send me a message</Link> if you think I might be right for a project
-					or role you're hiring for.
+					<Link href="/contact">Send me a message</Link> if you think I might be
+					right for a project or role you're hiring for.
 				</li>
 				<li>
 					I am writing an adventure module for{" "}
-					<Link href="https://dnd.wizards.com/how-to-play">Dungeons & Dragons 5e</Link>.
+					<Link href="https://dnd.wizards.com/how-to-play">
+						Dungeons & Dragons 5e
+					</Link>
+					.
 				</li>
 				<li>
 					I have an idea for a digital game and some early prototypes built in{" "}

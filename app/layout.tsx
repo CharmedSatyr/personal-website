@@ -53,9 +53,16 @@ const poppins = Poppins({
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang={siteMetadata.locale} suppressHydrationWarning>
-			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.webp" />
+			<link
+				rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/static/favicons/favicon-32x32.webp"
+			/>
 
-			<body className={`${poppins.variable} flex h-screen flex-col justify-between font-sans`}>
+			<body
+				className={`${poppins.variable} flex h-screen flex-col justify-between font-sans`}
+			>
 				<ThemeProviders>
 					<Header />
 					<main className="m-8 flex justify-center">{children}</main>

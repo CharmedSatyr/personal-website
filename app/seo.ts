@@ -9,7 +9,12 @@ interface PageSEOProps {
 	[key: string]: unknown;
 }
 
-const genPageMetadata = ({ title, description, image, ...rest }: PageSEOProps): Metadata => ({
+const genPageMetadata = ({
+	title,
+	description,
+	image,
+	...rest
+}: PageSEOProps): Metadata => ({
 	title,
 	openGraph: {
 		title: `${title} | ${siteMetadata.title}`,

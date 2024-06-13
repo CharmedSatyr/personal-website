@@ -11,7 +11,12 @@ describe("Contact", () => {
 	const push = jest.fn();
 	const requestSubmit = jest.fn();
 
-	beforeEach(() => (useRouter as jest.Mock).mockImplementation(() => ({ push, requestSubmit })));
+	beforeEach(() =>
+		(useRouter as jest.Mock).mockImplementation(() => ({
+			push,
+			requestSubmit,
+		})),
+	);
 	afterEach(() => jest.clearAllMocks());
 
 	it("renders a heading", () => {
@@ -92,6 +97,9 @@ describe("Contact", () => {
 
 		const emailLink = within(button).getByRole("link");
 
-		expect(emailLink).toHaveProperty("href", expect.stringContaining("mailto:"));
+		expect(emailLink).toHaveProperty(
+			"href",
+			expect.stringContaining("mailto:"),
+		);
 	});
 });

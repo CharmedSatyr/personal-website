@@ -20,6 +20,7 @@ module.exports = {
 	parserOptions: {
 		project: true,
 		tsconfigRootDir: __dirname,
+		extraFileExtensions: [".md", ".mdx"],
 	},
 	rules: {
 		"prettier/prettier": "error",
@@ -39,4 +40,10 @@ module.exports = {
 		"@typescript-eslint/no-var-requires": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 	},
+	overrides: [
+		{
+			files: ["*.md", "*.mdx"],
+			extends: ["plugin:mdx/recommended", "plugin:prettier/recommended"],
+		},
+	],
 };
