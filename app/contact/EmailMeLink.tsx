@@ -14,7 +14,7 @@ const EmailMeLink = () => {
 
 	return (
 		<button
-			className="fake-link"
+			className="hyperlink"
 			onClick={(e) => {
 				// After initial click, let the mailto: work
 				if (!clicked) {

@@ -26,7 +26,7 @@ const NavLinks = () => {
 					return 0;
 				})
 				.map((link) => (
-					<Link className="highlighted" key={link.title} href={link.href}>
+					<Link key={link.title} href={link.href}>
 						{link.title}
 					</Link>
 				))}
@@ -37,9 +37,7 @@ const NavLinks = () => {
 const Header = () => {
 	return (
 		<header className="flex items-center justify-between px-8 py-4">
-			<Link className="highlighted" href="/">
-				{siteMetadata.headerTitle}
-			</Link>
+			<Link href="/">{siteMetadata.headerTitle}</Link>
 
 			<div className="flex items-center space-x-4">
 				<NavLinks />

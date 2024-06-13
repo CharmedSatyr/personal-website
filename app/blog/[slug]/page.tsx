@@ -1,13 +1,12 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-const postsPath = "data/blog";
+import { blogDir } from "app/blog/page";
 
 export const generateStaticParams = async () => {
-	const files = fs.readdirSync(path.join(postsPath));
+	const files = fs.readdirSync(path.join(blogDir));
 
 	const paths = files.map((filename) => ({
 		slug: filename.replace(".mdx", ""),
@@ -18,7 +17,7 @@ export const generateStaticParams = async () => {
 
 const getPost = ({ slug }: { slug: string }) => {
 	const markdownFile = fs.readFileSync(
-		path.join(postsPath, slug + ".mdx"),
+		path.join(blogDir, slug + ".mdx"),
 		"utf-8",
 	);
 
@@ -36,7 +35,9 @@ const Post = ({ params }) => {
 
 	return (
 		<>
-			<h1>{props.frontMatter.title}</h1>
+			<h1 className="highlighted mb-8 text-3xl font-bold md:text-5xl">
+				{props.frontMatter.title}
+			</h1>
 
 			<MDXRemote source={props.content} />
 		</>

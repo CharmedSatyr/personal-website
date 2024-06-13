@@ -11,14 +11,22 @@ const CustomLink = ({
 	const isAnchorLink = href && href.startsWith("#");
 
 	if (isInternalLink) {
-		return <Link href={href} {...rest} />;
+		return <Link className="hyperlink" href={href} {...rest} />;
 	}
 
 	if (isAnchorLink) {
-		return <a href={href} {...rest} />;
+		return <a className="hyperlink" href={href} {...rest} />;
 	}
 
-	return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
+	return (
+		<a
+			className="hyperlink"
+			target="_blank"
+			rel="noopener noreferrer"
+			href={href}
+			{...rest}
+		/>
+	);
 };
 
 export default CustomLink;

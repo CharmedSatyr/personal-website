@@ -13,10 +13,6 @@
 		@apply text-lg md:text-xl;
 	}
 
-	footer {
-		@apply text-xs md:text-sm;
-	}
-
 	/* Other styles */
 	.highlighted {
 		@apply text-primary-800 dark:text-dark-primary-200;
@@ -42,8 +38,7 @@
 		@apply appearance-none rounded border-2 border-primary-300 bg-primary-50 text-grayscale-900 shadow-inner focus:border-secondary-700 focus:outline-none dark:border-dark-accent-300;
 	}
 
-	a,
-	.fake-link {
+	.hyperlink {
 		@apply text-secondary-700 underline decoration-accent-600 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 

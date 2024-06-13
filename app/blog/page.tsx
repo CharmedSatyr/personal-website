@@ -2,54 +2,46 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import Link from "next/link";
+import Link from "components/Link";
+import PageContainer from "@/components/PageContainer";
 
-export const Blog = () => {
-	// 1) Set blogs directory
-	const blogDir = "data/blog";
+export const blogDir = "data/blog";
 
-	// 2) Find all files in the blog directory
+const getBlogs = () => {
 	const files = fs.readdirSync(path.join(blogDir));
 
-	// 3) For each blog found
-	const blogs = files.map((filename) => {
-		// 4) Read the content of that blog
+	return files.map((filename) => {
 		const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
 
-		// 5) Extract the metadata from the blog's content
 		const { data: frontMatter } = matter(fileContent);
 
-		// 6) Return the metadata and page slug
 		return {
 			meta: frontMatter,
 			slug: filename.replace(".mdx", ""),
 		};
 	});
+};
+
+const Blog = () => {
+	const blogs = getBlogs();
 
 	return (
-		<main className="flex flex-col">
-			<h1 className="text-3xl font-bold">My Blogging Site</h1>
+		<PageContainer title="Blog">
+			<section>
+				{blogs.map((blog) => (
+					<Link
+						className="flex items-end justify-start gap-4"
+						href={"/blog/" + blog.slug}
+						passHref
+						key={blog.slug}
+					>
+						<time className="text-lg md:text-xl">{blog.meta.date}</time>
 
-			<section className="py-10">
-				<h2 className="text-2xl font-bold">Latest Blogs</h2>
-
-				<div className="py-2">
-					{blogs.map((blog) => (
-						<Link href={"/blog/" + blog.slug} passHref key={blog.slug}>
-							<div className="flex justify-between gap-2 py-2 align-middle">
-								<div>
-									<h3 className="text-lg font-bold">{blog.meta.title}</h3>
-									<p className="text-gray-400">{blog.meta.description}</p>
-								</div>
-								<div className="my-auto text-gray-400">
-									<p>{blog.meta.date}</p>
-								</div>
-							</div>
-						</Link>
-					))}
-				</div>
+						<h3 className="hyperlink text-lg md:text-xl">{blog.meta.title}</h3>
+					</Link>
+				))}
 			</section>
-		</main>
+		</PageContainer>
 	);
 };
 
