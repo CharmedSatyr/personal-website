@@ -4,7 +4,8 @@
 
 ## TODO
 
-- Bee flying, bee splat or osmething when you click it. Maybe a cache that shows count of bee splats.
+- Bee flying, bee splat or osmething when you click it. Maybe a cache that shows
+  count of bee splats.
 - Satyr logo
 - Collapsible mobile menu
 - Footer links
@@ -30,7 +31,8 @@
 
 - Ask to have your site added to:
   - Now.com
-  - Conent Layer - https://github.com/timlrx/contentlayer2?tab=readme-ov-file#community
+  - Conent Layer -
+    https://github.com/timlrx/contentlayer2?tab=readme-ov-file#community
 
 Add a blog! Possible entries:
 
