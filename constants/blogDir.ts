@@ -1,3 +1,3 @@
-const blogDir = "@/data/blog";
+const blogDir = "./data/blog";
 
 export default blogDir;
