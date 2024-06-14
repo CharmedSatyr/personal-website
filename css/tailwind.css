@@ -7,6 +7,10 @@
 		@apply text-primary-800 dark:text-dark-primary-200;
 	}
 
+	.title {
+		@apply highlighted mb-8 text-4xl font-bold xl:text-5xl;
+	}
+
 	aside,
 	label,
 	li,
