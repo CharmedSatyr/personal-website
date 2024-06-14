@@ -17,7 +17,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
 			priority: 0.8,
 		},
 		{
-			url: `${siteMetadata.siteUrl}/blog`,
+			url: `${siteMetadata.siteUrl}/field-notes`,
 			lastModified: new Date(),
 			changeFrequency: "monthly",
 			priority: 0.5,

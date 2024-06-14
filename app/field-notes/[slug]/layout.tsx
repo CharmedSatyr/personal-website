@@ -5,7 +5,9 @@ interface Props {
 }
 
 const ArticleContainer = ({ children }: Props) => {
-	return <article className="container min-h-96 max-w-3xl">{children}</article>;
+	return (
+		<article className="container prose min-h-96 max-w-3xl">{children}</article>
+	);
 };
 
 export default ArticleContainer;

@@ -26,13 +26,13 @@ const Blog = () => {
 
 	return (
 		<>
-			<PageTitle>Blog</PageTitle>
+			<PageTitle>Field Notes</PageTitle>
 
 			<section>
 				{blogs.map((blog) => (
 					<Link
-						className="flex items-end justify-start gap-4"
-						href={"/blog/" + blog.slug}
+						className="mb-4 flex items-end justify-start gap-4"
+						href={"/field-notes/" + blog.slug}
 						passHref
 						key={blog.slug}
 					>
