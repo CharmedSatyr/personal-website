@@ -4,7 +4,7 @@ import TreeImage from "@/components/TreeImage";
 const Root = () => {
 	return (
 		<>
-			<h1 className="title leading-tight">
+			<h1 className="title text-left leading-tight">
 				I'm a software developer, game designer, and writer in Seattle.
 				<TreeImage />
 			</h1>
