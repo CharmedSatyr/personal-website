@@ -67,7 +67,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 				<ThemeProviders>
 					<Header />
 
-					<main className="mb-auto w-10/12 pt-10 md:w-8/12 md:pt-20 lg:w-6/12 xl:w-4/12">
+					<main className="mb-auto w-10/12 pt-10 sm:w-9/12 md:w-7/12 md:pt-20 lg:w-5/12 xl:w-4/12">
 						{children}
 					</main>
 

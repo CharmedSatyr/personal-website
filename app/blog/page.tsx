@@ -36,9 +36,9 @@ const Blog = () => {
 						passHref
 						key={blog.slug}
 					>
-						<time className="text-lg md:text-xl">{blog.meta.date}</time>
+						<time>{blog.meta.date}</time>
 
-						<h3 className="hyperlink text-lg md:text-xl">{blog.meta.title}</h3>
+						<h3 className="hyperlink">{blog.meta.title}</h3>
 					</Link>
 				))}
 			</section>
