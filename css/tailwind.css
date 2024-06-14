@@ -15,6 +15,18 @@
 		@apply highlighted mb-8 text-4xl font-bold xl:text-5xl;
 	}
 
+	.title-h2 {
+		@apply highlighted mb-8 text-3xl font-bold xl:text-4xl;
+	}
+
+	.text {
+		@apply text-justify font-sans text-primary-700 dark:text-dark-primary-300 xl:text-lg;
+	}
+
+	.ordered-list {
+		@apply list-decimal leading-relaxed marker:text-accent-600 dark:marker:text-dark-accent-300;
+	}
+
 	aside,
 	label,
 	li,

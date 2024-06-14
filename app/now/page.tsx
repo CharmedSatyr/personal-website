@@ -13,7 +13,7 @@ const Now = () => {
 				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>
 
-			<ol className="list-decimal leading-relaxed marker:text-accent-600 dark:marker:text-dark-accent-300">
+			<ol className="ordered-list">
 				<li>
 					In January, my amazing partner Inga{" "}
 					<span role="img" aria-label="heart">

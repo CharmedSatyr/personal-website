@@ -1,13 +1,7 @@
-import { ReactNode } from "react";
+const Layout = ({ children }) => (
+	<article className="prose-headings:highlighted prose-p:text prose-a:hyperlink prose-ol:ordered-list prose-ol:text prose dark:prose-invert">
+		{children}
+	</article>
+);
 
-interface Props {
-	children: ReactNode;
-}
-
-const ArticleContainer = ({ children }: Props) => {
-	return (
-		<article className="container prose min-h-96 max-w-3xl">{children}</article>
-	);
-};
-
-export default ArticleContainer;
+export default Layout;

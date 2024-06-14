@@ -5,4 +5,8 @@ const headerNavLinks = [
 	{ href: "/about", title: "About" },
 ];
 
+if (process.env.NODE_ENV === "development") {
+	headerNavLinks.push({ href: "/field-notes", title: "Field Notes" });
+}
+
 export default headerNavLinks;

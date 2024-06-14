@@ -3,8 +3,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-import Link from "@/components/Link";
-import PageTitle from "@/components/PageTitle";
 import blogDir from "@/constants/blogDir";
 
 export const generateStaticParams = async () => {
@@ -35,14 +33,7 @@ const getPost = ({ slug }: { slug: string }) => {
 const Post = ({ params }) => {
 	const props = getPost(params);
 
-	return (
-		<>
-			<Link href="/field-notes">Back</Link>
-			<PageTitle>{props.frontMatter.title}</PageTitle>
-
-			<MDXRemote source={props.content} />
-		</>
-	);
+	return <MDXRemote source={props.content} />;
 };
 
 export default Post;
