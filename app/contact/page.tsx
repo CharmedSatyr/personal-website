@@ -14,7 +14,7 @@ export const metadata = genPageMetadata({ title: "Contact" });
 const Contact = () => {
 	return (
 		<>
-			<PageTitle title="Contact" />
+			<PageTitle>Contact</PageTitle>
 
 			<ol>
 				<li>

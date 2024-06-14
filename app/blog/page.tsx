@@ -26,7 +26,7 @@ const Blog = () => {
 
 	return (
 		<>
-			<PageTitle title="Blog" />
+			<PageTitle>Blog</PageTitle>
 
 			<section>
 				{blogs.map((blog) => (

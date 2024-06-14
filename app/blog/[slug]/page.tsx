@@ -36,7 +36,7 @@ const Post = ({ params }) => {
 
 	return (
 		<>
-			<PageTitle title={props.frontMatter.title} />
+			<PageTitle>{props.frontMatter.title}</PageTitle>
 
 			<MDXRemote source={props.content} />
 		</>

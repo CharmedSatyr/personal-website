@@ -10,7 +10,7 @@ export const metadata = genPageMetadata({ title: "About" });
 const About = () => {
 	return (
 		<>
-			<PageTitle title="About" />
+			<PageTitle>About</PageTitle>
 
 			<Image
 				className="mx-auto mb-4 w-3/6 max-w-sm rounded-sm border border-primary-800 dark:border-dark-primary-200 md:float-left md:mb-2 md:mr-3 md:mt-1"
