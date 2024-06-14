@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-import Link from "components/Link";
 import { useRouter } from "next/navigation";
+
+import Link from "@/components/Link";
 
 const MailPopup = ({ proof = "" }: { proof: string }) => {
 	const router = useRouter();

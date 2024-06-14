@@ -1,1 +1,1 @@
-export const blogDir = "data/blog";
+export const blogDir = "@/data/blog";

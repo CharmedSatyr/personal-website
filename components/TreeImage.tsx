@@ -1,10 +1,10 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
-import Image from "components/Image";
+import { useTheme } from "next-themes";
 import { Mode } from "constants/mode";
+
+import Image from "@/components/Image";
 
 const TreeImage = () => {
 	const [mounted, setMounted] = useState(false);

@@ -1,10 +1,10 @@
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
+import path from "path";
 
-import { blogDir } from "app/blog/constants";
-import Link from "components/Link";
-import PageTitle from "components/PageTitle";
+import { blogDir } from "@/app/blog/constants";
+import Link from "@/components/Link";
+import PageTitle from "@/components/PageTitle";
 
 const getBlogs = () => {
 	const files = fs.readdirSync(path.join(blogDir));

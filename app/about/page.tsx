@@ -1,8 +1,9 @@
-import genPageMetadata from "app/seo";
-import Image from "components/Image";
-import Link from "components/Link";
 import joseph from "public/static/images/joseph";
-import PageTitle from "components/PageTitle";
+
+import genPageMetadata from "@/app/seo";
+import Image from "@/components/Image";
+import Link from "@/components/Link";
+import PageTitle from "@/components/PageTitle";
 
 export const metadata = genPageMetadata({ title: "About" });
 

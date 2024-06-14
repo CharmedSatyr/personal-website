@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-import "css/tailwind.css";
-import ThemeProviders from "app/theme-providers";
-import Footer from "components/Footer";
-import Header from "components/Header";
-import siteMetadata from "data/site-metadata";
+import ThemeProviders from "@/app/theme-providers";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import siteMetadata from "@/data/site-metadata";
+
+import "@/css/tailwind.css";
 
 /**
  * See https://nextjs.org/docs/app/building-your-application/optimizing/metadata

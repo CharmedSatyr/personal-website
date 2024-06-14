@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import MailPopup from "app/contact/MailPopup";
+import MailPopup from "@/app/contact/MailPopup";
 
 const ProveHuman = () => {
 	const [proof, setProof] = useState("");

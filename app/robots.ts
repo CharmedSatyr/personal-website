@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-import siteMetadata from "data/site-metadata";
+import siteMetadata from "@/data/site-metadata";
 
 const robots = (): MetadataRoute.Robots => {
 	return {

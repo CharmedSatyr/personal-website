@@ -2,9 +2,9 @@
 
 import { usePathname } from "next/navigation";
 
-import Link from "components/Link";
-import headerNavLinks from "data/header-nav-links";
-import siteMetadata from "data/site-metadata";
+import Link from "@/components/Link";
+import headerNavLinks from "@/data/header-nav-links";
+import siteMetadata from "@/data/site-metadata";
 
 const NavLinks = () => {
 	const pathName = usePathname();

@@ -1,7 +1,7 @@
-import { fireEvent, render, screen, within } from "@testing-library/react";
 import { useRouter } from "next/navigation";
 
-import Contact from "app/contact/page";
+import Contact from "@/app/contact/page";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 
 jest.mock("next/navigation", () => ({
 	useRouter: jest.fn(),

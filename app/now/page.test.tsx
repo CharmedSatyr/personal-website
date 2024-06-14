@@ -1,6 +1,5 @@
+import Now from "@/app/now/page";
 import { render, screen } from "@testing-library/react";
-
-import Now from "app/now/page";
 
 describe("Now", () => {
 	it("renders a heading", () => {

@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import siteMetadata from "data/site-metadata";
+
+import siteMetadata from "@/data/site-metadata";
 
 const sitemap = (): MetadataRoute.Sitemap => {
 	return [

@@ -7,7 +7,7 @@ module.exports = {
 		node: true,
 		es6: true,
 	},
-	plugins: ["@typescript-eslint"],
+	plugins: ["@typescript-eslint", "simple-import-sort"],
 	extends: [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
@@ -33,6 +33,8 @@ module.exports = {
 				aspects: ["invalidHref", "preferButton"],
 			},
 		],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
 		"react/prop-types": 0,
 		"react/no-unescaped-entities": 0,
 		"@typescript-eslint/explicit-module-boundary-types": "off",
@@ -44,6 +46,32 @@ module.exports = {
 		{
 			files: ["*.md", "*.mdx"],
 			extends: ["plugin:mdx/recommended", "plugin:prettier/recommended"],
+		},
+		{
+			files: ["**/*.js", "**/*.ts", "**/*.tsx"],
+			rules: {
+				"simple-import-sort/imports": [
+					"error",
+					{
+						groups: [
+							// `react` first, `next` second, then packages starting with a character
+							["^react$", "^next", "^[a-z]"],
+							// Packages starting with `@`
+							["^@"],
+							// Packages starting with `~`
+							["^~"],
+							// Imports starting with `../`
+							["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+							// Imports starting with `./`
+							["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+							// Style imports
+							["^.+\\.s?css$"],
+							// Side effect imports
+							["^\\u0000"],
+						],
+					},
+				],
+			},
 		},
 	],
 };

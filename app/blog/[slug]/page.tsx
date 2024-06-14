@@ -1,9 +1,9 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 
-import { blogDir } from "app/blog/constants";
+import { blogDir } from "@/app/blog/constants";
 import PageTitle from "@/components/PageTitle";
 
 export const generateStaticParams = async () => {

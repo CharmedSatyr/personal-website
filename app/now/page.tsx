@@ -1,6 +1,6 @@
-import genPageMetadata from "app/seo";
-import Link from "components/Link";
-import PageTitle from "components/PageTitle";
+import genPageMetadata from "@/app/seo";
+import Link from "@/components/Link";
+import PageTitle from "@/components/PageTitle";
 
 export const metadata = genPageMetadata({ title: "Now" });
 

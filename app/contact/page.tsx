@@ -1,11 +1,11 @@
 import dotenv from "dotenv";
 
-import genPageMetadata from "app/seo";
-import EmailMeLink from "app/contact/EmailMeLink";
-import { LinkedIn } from "app/contact/social-icons";
-import Link from "components/Link";
-import PageTitle from "components/PageTitle";
-import siteMetadata from "data/site-metadata";
+import EmailMeLink from "@/app/contact/EmailMeLink";
+import { LinkedIn } from "@/app/contact/social-icons";
+import genPageMetadata from "@/app/seo";
+import Link from "@/components/Link";
+import PageTitle from "@/components/PageTitle";
+import siteMetadata from "@/data/site-metadata";
 
 dotenv.config();
 

@@ -1,5 +1,5 @@
-import Link from "components/Link";
-import TreeImage from "components/TreeImage";
+import Link from "@/components/Link";
+import TreeImage from "@/components/TreeImage";
 
 const Root = () => {
 	return (

@@ -14,9 +14,8 @@ export const Bee = (props: SVGProps<SVGSVGElement>) => (
 		width={props.width}
 		height={props.height}
 		viewBox="0 0 700 700"
-		//style="enable-background:new 0 0 700 700;"
-		//xml:space="preserve"
 		fill="currentColor"
+		{...props}
 	>
 		<path
 			d="M179.6,258.9c31.6,0.7,63.4,4.9,95,9.9c4.9,0.8,7.5,2.4,5.7-5.3c-2.7-10.9-4.2-22.5,0.5-33.4c1.6-3.7,0.3-6.1-3.1-7.9

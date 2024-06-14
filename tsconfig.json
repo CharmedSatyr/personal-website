@@ -14,9 +14,10 @@
 		"jsx": "preserve",
 		"baseUrl": ".",
 		"paths": {
-			"@/components/*": ["components/*"],
-			"@/css/*": ["css/*"],
-			"@/data/*": ["data/*"]
+			"@/app/*": ["./app/*"],
+			"@/components/*": ["./components/*"],
+			"@/css/*": ["./css/*"],
+			"@/data/*": ["./data/*"]
 		},
 		"plugins": [
 			{

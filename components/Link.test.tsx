@@ -1,6 +1,5 @@
+import Link from "@/components/Link";
 import { render, screen } from "@testing-library/react";
-
-import Link from "components/Link";
 
 describe("Link", () => {
 	it("should render an internal link as expected", () => {

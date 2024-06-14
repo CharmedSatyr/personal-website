@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-import ProveHuman from "app/contact/ProveHuman";
-import { Mail } from "app/contact/social-icons";
+import ProveHuman from "@/app/contact/ProveHuman";
+import { Mail } from "@/app/contact/social-icons";
 
 const EmailMeLink = () => {
 	const [clicked, setClicked] = useState(false);
