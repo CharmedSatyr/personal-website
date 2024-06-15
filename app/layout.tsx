@@ -56,7 +56,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 			/>
 
 			<body
-				className={`${poppins.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-dark-primary-950`}
+				className={`${poppins.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-slate-950`}
 			>
 				<ThemeProviders>
 					<Header />
