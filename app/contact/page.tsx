@@ -17,13 +17,14 @@ const Contact = () => {
 			<PageTitle>Contact</PageTitle>
 
 			<ol>
-				<li>
+				<li className="mb-8 text-lg">
 					<Link href={siteMetadata.linkedin}>
 						<LinkedIn className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
 						Connect on LinkedIn
 					</Link>
 				</li>
-				<li>
+
+				<li className="mb-8 text-lg">
 					<EmailMeLink />
 				</li>
 			</ol>

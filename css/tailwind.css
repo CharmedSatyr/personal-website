@@ -11,27 +11,29 @@
 		@apply text-secondary-700 underline decoration-accent-600 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 
-	.title {
+	h1.title {
 		@apply highlighted mb-8 text-4xl font-bold xl:text-5xl;
 	}
 
-	.title-h2 {
-		@apply highlighted mb-8 text-3xl font-bold xl:text-4xl;
+	h2.title {
+		@apply highlighted mb-4 text-3xl font-bold xl:text-3xl;
+	}
+
+	h3.title {
+		@apply highlighted mb-2 text-2xl font-bold xl:text-2xl;
 	}
 
 	.text {
-		@apply text-justify font-sans text-primary-700 dark:text-dark-primary-300 xl:text-lg;
+		@apply text-justify font-sans text-primary-700 dark:text-dark-primary-300;
 	}
 
-	.ordered-list {
-		@apply list-decimal leading-relaxed marker:text-accent-600 dark:marker:text-dark-accent-300;
+	.list {
+		@apply leading-relaxed marker:text-accent-600 dark:marker:text-dark-accent-300;
 	}
 
 	aside,
 	label,
-	li,
-	p,
-	ol {
-		@apply mb-8;
+	p {
+		@apply mb-6;
 	}
 }

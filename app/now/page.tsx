@@ -13,27 +13,27 @@ const Now = () => {
 				This is my <Link href="https://nownownow.com/about">Now</Link> page.
 			</aside>
 
-			<ol className="ordered-list">
-				<li>
+			<ol className="list list-decimal">
+				<li className="mb-4">
 					In January, my amazing partner Inga{" "}
 					<span role="img" aria-label="heart">
 						♥️
 					</span>{" "}
 					and I got married in an unplanned ceremony in Las Vegas.
 				</li>
-				<li>
+				<li className="mb-4">
 					I am looking for work as a software developer.{" "}
 					<Link href="/contact">Send me a message</Link> if you think I might be
 					right for a project or role you're hiring for.
 				</li>
-				<li>
+				<li className="mb-4">
 					I am writing an adventure module for{" "}
 					<Link href="https://dnd.wizards.com/how-to-play">
 						Dungeons & Dragons 5e
 					</Link>
 					.
 				</li>
-				<li>
+				<li className="mb-4">
 					I have an idea for a digital game and some early prototypes built in{" "}
 					<Link href="https://learn.unity.com">Unity</Link>.
 				</li>

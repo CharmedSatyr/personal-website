@@ -35,5 +35,7 @@
 Add a blog! Possible entries:
 
 - How I learned to code
-- Figuring out what's next? - Why I quit my last job, what I'm doing next.
+- Figuring out what's next? - Why I quit my last job, what I'm doing next. (I
+  don't want it to be, "I did X for a while so I could transition to Y". I want
+  to do the thing now.)
 - How I lost 100 pounds\*
