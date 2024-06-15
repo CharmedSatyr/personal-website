@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
 	subsets: ["latin"],
 	variable: "--font-poppins",
-	weight: ["300", "600"],
+	weight: ["300", "700"],
 });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
