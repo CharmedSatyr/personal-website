@@ -23,8 +23,8 @@ const About = () => {
 				</li>
 				<li className="mb-3">
 					<strong>Adventure, discovery, creativity.</strong> Risk-taker. I try
-					not to get too attached. I love a different point of view. Happiest
-					when making things.
+					not to get too attached and love a new perspective. Happiest when
+					making things.
 				</li>
 				<li className="mb-3">
 					<strong>Xenophile.</strong> 29 countries visited. Some years spent
