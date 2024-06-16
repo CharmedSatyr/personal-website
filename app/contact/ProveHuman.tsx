@@ -6,7 +6,7 @@ const ProveHuman = ({ triggerChange }) => {
 	const [proof, setProof] = useState("");
 
 	useEffect(() => {
-		if (proof !== process.env.NEXT_PUBLIC_PROOF) {
+		if (proof.toLowerCase() !== process.env.NEXT_PUBLIC_PROOF.toLowerCase()) {
 			return;
 		}
 
