@@ -8,7 +8,7 @@
 	}
 
 	.hyperlink {
-		@apply lowercase text-secondary-700 underline decoration-accent-600 decoration-dotted decoration-2 underline-offset-2 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
+		@apply /*after:content-['_↗']*/ lowercase text-secondary-700 underline decoration-accent-600 decoration-dotted decoration-2 underline-offset-2 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 
 	h1.title {
