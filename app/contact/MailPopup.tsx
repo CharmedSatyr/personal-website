@@ -5,39 +5,21 @@ import { useRouter } from "next/navigation";
 
 import Link from "@/components/Link";
 
-const MailPopup = ({ proof = "" }: { proof: string }) => {
+const MailPopup = () => {
 	const router = useRouter();
 	const [domain, setDomain] = useState("");
-	const [popup, setPopup] = useState(false);
 	const [user, setUser] = useState("");
 
-	const isValid = proof === process.env.NEXT_PUBLIC_PROOF;
+	useEffect(() => {
+		setUser(process.env.NEXT_PUBLIC_USERNAME);
+		setDomain(process.env.NEXT_PUBLIC_DOMAIN);
+	}, []);
 
 	useEffect(() => {
-		if (!isValid && (user !== "" || domain !== "")) {
-			setUser("");
-			setDomain("");
-			return;
-		}
-
-		if (isValid) {
-			setUser(process.env.NEXT_PUBLIC_USERNAME);
-			setDomain(process.env.NEXT_PUBLIC_DOMAIN);
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [isValid]);
-
-	useEffect(() => {
-		if (isValid && user && domain && !popup) {
-			setPopup(true);
+		if (user && domain) {
 			router.push(`mailto:${user}@${domain}`);
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [domain, isValid, user, popup]);
-
-	if (!isValid) {
-		return null;
-	}
+	}, [user, domain]);
 
 	return (
 		<button className="btn rounded p-2 font-bold outline outline-accent-600 dark:outline-accent-200">
@@ -45,7 +27,7 @@ const MailPopup = ({ proof = "" }: { proof: string }) => {
 				className="py-3 no-underline dark:text-dark-accent-200"
 				href={`mailto:${user}@${domain}`}
 			>
-				OK, that was easy
+				Click to email
 			</Link>
 		</button>
 	);

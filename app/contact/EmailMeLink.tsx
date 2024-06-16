@@ -1,27 +1,18 @@
 "use client";
 
-import { useState } from "react";
-
-import ProveHuman from "@/app/contact/ProveHuman";
 import { Mail } from "@/app/contact/social-icons";
 
-const EmailMeLink = () => {
-	const [clicked, setClicked] = useState(false);
+interface Props {
+	triggerChange: () => void;
+}
 
-	if (clicked) {
-		return <ProveHuman />;
-	}
-
+const EmailMeLink = ({ triggerChange }: Props) => {
 	return (
 		<button
 			className="hyperlink"
-			onClick={(e) => {
-				// After initial click, let the mailto: work
-				if (!clicked) {
-					e.preventDefault();
-				}
-
-				setClicked(true);
+			onClick={() => {
+				console.log("wat");
+				triggerChange();
 			}}
 		>
 			<Mail className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}

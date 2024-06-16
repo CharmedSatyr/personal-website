@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import MailPopup from "@/app/contact/MailPopup";
-
-const ProveHuman = () => {
+const ProveHuman = ({ triggerChange }) => {
 	const [proof, setProof] = useState("");
+
+	useEffect(() => {
+		if (proof !== process.env.NEXT_PUBLIC_PROOF) {
+			return;
+		}
+
+		triggerChange();
+	}, [proof]);
 
 	return (
 		<form className="max-w-xs cursor-default text-left md:max-w-lg">
@@ -19,8 +25,6 @@ const ProveHuman = () => {
 					required
 				/>
 			</label>
-
-			<MailPopup proof={proof} />
 		</form>
 	);
 };

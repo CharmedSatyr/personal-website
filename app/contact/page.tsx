@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-import EmailMeLink from "@/app/contact/EmailMeLink";
+import EmailManager from "@/app/contact/EmailManager";
 import { LinkedIn } from "@/app/contact/social-icons";
 import genPageMetadata from "@/app/seo";
 import Link from "@/components/Link";
@@ -25,7 +25,7 @@ const Contact = () => {
 				</li>
 
 				<li className="mb-8 text-lg">
-					<EmailMeLink />
+					<EmailManager />
 				</li>
 			</ol>
 		</>
