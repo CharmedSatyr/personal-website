@@ -18,7 +18,7 @@ module.exports = {
 			},
 			colors: {
 				dark: {
-					primary: colors.indigo,
+					primary: colors.slate,
 					secondary: colors.amber,
 					accent: colors.teal,
 				},

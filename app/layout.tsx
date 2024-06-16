@@ -56,12 +56,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 			/>
 
 			<body
-				className={`${poppins.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-slate-950`}
+				className={`${poppins.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-primary-950`}
 			>
 				<ThemeProviders>
 					<Header />
 
-					<main className="mb-auto w-10/12 pt-10 sm:w-9/12 md:w-8/12 md:pt-20 lg:w-7/12 xl:w-5/12 2xl:w-4/12">
+					<main className="mb-auto w-10/12 pt-10 pt-20 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 2xl:w-4/12">
 						{children}
 					</main>
 

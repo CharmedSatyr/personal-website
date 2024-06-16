@@ -36,10 +36,10 @@ const NavLinks = () => {
 
 const Header = () => {
 	return (
-		<header className="flex w-screen items-center justify-between px-8 py-4">
+		<header className="fixed left-0 right-0 top-0 flex w-screen items-center justify-between bg-primary-50 px-8 py-4 opacity-75 drop-shadow dark:bg-primary-950">
 			<Link href="/">{siteMetadata.headerTitle}</Link>
 
-			<div className="flex items-center space-x-4">
+			<div className="flex items-center space-x-2">
 				<NavLinks />
 			</div>
 		</header>
