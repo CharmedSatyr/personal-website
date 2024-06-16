@@ -14,11 +14,7 @@ const Now = () => {
 			</aside>
 
 			<ol className="list list-disc">
-				<li className="mb-4 list-none">
-					<span className="relative -left-3.5 -top-0.5 -mr-1 inline-flex h-1.5 w-1.5">
-						<span className="absolute inline-flex h-full w-full rounded-full bg-accent-600 dark:bg-secondary-300"></span>
-						<span className="inline-flex h-full w-full animate-ping rounded-full bg-accent-500 opacity-75 dark:bg-secondary-200"></span>
-					</span>
+				<li className="mb-4 marker:animate-pulse">
 					I am looking for work as a software developer.{" "}
 					<Link href="/contact">Send me a message</Link> if you think I might be
 					right for a project or role you're hiring for.
