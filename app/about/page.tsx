@@ -29,19 +29,20 @@ const About = () => {
 				<li className="mb-3">
 					<strong>Xenophile.</strong> 29 countries visited. Some years spent
 					abroad. London, Busan, Chiang Mai, Prague. I get to know places
-					through local cuisine.
+					through local food and drink.
 				</li>
 				<li className="mb-3">
 					<strong>Slow thinker.</strong> Philosophy, public policy, literary
-					criticism, game design. Iteration is key. All my work gets done in
-					editing.
+					criticism, game design. Iteration is key. I make connections while
+					writing, editing, refactoring.
 				</li>
 				<li className="mb-3">
-					<strong>D&D class: Wizard.</strong> Magical, with little claim to
-					cunning or physical prowess. I have to study to learn spells, unlike
-					sorcerers or warlocks.
+					<strong>D&D class: Wizard.</strong> Potentially magical. Little claim
+					to cunning or physical prowess. I can learn most spells with enough
+					study.
 				</li>
 			</ul>
+
 			<div className="flex flex-col items-center justify-between justify-items-center md:flex-row">
 				<Image
 					className="m-2 w-3/6 max-w-sm flex-initial rounded-sm border border-primary-800 dark:border-dark-primary-200 md:w-2/6"
@@ -81,11 +82,11 @@ const About = () => {
 				the intersection of writing, code, and game design. Find me on{" "}
 				<Link href={siteMetadata.linkedin}>LinkedIn</Link>.
 			</p>
+
 			<p>
-				I engage with software development as a craft rather than science or
-				art. I want to write code that is useful, respects users, and delivers
-				business value. My development practice is constant iteration
-				constrained by practical objectives.
+				I engage with software development as a craft rather than a science or
+				art. I want to write code that respects users and delivers practical
+				value.
 			</p>
 		</>
 	);
