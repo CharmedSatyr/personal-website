@@ -17,12 +17,7 @@ const EmailManager = () => {
 
 	const emailComponents = {
 		emailMe: (
-			<EmailMeLink
-				triggerChange={() => {
-					console.log("hi", state);
-					setState(EmailState.proveHuman);
-				}}
-			/>
+			<EmailMeLink triggerChange={() => setState(EmailState.proveHuman)} />
 		),
 		proveHuman: (
 			<ProveHuman triggerChange={() => setState(EmailState.mailPopup)} />

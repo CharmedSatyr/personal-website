@@ -8,13 +8,7 @@ interface Props {
 
 const EmailMeLink = ({ triggerChange }: Props) => {
 	return (
-		<button
-			className="hyperlink"
-			onClick={() => {
-				console.log("wat");
-				triggerChange();
-			}}
-		>
+		<button className="hyperlink" onClick={() => triggerChange()}>
 			<Mail className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
 			Send me an email
 		</button>
