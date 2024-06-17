@@ -23,7 +23,7 @@ const About = () => {
 				</li>
 				<li className="mb-3">
 					<strong>Adventure, discovery, creativity.</strong> Risk-taker. I try
-					not to get too attached and love a new perspective. Happiest when
+					not to get too attached, and I love a new perspective. Happiest when
 					making things.
 				</li>
 				<li className="mb-3">
