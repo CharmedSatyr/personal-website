@@ -20,7 +20,7 @@ const CustomLink = ({
 
 	return (
 		<a
-			className="hyperlink"
+			className="hyperlink after:content-['_↗']"
 			target="_blank"
 			rel="noopener noreferrer"
 			href={href}
