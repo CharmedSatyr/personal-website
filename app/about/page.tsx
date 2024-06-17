@@ -15,7 +15,7 @@ const About = () => {
 			<PageTitle>About</PageTitle>
 
 			<h2 className="title">Bird's eye view</h2>
-			<ul className="list list-disc marker:mr-0 marker:pr-0">
+			<ul className="list list-disc">
 				<li className="mb-3">
 					<strong>Southerner in exile.</strong> Family in Mississippi,
 					Tennessee, South Carolina, Virginia. More hillbilly than redneck. I
@@ -85,9 +85,21 @@ const About = () => {
 
 			<p>
 				I engage with software development as a craft rather than a science or
-				art. I want to write code that respects users and delivers practical
-				value.
+				art. I want to write maintainable code that respects users and delivers
+				practical value.
 			</p>
+
+			{/*
+			<h2 className="title">Go-To Technologies</h2>
+			<ul className="list list-disc">
+				<li>JavaScript</li>
+				<li>TypeScript</li>
+				<li>React</li>
+				<li>Next.js</li>
+				<li>Rust</li>
+				<li>Nextcloud</li>
+			</ul>
+			*/}
 		</>
 	);
 };
