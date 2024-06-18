@@ -83,6 +83,17 @@ const Games = async () => {
 				tools, and laboratories for understanding human behavior.
 			</p>
 
+			<h2 className="title">Involvement</h2>
+			<p>
+				In 2023, I completed a Certificate in Game Design from the University of
+				Washington. I've experimented with a few small games on{" "}
+				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
+				participated in four game jams, and am active in the{" "}
+				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}
+				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link>, and{" "}
+				<Link href="https://lexyslotd.com">Skyrim modding</Link> communities.
+			</p>
+
 			<p>
 				I average one digital game per week and take notes on everything I play.
 				I often enjoy single-player digital games with strong narratives,
@@ -105,16 +116,6 @@ const Games = async () => {
 			</p>
 
 			<p>
-				In 2023, I completed a Certificate in Game Design from the University of
-				Washington. I've experimented with a few small games on{" "}
-				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
-				participated in four game jams, and am active in the{" "}
-				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}
-				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link>, and{" "}
-				<Link href="https://lexyslotd.com">modding</Link> communities.
-			</p>
-
-			<p>
 				Years ago, I made over 200 gameplay and tutorials videos for my{" "}
 				<Link href="https://www.youtube.com/user/wenwrendogaming">
 					YouTube channel
@@ -127,7 +128,9 @@ const Games = async () => {
 			</p>
 
 			<h2 className="title">Recently Played</h2>
-			<aside>Data from the Steam API. I play games elsewhere, too.</aside>
+			<aside className="italic">
+				Data from the Steam API, but I play games elsewhere, too.
+			</aside>
 
 			<ul className="list list-disc">{display}</ul>
 		</>

@@ -17,25 +17,29 @@ const About = () => {
 			<h2 className="title">Bird's eye view</h2>
 			<ul className="list list-disc">
 				<li className="mb-3">
-					<strong>Southerner in exile.</strong> Family in Mississippi,
-					Tennessee, South Carolina, Virginia. More hillbilly than redneck. I
-					left on purpose but enjoy visiting.
+					<strong>Southerner in exile.</strong> I live in Seattle, but my
+					family's been in the southeastern U.S. for perhaps nine generations. I
+					left the South on purpose but enjoy visiting.
 				</li>
+
 				<li className="mb-3">
 					<strong>Adventure, discovery, creativity.</strong> Risk-taker. I try
 					not to get too attached, and I love a new perspective. Happiest when
 					making things.
 				</li>
+
 				<li className="mb-3">
 					<strong>Xenophile.</strong> 29 countries visited. Some years spent
 					abroad. London, Busan, Chiang Mai, Prague. I get to know places
 					through local food and drink.
 				</li>
+
 				<li className="mb-3">
 					<strong>Slow thinker.</strong> Philosophy, public policy, literary
 					criticism, game design. Iteration is key. I make connections while
 					writing, editing, refactoring.
 				</li>
+
 				<li className="mb-3">
 					<strong>D&D class: Wizard.</strong> Potentially magical. Little claim
 					to cunning or physical prowess. I can learn most spells with enough
