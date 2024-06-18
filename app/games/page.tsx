@@ -109,8 +109,9 @@ const Games = async () => {
 				Washington. I've experimented with a few small games on{" "}
 				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
 				participated in four game jams, and am active in the{" "}
-				<Link href="https://www.seattleindies.org/">Seattle Indies</Link> and{" "}
-				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link> communities.
+				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}
+				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link>, and{" "}
+				<Link href="https://lexyslotd.com">modding</Link> communities.
 			</p>
 
 			<p>
