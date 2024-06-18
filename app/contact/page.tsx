@@ -24,7 +24,7 @@ const Contact = () => {
 					</Link>
 				</li>
 
-				<li className="mb-8 text-lg">
+				<li className="text-lg">
 					<EmailManager />
 				</li>
 			</ol>

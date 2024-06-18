@@ -44,3 +44,5 @@ Add a blog! Possible entries:
 
 Provide language options for languages you've studied—French, Latin in
 particular.
+
+Tech page Food page
