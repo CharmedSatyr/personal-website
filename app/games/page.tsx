@@ -76,15 +76,18 @@ const Games = async () => {
 
 	return (
 		<>
-			<PageTitle>Games (Under Construction)</PageTitle>
+			<PageTitle>Games</PageTitle>
 
-			<p>I'm passionate about games as an interactive creative medium.</p>
+			<p>
+				I'm passionate about games as interactive creative media, learning
+				tools, and laboratories for understanding human behavior.
+			</p>
 
 			<p>
 				I average one digital game per week and take notes on everything I play.
-				I often enjoy single-player games with strong narratives, exploration
-				and survival mechanics, role-playing, turn-based tactics, or immersive
-				sim elements.
+				I often enjoy single-player digital games with strong narratives,
+				exploration and survival mechanics, role-playing, turn-based tactics, or
+				immersive sim elements.
 			</p>
 
 			<p>
@@ -104,24 +107,27 @@ const Games = async () => {
 			<p>
 				In 2023, I completed a Certificate in Game Design from the University of
 				Washington. I've experimented with a few small games on{" "}
-				<Link href="https://charmedsatyr.itch.io/">itch.io</Link> and am active
-				in the <Link href="https://www.seattleindies.org/">Seattle Indies</Link>
-				.
+				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
+				participated in four game jams, and am active in the{" "}
+				<Link href="https://www.seattleindies.org/">Seattle Indies</Link> and{" "}
+				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link> communities.
 			</p>
 
 			<p>
-				Previously, I made over 200 gameplay and tutorials videos for a
+				Years ago, I made over 200 gameplay and tutorials videos for my{" "}
 				<Link href="https://www.youtube.com/user/wenwrendogaming">
 					YouTube channel
-				</Link>
-				, and I've contributed to gaming communities like{" "}
-				<Link href="https://www.youtube.com/watch?v=8Nckf8AeBig">
+				</Link>{" "}
+				and had a blast doing voice work for{" "}
+				<Link href="https://www.youtube.com/watch?v=8Nckf8AeBig&t=31s">
 					Skyrim Book Club
 				</Link>
-				.{" "}
+				.
 			</p>
 
-			<h2 className="title">Recently Played on Steam</h2>
+			<h2 className="title">Recently Played</h2>
+			<aside>Data from the Steam API. I play games elsewhere, too.</aside>
+
 			<ul className="list list-disc">{display}</ul>
 		</>
 	);
