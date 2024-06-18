@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Asul, Poppins } from "next/font/google";
 
 import ThemeProviders from "@/app/theme-providers";
 import Footer from "@/components/Footer";
@@ -39,10 +39,16 @@ export const metadata: Metadata = {
 	},
 };
 
-const poppins = Poppins({
+const sans = Poppins({
 	subsets: ["latin"],
-	variable: "--font-poppins",
-	weight: ["200", "600"],
+	variable: "--font-sans",
+	weight: ["200"],
+});
+
+const serif = Asul({
+	subsets: ["latin"],
+	variable: "--font-serif",
+	weight: ["400"],
 });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -56,7 +62,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 			/>
 
 			<body
-				className={`${poppins.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-primary-950`}
+				className={`${sans.variable} ${serif.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-primary-950`}
 			>
 				<ThemeProviders>
 					<Header />

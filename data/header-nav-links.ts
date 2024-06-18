@@ -7,6 +7,7 @@ const headerNavLinks = [
 
 if (process.env.NODE_ENV === "development") {
 	headerNavLinks.push({ href: "/field-notes", title: "Field Notes" });
+	headerNavLinks.push({ href: "/games", title: "Games" });
 }
 
 export default headerNavLinks;

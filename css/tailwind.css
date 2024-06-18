@@ -11,6 +11,10 @@
 		@apply lowercase text-secondary-700 underline decoration-accent-600 decoration-dotted decoration-2 underline-offset-2 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
 	}
 
+	.title {
+		@apply font-serif;
+	}
+
 	h1.title {
 		@apply highlighted mb-8 text-4xl font-bold xl:text-5xl;
 	}

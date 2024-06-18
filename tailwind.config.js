@@ -14,7 +14,8 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ["var(--font-poppins)"],
+				sans: ["var(--font-sans)"],
+				serif: ["var(--font-serif)"],
 			},
 			colors: {
 				dark: {
