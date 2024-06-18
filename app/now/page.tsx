@@ -29,15 +29,17 @@ const Now = () => {
 				</li>
 
 				<li className="mb-4">
+					Inga and I spent summer 2023 in Prague and are looking forward to
+					attending the Paris 2024 Summer Olympics.
+				</li>
+
+				<li className="mb-4">
 					I am writing an adventure module for{" "}
 					<Link href="https://dnd.wizards.com/how-to-play">
 						Dungeons & Dragons 5e
-					</Link>
-					.
-				</li>
-				<li className="mb-4">
-					I have an idea for a digital game and some early prototypes built in{" "}
-					<Link href="https://learn.unity.com">Unity</Link>.
+					</Link>{" "}
+					and have some early prototypes for a digital game about shadows built
+					in <Link href="https://learn.unity.com">Unity</Link>.
 				</li>
 			</ol>
 		</>
