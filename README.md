@@ -4,6 +4,7 @@
 
 ## TODO
 
+- Test and refactor games page code.
 - Bee flying, bee splat or osmething when you click it. Maybe a cache that shows
   count of bee splats.
 - Satyr logo
@@ -18,9 +19,9 @@
 - gpg key
 - A Lists page
 - Mention things you like
+
   - Penn
   - WOFF
-- Contact form could probably be a state machine
 
   - Flying
   - Splat or alt
