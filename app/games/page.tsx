@@ -82,14 +82,9 @@ const Games = async () => {
 
 			<p>
 				I average one digital game per week and take notes on everything I play.
-				I often enjoy games with strong narratives, exploration and survival
-				mechanics, role-playing, or immersive sim elements. See{" "}
-				<Link href="https://discoelysium.com/">Disco Elysium</Link>,
-				<Link href="https://www.mobiusdigitalgames.com/outer-wilds.html">
-					Outer Wilds
-				</Link>
-				, The Elder Scrolls and Fallout (heavily modded), Silent Hill 2,
-				Resident Evil 7, Baldur's Gate 3...
+				I often enjoy single-player games with strong narratives, exploration
+				and survival mechanics, role-playing, turn-based tactics, or immersive
+				sim elements.
 			</p>
 
 			<p>
