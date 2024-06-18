@@ -91,7 +91,7 @@ const Games = async () => {
 				participated in four game jams, and am active in the{" "}
 				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}
 				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link>, and{" "}
-				<Link href="https://lexyslotd.com">Skyrim modding</Link> communities.
+				<Link href="https://lexyslotd.com">modding</Link> communities.
 			</p>
 
 			<p>
