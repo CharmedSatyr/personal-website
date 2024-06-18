@@ -31,7 +31,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
 		{
 			url: `${siteMetadata.siteUrl}/now`,
 			lastModified: new Date(),
-			changeFrequency: "yearly",
+			changeFrequency: "monthly",
 			priority: 0.5,
 		},
 		{
