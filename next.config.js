@@ -12,6 +12,14 @@ const getBuildDate = () => {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "shared.akamai.steamstatic.com",
+			},
+		],
+	},
 	pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 	env: {
 		lastUpdated: getBuildDate(),
