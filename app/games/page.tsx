@@ -86,7 +86,7 @@ const Games = async () => {
 			<h2 className="title">Involvement</h2>
 			<p>
 				In 2023, I completed a Certificate in Game Design from the University of
-				Washington. I've experimented with a few small games on{" "}
+				Washington. I've developed a few experiments on{" "}
 				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
 				participated in four game jams, and am active in the{" "}
 				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}

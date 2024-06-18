@@ -5,6 +5,7 @@
 ## TODO
 
 - Test and refactor games page code.
+
 - Bee flying, bee splat or osmething when you click it. Maybe a cache that shows
   count of bee splats.
 - Satyr logo
@@ -40,3 +41,6 @@ Add a blog! Possible entries:
   don't want it to be, "I did X for a while so I could transition to Y". I want
   to do the thing now.)
 - How I lost 100 pounds\*
+
+Provide language options for languages you've studied—French, Latin in
+particular.
