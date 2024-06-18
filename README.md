@@ -5,6 +5,10 @@
 ## TODO
 
 - Test and refactor games page code.
+- Tech page
+- How I learned to Code blog
+
+- Food page
 
 - Bee flying, bee splat or osmething when you click it. Maybe a cache that shows
   count of bee splats.
@@ -17,7 +21,6 @@
 - Tech page - go-to stack
 - Rose petals or other particle effects behind the word, gradually introduced
 - <filter-function> for inverting colors
-- gpg key
 - A Lists page
 - Mention things you like
 
@@ -44,6 +47,3 @@ Add a blog! Possible entries:
 
 Provide language options for languages you've studied—French, Latin in
 particular.
-
-- Tech page
-- Food page
