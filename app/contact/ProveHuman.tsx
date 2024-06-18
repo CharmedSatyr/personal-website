@@ -11,7 +11,7 @@ const ProveHuman = ({ triggerChange }) => {
 		}
 
 		triggerChange();
-	}, [proof]);
+	}, [proof, triggerChange]);
 
 	return (
 		<form className="max-w-xs cursor-default text-left md:max-w-lg">

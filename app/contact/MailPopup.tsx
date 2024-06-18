@@ -19,7 +19,7 @@ const MailPopup = () => {
 		if (user && domain) {
 			router.push(`mailto:${user}@${domain}`);
 		}
-	}, [user, domain]);
+	}, [router, user, domain]);
 
 	return (
 		<button className="btn rounded p-2 font-bold outline outline-accent-600 dark:outline-accent-200">
