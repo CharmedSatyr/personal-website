@@ -38,8 +38,9 @@ const Now = () => {
 					<Link href="https://dnd.wizards.com/how-to-play">
 						Dungeons & Dragons 5e
 					</Link>{" "}
-					and have some early prototypes for a digital game about shadows built
-					in <Link href="https://learn.unity.com">Unity</Link>.
+					and have some early prototypes in{" "}
+					<Link href="https://learn.unity.com">Unity</Link> for a digital game
+					about shadows.
 				</li>
 			</ol>
 		</>
