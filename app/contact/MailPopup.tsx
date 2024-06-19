@@ -15,7 +15,7 @@ const MailPopup = () => {
 
 	return (
 		<>
-			<button className="btn mt-4 rounded p-2 font-bold outline outline-accent-600 dark:outline-accent-200">
+			<button className="btn rounded p-2 font-bold outline outline-accent-600 dark:outline-accent-200">
 				<Link
 					className="py-3 no-underline dark:text-dark-accent-200"
 					href={`mailto:${user}@${domain}`}

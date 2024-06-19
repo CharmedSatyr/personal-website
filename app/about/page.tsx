@@ -18,8 +18,8 @@ const About = () => {
 			<ul className="list list-disc">
 				<li className="mb-3">
 					<strong>Southerner in exile.</strong> I live in Seattle, but my
-					family's been in the southeastern U.S. for at least nine generations.
-					I left the South on purpose but enjoy visiting.
+					family's been in the southeastern U.S. for at least ten generations. I
+					left the South on purpose but enjoy visiting.
 				</li>
 
 				<li className="mb-3">
@@ -30,8 +30,8 @@ const About = () => {
 
 				<li className="mb-3">
 					<strong>Xenophile.</strong> 29 countries visited. Some years spent
-					abroad. Extended periods in London, Busan, Chiang Mai, Prague. I get
-					to know places through local food and drink.
+					abroad. Periods in London, Busan, Chiang Mai, Prague. I get to know
+					places through local food and drink.
 				</li>
 
 				<li className="mb-3">

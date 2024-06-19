@@ -116,10 +116,8 @@ const Games = async () => {
 			</p>
 
 			<p>
-				Years ago, I made over 200 gameplay and tutorials videos for my{" "}
-				<Link href="https://www.youtube.com/user/wenwrendogaming">
-					YouTube channel
-				</Link>{" "}
+				Years ago, I made over 200 gameplay and tutorial videos for{" "}
+				<Link href="https://www.youtube.com/user/wenwrendogaming">YouTube</Link>{" "}
 				and had a blast doing voice work for{" "}
 				<Link href="https://www.youtube.com/watch?v=8Nckf8AeBig&t=31s">
 					Skyrim Book Club
