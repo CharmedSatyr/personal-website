@@ -19,8 +19,8 @@ const Games = () => {
 			<p>
 				In 2023, I completed a Certificate in Game Design from the University of
 				Washington. I've developed a few experiments on{" "}
-				<Link href="https://charmedsatyr.itch.io/">itch.io</Link>, have
-				participated in four game jams, and am active in the{" "}
+				<Link href="https://charmedsatyr.itch.io/">itch.io</Link> and have
+				participated in four game jams. I am active in the{" "}
 				<Link href="https://www.seattleindies.org/">Seattle Indies</Link>,{" "}
 				<Link href="https://duckfeed.tv/">Duckfeed.tv</Link>, and{" "}
 				<Link href="https://lexyslotd.com">modding</Link> communities.

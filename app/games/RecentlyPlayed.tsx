@@ -5,7 +5,19 @@ import Link from "@/components/Link";
 
 dotenv.config();
 
-async function getRecentlyPlayed() {
+interface RecentlyPlayedGame {
+	appid: number;
+	name: string;
+}
+
+interface RecentlyPlayed {
+	response: {
+		total_count: number;
+		games: RecentlyPlayedGame[];
+	};
+}
+
+const getRecentlyPlayed = async (): Promise<RecentlyPlayed> => {
 	const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
 
 	const res = await fetch(url);
@@ -15,9 +27,21 @@ async function getRecentlyPlayed() {
 	}
 
 	return res.json();
+};
+
+interface GameMetadata {
+	[appid: string]: {
+		success: boolean;
+		data: {
+			type: string;
+			name: string;
+			short_description: string;
+			header_image: string;
+		};
+	};
 }
 
-const getGameMetadata = async (appid: string) => {
+const getGameMetadata = async (appid: string): Promise<GameMetadata> => {
 	const res = await fetch(
 		`https://store.steampowered.com/api/appdetails?appids=${appid}&key=${process.env.STEAM_API_KEY}`,
 	);
@@ -30,28 +54,28 @@ const getGameMetadata = async (appid: string) => {
 };
 
 const getRecentGameMetadata = async () => {
-	const data: { response: { games: { appid: string }[] } } =
-		await getRecentlyPlayed();
+	try {
+		const data = await getRecentlyPlayed();
+		const recentlyPlayed = data.response.games.map((g) => g.appid.toString());
 
-	const recentlyPlayed: string[] = data.response.games.map((g) => g.appid);
+		const recentGameMetadata = recentlyPlayed.map(async (appid: string) => {
+			const metadata = await getGameMetadata(appid);
 
-	return recentlyPlayed.map(async (appid: string) => {
-		const metadata = await getGameMetadata(appid);
+			const name: string = metadata[appid].data.name;
+			const image: string = metadata[appid].data.header_image;
+			const description: string = metadata[appid].data.short_description;
 
-		const name: string = metadata[appid].data.name;
-		const image: string = metadata[appid].data.header_image;
-		const description: string = metadata[appid].data.short_description;
+			return { appid, description, image, name };
+		});
 
-		return { appid, description, image, name };
-	});
+		return await Promise.all(recentGameMetadata);
+	} catch (e) {
+		return [];
+	}
 };
 
 const RecentlyPlayed = async () => {
-	const gameMetadata = await getRecentGameMetadata();
-
-	const items = gameMetadata.map(async (metadata) => {
-		const game = await metadata;
-
+	const items = (await getRecentGameMetadata()).map((game) => {
 		return (
 			<li key={game.name} className="my-6 list-none">
 				<Link
@@ -70,6 +94,10 @@ const RecentlyPlayed = async () => {
 			</li>
 		);
 	});
+
+	if (!items.length) {
+		return null;
+	}
 
 	return (
 		<div>
