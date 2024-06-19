@@ -3,7 +3,7 @@
 import { SVGProps } from "react";
 
 //<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-export const Bee = (props: SVGProps<SVGSVGElement>) => (
+const Bee = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		version="1.1"
 		id="katman_1"

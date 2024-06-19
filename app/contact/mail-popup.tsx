@@ -23,12 +23,6 @@ const MailPopup = () => {
 					Click to email
 				</Link>
 			</button>
-
-			<div className="mt-4">
-				<Link href="https://keys.openpgp.org/vks/v1/by-fingerprint/4BFDEC92BE41B3E455B8595206DC90228603707A">
-					OpenPGP Key
-				</Link>
-			</div>
 		</>
 	);
 };

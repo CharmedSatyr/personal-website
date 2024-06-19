@@ -36,7 +36,11 @@ const ThemeSwitch = () => {
 
 	const SwitchIcon = () => (theme === Mode.light ? <Sun /> : <Moon />);
 
-	return mounted ? (
+	if (!mounted) {
+		return null;
+	}
+
+	return (
 		<button
 			className="h-5 w-5 text-accent-600 dark:text-dark-accent-300"
 			aria-label="Theme Switch"
@@ -45,7 +49,7 @@ const ThemeSwitch = () => {
 		>
 			<SwitchIcon />
 		</button>
-	) : null;
+	);
 };
 
 export default ThemeSwitch;
