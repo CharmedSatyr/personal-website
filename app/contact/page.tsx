@@ -1,13 +1,9 @@
-import dotenv from "dotenv";
-
 import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
 import Link from "@/components/link";
 import PageTitle from "@/components/page-title";
 import { LinkedIn } from "@/components/social-icons";
 import siteMetadata from "@/data/site-metadata";
-
-dotenv.config();
 
 export const metadata = genPageMetadata({ title: "Contact" });
 

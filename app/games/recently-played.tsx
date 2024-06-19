@@ -1,9 +1,5 @@
-import dotenv from "dotenv";
-
 import Image from "@/components/image";
 import Link from "@/components/link";
-
-dotenv.config();
 
 interface RecentlyPlayedGame {
 	appid: number;
