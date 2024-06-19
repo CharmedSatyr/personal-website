@@ -1,0 +1,17 @@
+export const options = {
+	weekday: "long",
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
+export const lastUpdated = new Date(process.env.lastUpdated).toLocaleDateString(
+	"en-US",
+	options,
+);
+
+# Colophon
+
+This page is under construction.
+
+{/* eslint-disable-next-line no-unused-expressions */} The site was last updated
+on {lastUpdated}.

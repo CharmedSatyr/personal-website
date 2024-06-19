@@ -1,8 +1,9 @@
 import Bee from "@/components/bee";
+import Link from "@/components/link";
 import ThemeSwitch from "@/components/theme-switch";
 import siteMetadata from "@/data/site-metadata";
 
-const Footer = () => {
+const Footers = () => {
 	return (
 		<footer className="flex w-screen items-center justify-center space-x-2 text-nowrap px-8 py-4 text-sm dark:text-dark-primary-400">
 			<section>
@@ -11,7 +12,8 @@ const Footer = () => {
 
 			<Bee height={15} width={15} />
 
-			<div>Updated {process.env.lastUpdated}</div>
+			<div className="hidden">Updated {process.env.lastUpdated}</div>
+			<Link href="/colophon">Colophon</Link>
 
 			<Bee height={15} width={15} />
 
@@ -20,4 +22,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default Footers;
