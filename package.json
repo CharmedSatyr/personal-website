@@ -9,6 +9,7 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
+		"lint": "npx eslint --fix .",
 		"prepare": "husky",
 		"prettier": "npx prettier --write .",
 		"start": "next start",
