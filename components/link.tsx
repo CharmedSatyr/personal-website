@@ -7,8 +7,8 @@ const CustomLink = ({
 	href,
 	...rest
 }: LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
-	const isInternalLink = href && href.startsWith("/");
-	const isAnchorLink = href && href.startsWith("#");
+	const isInternalLink = href?.startsWith("/");
+	const isAnchorLink = href?.startsWith("#");
 
 	if (isInternalLink) {
 		return <Link className="hyperlink" href={href} {...rest} />;
@@ -20,7 +20,7 @@ const CustomLink = ({
 
 	return (
 		<a
-			className="hyperlink after:content-['_\2197']"
+			className="hyperlink after:content-['_↗︎']"
 			target="_blank"
 			rel="noopener noreferrer"
 			href={href}
