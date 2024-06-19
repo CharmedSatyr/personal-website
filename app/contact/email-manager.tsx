@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
+import MailPopup from "@/app/contact/email-button-popup";
 import EmailMeLink from "@/app/contact/email-me-link";
-import MailPopup from "@/app/contact/mail-popup";
 import ProveHuman from "@/app/contact/prove-human";
 
 enum EmailState {

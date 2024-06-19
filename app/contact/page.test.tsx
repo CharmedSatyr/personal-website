@@ -3,17 +3,38 @@ import { useRouter } from "next/navigation";
 import Contact from "@/app/contact/page";
 import { fireEvent, render, screen, within } from "@testing-library/react";
 
+jest.mock("next/navigation", () => ({
+	useRouter: jest.fn(),
+}));
+
 describe("Contact", () => {
+	const push = jest.fn();
+	const requestSubmit = jest.fn();
+
+	beforeEach(() =>
+		(useRouter as jest.Mock).mockImplementation(() => ({
+			push,
+			requestSubmit,
+		})),
+	);
+	afterEach(() => jest.clearAllMocks());
+
+	it("should not deviate unexpectedly from the last snapshot", () => {
+		const { container } = render(<Contact />);
+
+		expect(container).toMatchSnapshot();
+	});
+
 	it("renders a heading", () => {
 		render(<Contact />);
 
 		expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
 	});
 
-	it("renders a link", () => {
+	it("renders two links", () => {
 		render(<Contact />);
 
-		expect(screen.getByRole("link")).toBeInTheDocument();
+		expect(screen.getAllByRole("link")).toHaveLength(2);
 	});
 
 	it("renders a button", () => {
@@ -47,7 +68,22 @@ describe("Contact", () => {
 
 		fireEvent.change(input, { target: { value: "Ralph" } });
 
+		expect(push).not.toHaveBeenCalled();
 		expect(screen.queryByRole("button")).not.toBeInTheDocument();
+	});
+
+	it("should trigger a `mailto:` link if the challenge is completed correctly", () => {
+		render(<Contact />);
+
+		expect(screen.getAllByRole("button").length).toBe(1);
+
+		fireEvent.click(screen.getByRole("button"));
+
+		const input = screen.getByRole("textbox");
+
+		fireEvent.change(input, { target: { value: "Joseph" } });
+
+		expect(push).toHaveBeenCalledWith(expect.stringContaining("mailto:"));
 	});
 
 	it("should show a button that triggers a `mailto:` link if the challenge is completed correctly", async () => {
@@ -60,6 +96,8 @@ describe("Contact", () => {
 		expect(screen.queryByRole("button")).not.toBeInTheDocument();
 
 		fireEvent.change(input, { target: { value: "Joseph" } });
+
+		expect(push).toHaveBeenCalledTimes(1);
 
 		const button = screen.getByRole("button");
 
