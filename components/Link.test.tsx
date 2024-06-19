@@ -1,4 +1,4 @@
-import Link from "@/components/Link";
+import Link from "@/components/link";
 import { render, screen } from "@testing-library/react";
 
 describe("Link", () => {

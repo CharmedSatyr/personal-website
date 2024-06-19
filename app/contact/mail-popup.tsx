@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import Link from "@/components/Link";
+import Link from "@/components/link";
 
 const MailPopup = () => {
 	const [domain, setDomain] = useState("");

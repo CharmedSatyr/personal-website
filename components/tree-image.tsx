@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Mode } from "constants/mode";
 
-import Image from "@/components/Image";
+import Image from "@/components/image";
 
 const TreeImage = () => {
 	const [mounted, setMounted] = useState(false);

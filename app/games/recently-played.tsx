@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 
-import Image from "@/components/Image";
-import Link from "@/components/Link";
+import Image from "@/components/image";
+import Link from "@/components/link";
 
 dotenv.config();
 

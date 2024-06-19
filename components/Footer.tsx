@@ -1,5 +1,5 @@
-import Bee from "@/components/Bee";
-import ThemeSwitch from "@/components/ThemeSwitch";
+import Bee from "@/components/bee";
+import ThemeSwitch from "@/components/theme-switch";
 import siteMetadata from "@/data/site-metadata";
 
 const Footer = () => {

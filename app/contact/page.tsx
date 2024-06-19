@@ -1,9 +1,9 @@
 import dotenv from "dotenv";
 
-import EmailManager from "@/app/contact/EmailManager";
+import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
-import Link from "@/components/Link";
-import PageTitle from "@/components/PageTitle";
+import Link from "@/components/link";
+import PageTitle from "@/components/page-title";
 import { LinkedIn } from "@/components/social-icons";
 import siteMetadata from "@/data/site-metadata";
 

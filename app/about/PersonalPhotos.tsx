@@ -1,7 +1,7 @@
 import greatWall from "public/static/images/great-wall";
 import joseph from "public/static/images/joseph";
 
-import Image from "@/components/Image";
+import Image from "@/components/image";
 
 const PersonalPhotos = () => {
 	return (

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { Asul, Poppins } from "next/font/google";
 
 import ThemeProviders from "@/app/theme-providers";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import siteMetadata from "@/data/site-metadata";
 
 import "@/css/tailwind.css";
