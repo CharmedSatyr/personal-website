@@ -3,8 +3,8 @@ import { Asul, Poppins } from "next/font/google";
 import dotenv from "dotenv";
 
 import ThemeProviders from "@/app/theme-providers";
+import Header from "@/components/custom-header";
 import Footer from "@/components/footers";
-import Header from "@/components/header";
 import siteMetadata from "@/data/site-metadata";
 
 import "@/css/tailwind.css";
