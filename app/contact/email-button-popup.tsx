@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import Link from "@/components/custom-link";
+import Link from "@/components/link";
 
 const MailPopup = () => {
 	const router = useRouter();

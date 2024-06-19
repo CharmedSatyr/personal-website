@@ -1,5 +1,5 @@
-import Image from "@/components/custom-image";
-import Link from "@/components/custom-link";
+import Image from "@/components/image";
+import Link from "@/components/link";
 
 interface RecentlyPlayedGame {
 	appid: number;
