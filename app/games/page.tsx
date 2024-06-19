@@ -1,79 +1,11 @@
-import dotenv from "dotenv";
-
+import RecentlyPlayed from "@/app/games/RecentlyPlayed";
 import genPageMetadata from "@/app/seo";
-import Image from "@/components/Image";
 import Link from "@/components/Link";
 import PageTitle from "@/components/PageTitle";
 
-dotenv.config();
-
 export const metadata = genPageMetadata({ title: "Games" });
 
-async function getRecentlyPlayed() {
-	const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
-
-	const res = await fetch(url);
-
-	if (!res.ok) {
-		throw new Error("Failed to fetch data");
-	}
-
-	return res.json();
-}
-
-const getGameMetadata = async (appid: string) => {
-	const res = await fetch(
-		`https://store.steampowered.com/api/appdetails?appids=${appid}&key=${process.env.STEAM_API_KEY}`,
-	);
-
-	if (!res.ok) {
-		throw new Error("Failed to fetch metadata");
-	}
-
-	return res.json();
-};
-
-const getRecentGameMetadata = async () => {
-	const data: { response: { games: { appid: string }[] } } =
-		await getRecentlyPlayed();
-
-	const recentlyPlayed: string[] = data.response.games.map((g) => g.appid);
-
-	return recentlyPlayed.map(async (appid: string) => {
-		const metadata = await getGameMetadata(appid);
-
-		const name: string = metadata[appid].data.name;
-		const image: string = metadata[appid].data.header_image;
-		const description: string = metadata[appid].data.short_description;
-
-		return { appid, description, image, name };
-	});
-};
-
-const Games = async () => {
-	const gameMetadata = await getRecentGameMetadata();
-
-	const display = gameMetadata.map(async (g) => {
-		const a = await g;
-		return (
-			<li key={a.name} className="my-6 list-none">
-				<Link
-					href={`https://store.steampowered.com/app/${a.appid}`}
-					className="flex"
-				>
-					<Image
-						alt={a.name}
-						width={150}
-						className="mr-2 inline"
-						height={0}
-						src={a.image}
-					/>
-					{a.description}
-				</Link>
-			</li>
-		);
-	});
-
+const Games = () => {
 	return (
 		<>
 			<PageTitle>Games</PageTitle>
@@ -125,12 +57,7 @@ const Games = async () => {
 				.
 			</p>
 
-			<h2 className="title">Recently Played</h2>
-			<aside className="italic">
-				Data from the Steam API, but I play games elsewhere, too.
-			</aside>
-
-			<ul className="list list-disc">{display}</ul>
+			<RecentlyPlayed />
 		</>
 	);
 };
