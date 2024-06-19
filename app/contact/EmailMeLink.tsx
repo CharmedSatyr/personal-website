@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail } from "@/app/contact/social-icons";
+import { Mail } from "@/components/social-icons";
 
 interface Props {
 	triggerChange: () => void;
