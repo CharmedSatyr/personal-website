@@ -1,5 +1,5 @@
 import Bee from "@/components/bee";
-import Link from "@/components/link";
+import Link from "@/components/custom-link";
 import ThemeSwitch from "@/components/theme-switch";
 import siteMetadata from "@/data/site-metadata";
 

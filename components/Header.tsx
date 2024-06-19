@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 
-import Link from "@/components/link";
+import Link from "@/components/custom-link";
 import headerNavLinks from "@/data/header-nav-links";
 import siteMetadata from "@/data/site-metadata";
 

@@ -1,6 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 
-import Link from "@/components/link";
+import Link from "@/components/custom-link";
 import PageTitle from "@/components/page-title";
 
 export const useMDXComponents = (components: MDXComponents): MDXComponents => {

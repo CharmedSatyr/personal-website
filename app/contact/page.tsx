@@ -1,6 +1,6 @@
 import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
-import Link from "@/components/link";
+import Link from "@/components/custom-link";
 import Lock from "@/components/lock";
 import PageTitle from "@/components/page-title";
 import { LinkedIn } from "@/components/social-icons";
