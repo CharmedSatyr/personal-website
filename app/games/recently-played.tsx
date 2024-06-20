@@ -99,7 +99,8 @@ const RecentlyPlayed = async () => {
 		<div>
 			<h2 className="title">Recently Played</h2>
 			<aside className="italic">
-				Data from the Steam API, but I play games elsewhere, too.
+				Games I've played within the past two weeks according to Steam. I play
+				games elsewhere, too.
 			</aside>
 
 			<ul className="list list-disc">{items}</ul>
