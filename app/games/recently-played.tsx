@@ -85,7 +85,9 @@ const RecentlyPlayed = async () => {
 						height={0}
 						src={game.image}
 					/>
-					<p className="mb-0">{game.description}</p>
+					<p className="mb-0">
+						<span className="hyperlink">{game.name}</span> {game.description}
+					</p>
 				</Link>
 			</li>
 		);
@@ -99,8 +101,8 @@ const RecentlyPlayed = async () => {
 		<div>
 			<h2 className="title">Recently Played</h2>
 			<aside className="italic">
-				Games I've played within the past two weeks according to Steam. I play
-				games elsewhere, too.
+				Games I've cranked up within the past two weeks according to Steam. I
+				play games elsewhere, too.
 			</aside>
 
 			<ul className="list list-disc">{items}</ul>
