@@ -85,7 +85,8 @@ const RecentlyPlayed = async () => {
 					src={game.image}
 				/>
 				<p className="mb-0 lg:ml-2 lg:w-6/12">
-					<span className="hyperlink">{game.name}</span> {game.description}
+					<span className="hyperlink external">{game.name}</span>{" "}
+					{game.description}
 				</p>
 			</Link>
 		</li>
