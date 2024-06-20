@@ -82,7 +82,7 @@ const RecentlyPlayed = async () => {
 						alt={game.name}
 						width={400}
 						className="inline object-contain lg:mr-2 lg:w-6/12"
-						height={0}
+						height={400}
 						src={game.image}
 					/>
 					<p className="mb-0">
