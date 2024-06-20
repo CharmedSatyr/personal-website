@@ -71,27 +71,25 @@ const getRecentGameMetadata = async () => {
 };
 
 const RecentlyPlayed = async () => {
-	const items = (await getRecentGameMetadata()).map((game) => {
-		return (
-			<li key={game.name} className="my-6 list-none">
-				<Link
-					href={`https://store.steampowered.com/app/${game.appid}`}
-					className="flex flex-col items-center lg:flex-row"
-				>
-					<Image
-						alt={game.name}
-						width={400}
-						className="inline object-contain lg:mr-2 lg:w-6/12"
-						height={400}
-						src={game.image}
-					/>
-					<p className="mb-0">
-						<span className="hyperlink">{game.name}</span> {game.description}
-					</p>
-				</Link>
-			</li>
-		);
-	});
+	const items = (await getRecentGameMetadata()).map((game) => (
+		<li key={game.name} className="my-6 list-none">
+			<Link
+				href={`https://store.steampowered.com/app/${game.appid}`}
+				className="flex flex-col items-center lg:flex-row"
+			>
+				<Image
+					alt={game.name}
+					width={400}
+					className="inline object-contain lg:w-6/12"
+					height={400}
+					src={game.image}
+				/>
+				<p className="mb-0 lg:ml-2 lg:w-6/12">
+					<span className="hyperlink">{game.name}</span> {game.description}
+				</p>
+			</Link>
+		</li>
+	));
 
 	if (!items.length) {
 		return null;
