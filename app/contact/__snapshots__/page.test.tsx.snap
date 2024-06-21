@@ -12,7 +12,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
       class="mb-8 text-lg"
     >
       <a
-        class="hyperlink after:content-['_↗']"
+        class="hyperlink external"
         href="https://www.linkedin.com/in/joseph-wolfe"
         rel="noopener noreferrer"
         target="_blank"
@@ -64,7 +64,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
       class="text-lg"
     >
       <a
-        class="hyperlink after:content-['_↗']"
+        class="hyperlink external"
         href="https://keys.openpgp.org/vks/v1/by-fingerprint/4BFDEC92BE41B3E455B8595206DC90228603707A"
         rel="noopener noreferrer"
         target="_blank"
