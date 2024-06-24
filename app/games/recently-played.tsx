@@ -1,18 +1,11 @@
+import {
+	GameMetadataResponse,
+	Props,
+	RecentlyPlayedResponse,
+} from "@/app/games/recently-played.types";
 import Image from "@/components/image";
 import Link from "@/components/link";
 import { SteamApi } from "@/constants/api";
-
-interface RecentlyPlayedGame {
-	appid: number;
-	name: string;
-}
-
-export interface RecentlyPlayedResponse {
-	response: {
-		total_count: number;
-		games: RecentlyPlayedGame[];
-	};
-}
 
 export const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
 	const url =
@@ -28,18 +21,6 @@ export const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
 	return res.json();
 };
 
-export interface GameMetadataResponse {
-	[appid: string]: {
-		success: boolean;
-		data: {
-			type: string;
-			name: string;
-			short_description: string;
-			header_image: string;
-		};
-	};
-}
-
 const getGameMetadata = async (
 	appid: string,
 ): Promise<GameMetadataResponse> => {
@@ -54,20 +35,22 @@ const getGameMetadata = async (
 	return res.json();
 };
 
-const getRecentGameMetadata = async () => {
+const getRecentGameMetadata = async (adds: string[]) => {
 	try {
 		const data = await getRecentlyPlayed();
 		const recentlyPlayed = data.response.games.map((g) => g.appid.toString());
 
-		const recentGameMetadata = recentlyPlayed.map(async (appid: string) => {
-			const metadata = await getGameMetadata(appid);
+		const recentGameMetadata = [...adds, ...recentlyPlayed].map(
+			async (appid: string) => {
+				const metadata = await getGameMetadata(appid);
 
-			const name: string = metadata[appid].data.name;
-			const image: string = metadata[appid].data.header_image;
-			const description: string = metadata[appid].data.short_description;
+				const name: string = metadata[appid].data.name;
+				const image: string = metadata[appid].data.header_image;
+				const description: string = metadata[appid].data.short_description;
 
-			return { appid, description, image, name };
-		});
+				return { appid, description, image, name };
+			},
+		);
 
 		return await Promise.all(recentGameMetadata);
 	} catch (e) {
@@ -75,8 +58,8 @@ const getRecentGameMetadata = async () => {
 	}
 };
 
-const RecentlyPlayed = async () => {
-	const items = (await getRecentGameMetadata()).map((game) => (
+const RecentlyPlayed = async (props: Props) => {
+	const items = (await getRecentGameMetadata(props.adds)).map((game) => (
 		<li key={game.name} className="my-6 list-none">
 			<Link
 				href={`https://store.steampowered.com/app/${game.appid}`}
@@ -105,8 +88,7 @@ const RecentlyPlayed = async () => {
 		<div>
 			<h2 className="title">Recently Played</h2>
 			<aside className="italic">
-				Games I've cranked up within the past two weeks according to Steam. I
-				play games elsewhere, too.
+				Titles I've dipped into within the past two weeks.
 			</aside>
 
 			<ul className="list list-disc">{items}</ul>
