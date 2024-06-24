@@ -4,7 +4,6 @@
 
 ## TODO
 
-- Test and refactor games page code.
 - Tech page
 - Arrow emoji issue
 - How I learned to Code blog
