@@ -2,6 +2,7 @@ import RecentlyPlayed, {
 	GameMetadataResponse,
 	RecentlyPlayedResponse,
 } from "@/app/games/recently-played";
+import { SteamApi } from "@/constants/api";
 import { render, screen } from "@testing-library/react";
 
 describe("recently-played", () => {
@@ -39,6 +40,12 @@ describe("recently-played", () => {
 		render(await RecentlyPlayed());
 
 		expect(fetch).toHaveBeenCalledTimes(2);
+		expect(fetch).toHaveBeenCalledWith(
+			expect.stringContaining(SteamApi.recentlyPlayed),
+		);
+		expect(fetch).toHaveBeenCalledWith(
+			expect.stringContaining(SteamApi.appDetails),
+		);
 
 		expect(screen.getByRole("heading", { level: 2 })).toBeInTheDocument();
 		expect(screen.getByRole("list")).toBeInTheDocument();

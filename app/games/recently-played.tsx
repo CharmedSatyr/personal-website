@@ -1,5 +1,6 @@
 import Image from "@/components/image";
 import Link from "@/components/link";
+import { SteamApi } from "@/constants/api";
 
 interface RecentlyPlayedGame {
 	appid: number;
@@ -14,7 +15,9 @@ export interface RecentlyPlayedResponse {
 }
 
 export const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
-	const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
+	const url =
+		SteamApi.recentlyPlayed +
+		`?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
 
 	const res = await fetch(url);
 
@@ -41,7 +44,7 @@ const getGameMetadata = async (
 	appid: string,
 ): Promise<GameMetadataResponse> => {
 	const res = await fetch(
-		`https://store.steampowered.com/api/appdetails?appids=${appid}&key=${process.env.STEAM_API_KEY}`,
+		SteamApi.appDetails + `?appids=${appid}&key=${process.env.STEAM_API_KEY}`,
 	);
 
 	if (!res.ok) {
