@@ -6,14 +6,14 @@ interface RecentlyPlayedGame {
 	name: string;
 }
 
-interface RecentlyPlayed {
+export interface RecentlyPlayedResponse {
 	response: {
 		total_count: number;
 		games: RecentlyPlayedGame[];
 	};
 }
 
-const getRecentlyPlayed = async (): Promise<RecentlyPlayed> => {
+export const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
 	const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
 
 	const res = await fetch(url);
@@ -25,7 +25,7 @@ const getRecentlyPlayed = async (): Promise<RecentlyPlayed> => {
 	return res.json();
 };
 
-interface GameMetadata {
+export interface GameMetadataResponse {
 	[appid: string]: {
 		success: boolean;
 		data: {
@@ -37,7 +37,9 @@ interface GameMetadata {
 	};
 }
 
-const getGameMetadata = async (appid: string): Promise<GameMetadata> => {
+const getGameMetadata = async (
+	appid: string,
+): Promise<GameMetadataResponse> => {
 	const res = await fetch(
 		`https://store.steampowered.com/api/appdetails?appids=${appid}&key=${process.env.STEAM_API_KEY}`,
 	);

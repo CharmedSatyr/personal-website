@@ -9,14 +9,14 @@ jest.mock("next/navigation", () => ({
 
 describe("Contact", () => {
 	const push = jest.fn();
-	const requestSubmit = jest.fn();
 
 	beforeEach(() =>
-		(useRouter as jest.Mock).mockImplementation(() => ({
+		(useRouter as jest.Mock).mockReturnValue({
 			push,
-			requestSubmit,
-		})),
+			requestSubmit: jest.fn(),
+		}),
 	);
+
 	afterEach(() => jest.clearAllMocks());
 
 	it("should not deviate unexpectedly from the last snapshot", () => {
