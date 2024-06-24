@@ -18,7 +18,10 @@ export interface GameMetadataResponse {
 }
 
 export interface Props {
-	/** Additional Steam appids to display as recently played. */
+	/**
+	 * Additional Steam appids to display as recently played.
+	 * E.g., if the game was played on a platform besides Steam.
+	 */
 	adds: string[];
 }
 
