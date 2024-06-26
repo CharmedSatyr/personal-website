@@ -3,7 +3,7 @@ import genPageMetadata from "@/app/seo";
 import Link from "@/components/link";
 import Lock from "@/components/lock";
 import PageTitle from "@/components/page-title";
-import { LinkedIn } from "@/components/social-icons";
+import { GitHub, LinkedIn } from "@/components/social-icons";
 import siteMetadata from "@/data/site-metadata";
 
 export const metadata = genPageMetadata({ title: "Contact" });
@@ -18,6 +18,13 @@ const Contact = () => {
 					<Link href={siteMetadata.linkedin}>
 						<LinkedIn className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
 						Connect on LinkedIn
+					</Link>
+				</li>
+
+				<li className="mb-8 text-lg">
+					<Link href={siteMetadata.github}>
+						<GitHub className="inline h-8 w-8 text-accent-600 dark:text-dark-accent-300" />{" "}
+						Collaborate on GitHub
 					</Link>
 				</li>
 
