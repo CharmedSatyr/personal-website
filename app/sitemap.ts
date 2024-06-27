@@ -40,6 +40,18 @@ const sitemap = (): MetadataRoute.Sitemap => {
 			changeFrequency: "weekly",
 			priority: 0.5,
 		},
+		{
+			url: `${siteMetadata.siteUrl}/tech`,
+			lastModified: new Date(),
+			changeFrequency: "monthly",
+			priority: 0.5,
+		},
+		{
+			url: `${siteMetadata.siteUrl}/colophon`,
+			lastModified: new Date(),
+			changeFrequency: "yearly",
+			priority: 0.3,
+		},
 	];
 };
 
