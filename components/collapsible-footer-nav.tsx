@@ -36,10 +36,10 @@ const CollapsibleFooterNav = () => {
 		>
 			<button
 				onClick={() => setShowNav(!showNav)}
-				className="m-2 rounded border border-primary-400 px-2 py-px text-right text-accent-600 dark:border-primary-800 dark:text-dark-accent-300"
+				className="m-2 rounded border border-primary-400 px-2 py-px text-right dark:border-primary-800"
 			>
 				<div className="absolute top-1 -ml-4">
-					<div className="rounded-full border border-primary-400 dark:border-primary-800 dark:bg-primary-950">
+					<div className="rounded-full border border-primary-400 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
 						<Chevron />
 					</div>
 				</div>
