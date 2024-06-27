@@ -31,7 +31,7 @@ const CollapsibleFooterNav = () => {
 	const Chevron = () => (showNav ? <ChevronDoubleDown /> : <ChevronDoubleUp />);
 
 	return (
-		<div className="sticky bottom-0 mt-20 h-36 w-full">
+		<div className="sticky bottom-0 mt-40 h-36 w-full">
 			<div
 				className={`${height} absolute bottom-0 w-full transform border-t border-primary-400 bg-primary-50 text-right drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
 			>
