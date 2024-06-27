@@ -5,6 +5,8 @@ import { useState } from "react";
 import NavLinks from "@/components/nav-links";
 import StaticFooter from "@/components/static-footer";
 
+import { ChevronDoubleDown, ChevronDoubleUp } from "./chevrons";
+
 const FooterNav = ({ showNav }) => {
 	if (!showNav) {
 		return null;
@@ -24,6 +26,7 @@ const CollapsibleFooterNav = () => {
 
 	const height = showNav ? "h-56" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
+	const Chevron = () => (showNav ? <ChevronDoubleDown /> : <ChevronDoubleUp />);
 
 	return (
 		<div
@@ -33,6 +36,11 @@ const CollapsibleFooterNav = () => {
 				onClick={() => setShowNav(!showNav)}
 				className="m-2 rounded border border-primary-400 px-2 py-px text-right text-accent-600 dark:border-primary-800 dark:text-dark-accent-300"
 			>
+				<div className="absolute top-1 -ml-4">
+					<div className="rounded-full border border-primary-400 dark:border-primary-800 dark:bg-primary-950">
+						<Chevron />
+					</div>
+				</div>
 				{text}
 			</button>
 
