@@ -3,19 +3,19 @@
 import { useEffect, useState } from "react";
 
 export const useWindowSize = (): number => {
-	const [isClient, setIsClient] = useState<boolean>(false);
+	const [mounted, setMounted] = useState<boolean>(false);
 	const [windowSize, setWindowSize] = useState<number>(0);
 
 	useEffect(() => {
-		setIsClient(true);
+		setMounted(true);
 	}, []);
 
 	useEffect(() => {
-		if (!isClient) {
+		if (!mounted) {
 			return;
 		}
 		setWindowSize(window.innerWidth), [];
-	});
+	}, [mounted, windowSize]);
 
 	useEffect(() => {
 		const updateWindowSize = () => setWindowSize(window.innerWidth);
