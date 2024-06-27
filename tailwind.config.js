@@ -20,9 +20,9 @@ module.exports = {
 			colors: {
 				dark: {
 					primary: colors.slate,
-					secondary: colors.amber[200],
+					secondary: colors.red[300],
 					accent: colors.teal[300],
-					hover: colors.red[200],
+					hover: colors.amber[200],
 				},
 				primary: colors.slate,
 				secondary: colors.teal[700],
