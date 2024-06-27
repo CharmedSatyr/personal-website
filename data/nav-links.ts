@@ -5,6 +5,7 @@ const navLinks = [
 	{ href: "/games", title: "Games" },
 	{ href: "/field-notes", title: "Field Notes" },
 	{ href: "/now", title: "Now" },
+	{ href: "/tech", title: "Tech" },
 ];
 
 export default navLinks;
