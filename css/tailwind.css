@@ -8,7 +8,7 @@
 	}
 
 	.hyperlink {
-		@apply text-secondary-700 underline decoration-accent-600 decoration-dotted decoration-2 underline-offset-2 dark:text-dark-secondary-200 dark:decoration-dark-accent-300;
+		@apply text-secondary underline decoration-accent decoration-dotted decoration-2 underline-offset-2 hover:text-hover hover:decoration-solid dark:text-dark-secondary dark:decoration-dark-accent dark:hover:text-dark-hover;
 	}
 
 	.hyperlink.external {
@@ -36,7 +36,7 @@
 	}
 
 	.list {
-		@apply leading-relaxed marker:text-accent-600 dark:marker:text-dark-accent-300;
+		@apply leading-relaxed marker:text-accent dark:marker:text-dark-accent;
 	}
 
 	p {

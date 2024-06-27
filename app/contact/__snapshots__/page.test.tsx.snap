@@ -18,7 +18,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent-600 dark:text-dark-accent-300"
+          class="inline h-6 w-6 text-accent dark:text-dark-accent"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent-600 dark:text-dark-accent-300"
+          class="inline h-6 w-6 text-accent dark:text-dark-accent"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         class="hyperlink"
       >
         <svg
-          class="inline h-6 w-6 text-accent-600 dark:text-dark-accent-300"
+          class="inline h-6 w-6 text-accent dark:text-dark-accent"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent-600 dark:text-dark-accent-300"
+          class="inline h-6 w-6 text-accent dark:text-dark-accent"
           fill="currentColor"
           version="1.1"
           viewBox="0 0 1024 1024"
