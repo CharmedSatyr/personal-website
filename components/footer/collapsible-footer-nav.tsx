@@ -2,8 +2,8 @@
 
 import { SVGProps, useState } from "react";
 
+import StaticFooter from "@/components/footer/static-footer";
 import NavLinks from "@/components/nav-links";
-import StaticFooter from "@/components/static-footer";
 import {
 	ChevronDoubleDownIcon,
 	ChevronDoubleUpIcon,
