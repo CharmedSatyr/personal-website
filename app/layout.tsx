@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const sans = Poppins({
 	subsets: ["latin"],
 	variable: "--font-sans",
-	weight: ["200", "600"],
+	weight: ["200", "300", "400", "600"],
 });
 
 const serif = Asul({

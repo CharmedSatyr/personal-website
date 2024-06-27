@@ -32,7 +32,7 @@
 	}
 
 	.text {
-		@apply text-justify font-sans text-primary-700 dark:text-dark-primary-300;
+		@apply text-justify font-sans font-light text-primary-700 dark:font-extralight dark:text-dark-primary-300;
 	}
 
 	.list {
