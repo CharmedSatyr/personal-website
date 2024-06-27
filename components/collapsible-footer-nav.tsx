@@ -22,7 +22,7 @@ const FooterNav = ({ showNav }) => {
 };
 
 const CollapsibleFooterNav = () => {
-	const [showNav, setShowNav] = useState(true);
+	const [showNav, setShowNav] = useState(false);
 
 	const height = showNav ? "h-60" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
