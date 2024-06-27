@@ -67,19 +67,18 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         class="hyperlink"
       >
         <svg
-          class="inline h-6 w-6 text-accent dark:text-dark-accent"
+          aria-hidden="true"
+          class="inline size-6 text-accent dark:text-dark-accent"
+          data-slot="icon"
           fill="currentColor"
-          viewBox="0 0 20 20"
+          viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            Mail
-          </title>
           <path
-            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+            d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
           />
           <path
-            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
           />
         </svg>
          
@@ -94,14 +93,17 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent dark:text-dark-accent"
+          aria-hidden="true"
+          class="inline size-6 text-accent dark:text-dark-accent"
+          data-slot="icon"
           fill="currentColor"
-          version="1.1"
-          viewBox="0 0 1024 1024"
+          viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M768 341.333333h-42.666667v-85.333333c0-117.76-95.573333-213.333333-213.333333-213.333333S298.666667 138.24 298.666667 256v85.333333h-42.666667c-47.146667 0-85.333333 38.186667-85.333333 85.333334v426.666666c0 47.146667 38.186667 85.333333 85.333333 85.333334h512c47.146667 0 85.333333-38.186667 85.333333-85.333334V426.666667c0-47.146667-38.186667-85.333333-85.333333-85.333334zM512 725.333333c-47.146667 0-85.333333-38.186667-85.333333-85.333333s38.186667-85.333333 85.333333-85.333333 85.333333 38.186667 85.333333 85.333333-38.186667 85.333333-85.333333 85.333333z m132.266667-384H379.733333v-85.333333c0-72.96 59.306667-132.266667 132.266667-132.266667 72.96 0 132.266667 59.306667 132.266667 132.266667v85.333333z"
+            clip-rule="evenodd"
+            d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z"
+            fill-rule="evenodd"
           />
         </svg>
          
