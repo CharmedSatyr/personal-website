@@ -9,7 +9,7 @@ const NavLinks = () => {
 	const pathName = usePathname();
 
 	return (
-		<nav className="space-x-4">
+		<nav className="flex justify-center space-x-2 px-8 sm:space-x-4">
 			{headerNavLinks
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)

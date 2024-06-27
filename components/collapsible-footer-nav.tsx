@@ -15,9 +15,7 @@ const FooterNav = ({ showNav }) => {
 	}
 	return (
 		<div className="pt-4">
-			<div className="flex justify-center">
-				<NavLinks />
-			</div>
+			<NavLinks />
 			<StaticFooter />
 		</div>
 	);
