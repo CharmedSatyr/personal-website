@@ -1,9 +1,10 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Asul, Poppins } from "next/font/google";
 import dotenv from "dotenv";
 
 import ThemeProviders from "@/app/theme-providers";
-import Footer from "@/components/footer";
 import Header from "@/components/header";
 import siteMetadata from "@/data/site-metadata";
 
@@ -54,6 +55,10 @@ const serif = Asul({
 	weight: ["400"],
 });
 
+const ResponsiveFooter = dynamic(
+	() => import("@/components/responsive-footer"),
+);
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang={siteMetadata.locale} suppressHydrationWarning>
@@ -73,8 +78,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 					<main className="mb-auto w-10/12 pt-20 sm:w-9/12 md:w-8/12 lg:w-7/12 lg:pt-32 xl:w-5/12 2xl:w-4/12">
 						{children}
 					</main>
-
-					<Footer />
+					<Suspense>
+						<ResponsiveFooter />
+					</Suspense>
 				</ThemeProviders>
 			</body>
 		</html>
