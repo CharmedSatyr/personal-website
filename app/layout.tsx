@@ -55,9 +55,7 @@ const serif = Asul({
 	weight: ["400"],
 });
 
-const ResponsiveFooter = dynamic(
-	() => import("@/components/responsive-footer"),
-);
+const ResponsiveFooter = dynamic(() => import("@/components/footer"));
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
