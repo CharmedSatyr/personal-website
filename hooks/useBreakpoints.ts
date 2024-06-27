@@ -1,5 +1,3 @@
-"use client";
-
 import resolveConfig from "tailwindcss/resolveConfig";
 const resolvedConfig = resolveConfig(tailwindConfig as Config);
 import * as tailwindConfig from "tailwind.config";
@@ -14,7 +12,7 @@ interface Breakpoints {
 	"2xl": number;
 }
 
-const useBreakpoints = (): Breakpoints => {
+const useBreakpoints = (config = resolvedConfig): Breakpoints => {
 	const screens: Breakpoints = {
 		sm: undefined,
 		md: undefined,
@@ -23,9 +21,7 @@ const useBreakpoints = (): Breakpoints => {
 		"2xl": undefined,
 	};
 
-	for (const [key, value] of Object.entries<Breakpoint>(
-		resolvedConfig.theme.screens,
-	)) {
+	for (const [key, value] of Object.entries<Breakpoint>(config.theme.screens)) {
 		screens[key] = Number(value.replace("px", ""));
 	}
 
