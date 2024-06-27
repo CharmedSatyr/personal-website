@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail } from "@/components/icons/social";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 interface Props {
 	triggerChange: () => void;
@@ -9,7 +9,7 @@ interface Props {
 const EmailMeLink = ({ triggerChange }: Props) => {
 	return (
 		<button className="hyperlink" onClick={() => triggerChange()}>
-			<Mail className="inline h-6 w-6 text-accent-600 dark:text-dark-accent-300" />{" "}
+			<EnvelopeIcon className="inline size-6 text-accent-600 dark:text-dark-accent-300" />{" "}
 			Send me an email
 		</button>
 	);

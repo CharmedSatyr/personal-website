@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { SVGProps, useState } from "react";
 
-import {
-	ChevronDoubleDown,
-	ChevronDoubleUp,
-} from "@/components/icons/chevrons";
 import NavLinks from "@/components/nav-links";
 import StaticFooter from "@/components/static-footer";
+import {
+	ChevronDoubleDownIcon,
+	ChevronDoubleUpIcon,
+} from "@heroicons/react/24/solid";
 
 const FooterNav = ({ showNav }) => {
 	if (!showNav) {
@@ -26,7 +26,13 @@ const CollapsibleFooterNav = () => {
 
 	const height = showNav ? "h-60" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
-	const Chevron = () => (showNav ? <ChevronDoubleDown /> : <ChevronDoubleUp />);
+
+	const Chevron = (props: SVGProps<SVGSVGElement>) =>
+		showNav ? (
+			<ChevronDoubleDownIcon {...props} />
+		) : (
+			<ChevronDoubleUpIcon {...props} />
+		);
 
 	return (
 		<div className="sticky bottom-0 h-fit w-full">
@@ -39,9 +45,9 @@ const CollapsibleFooterNav = () => {
 						onClick={() => setShowNav(!showNav)}
 						className="float-right mr-2 rounded border border-primary-400 px-2 py-px dark:border-primary-800"
 					>
-						<div className="absolute top-0 -ml-4">
+						<div className="absolute top-1 -ml-4">
 							<div className="rounded-full border border-primary-400 bg-primary-50 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
-								<Chevron />
+								<Chevron className="size-3.5 dark:text-dark-accent-300" />
 							</div>
 						</div>
 						{text}

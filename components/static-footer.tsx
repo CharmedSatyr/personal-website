@@ -1,7 +1,7 @@
-import Bee from "@/components/icons/bee";
 import Link from "@/components/link";
 import ThemeSwitch from "@/components/theme-switch";
 import siteMetadata from "@/data/site-metadata";
+import { HeartIcon } from "@heroicons/react/24/solid";
 
 const StaticFooter = () => {
 	return (
@@ -10,11 +10,11 @@ const StaticFooter = () => {
 				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
 			</section>
 
-			<Bee height={15} width={15} />
+			<HeartIcon className="size-2" />
 
 			<Link href="/colophon">Colophon</Link>
 
-			<Bee height={15} width={15} />
+			<HeartIcon className="size-2" />
 
 			<ThemeSwitch />
 		</footer>
