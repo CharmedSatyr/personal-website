@@ -14,7 +14,7 @@ const FooterNav = ({ showNav }) => {
 		return null;
 	}
 	return (
-		<div className="pt-4">
+		<div className="flex h-full flex-col items-center justify-between pt-4">
 			<NavLinks />
 			<StaticFooter />
 		</div>
@@ -22,28 +22,31 @@ const FooterNav = ({ showNav }) => {
 };
 
 const CollapsibleFooterNav = () => {
-	const [showNav, setShowNav] = useState(false);
+	const [showNav, setShowNav] = useState(true);
 
-	const height = showNav ? "h-36" : "h-12";
+	const height = showNav ? "h-60" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
 	const Chevron = () => (showNav ? <ChevronDoubleDown /> : <ChevronDoubleUp />);
 
 	return (
-		<div className="sticky bottom-0 mt-40 h-36 w-full">
+		<div className="sticky bottom-0 h-fit w-full">
 			<div
-				className={`${height} absolute bottom-0 w-full transform border-t border-primary-400 bg-primary-50 text-right drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
+				className={`${height} absolute bottom-0 flex w-full transform flex-col border-t border-primary-400 bg-primary-50 drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
 			>
-				<button
-					onClick={() => setShowNav(!showNav)}
-					className="my-2 mr-8 rounded border border-primary-400 px-2 py-px text-right dark:border-primary-800"
-				>
-					<div className="absolute top-1 -ml-4">
-						<div className="rounded-full border border-primary-400 bg-primary-50 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
-							<Chevron />
+				{/* Button Container */}
+				<div className="my-2">
+					<button
+						onClick={() => setShowNav(!showNav)}
+						className="float-right mr-2 rounded border border-primary-400 px-2 py-px dark:border-primary-800"
+					>
+						<div className="absolute top-0 -ml-4">
+							<div className="rounded-full border border-primary-400 bg-primary-50 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
+								<Chevron />
+							</div>
 						</div>
-					</div>
-					{text}
-				</button>
+						{text}
+					</button>
+				</div>
 
 				<FooterNav showNav={showNav} />
 			</div>
