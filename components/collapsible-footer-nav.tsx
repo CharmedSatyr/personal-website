@@ -26,27 +26,29 @@ const FooterNav = ({ showNav }) => {
 const CollapsibleFooterNav = () => {
 	const [showNav, setShowNav] = useState(false);
 
-	const height = showNav ? "h-56" : "h-12";
+	const height = showNav ? "h-48" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
 	const Chevron = () => (showNav ? <ChevronDoubleDown /> : <ChevronDoubleUp />);
 
 	return (
-		<div
-			className={`${height} sticky bottom-0 w-full transform border-t border-primary-400 bg-primary-50 text-right drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
-		>
-			<button
-				onClick={() => setShowNav(!showNav)}
-				className="m-2 rounded border border-primary-400 px-2 py-px text-right dark:border-primary-800"
+		<div className="sticky bottom-0 h-48 w-full">
+			<div
+				className={`${height} absolute bottom-0 w-full transform border-t border-primary-400 bg-primary-50 text-right drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
 			>
-				<div className="absolute top-1 -ml-4">
-					<div className="rounded-full border border-primary-400 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
-						<Chevron />
+				<button
+					onClick={() => setShowNav(!showNav)}
+					className="m-2 rounded border border-primary-400 px-2 py-px text-right dark:border-primary-800"
+				>
+					<div className="absolute top-1 -ml-4">
+						<div className="rounded-full border border-primary-400 text-accent-600 dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent-300">
+							<Chevron />
+						</div>
 					</div>
-				</div>
-				{text}
-			</button>
+					{text}
+				</button>
 
-			<FooterNav showNav={showNav} />
+				<FooterNav showNav={showNav} />
+			</div>
 		</div>
 	);
 };
