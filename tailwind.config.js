@@ -20,14 +20,12 @@ module.exports = {
 			colors: {
 				dark: {
 					primary: colors.slate,
-					secondary: colors.red[300],
+					secondary: colors.amber[200],
 					accent: colors.teal[300],
-					hover: colors.amber[200],
 				},
 				primary: colors.slate,
 				secondary: colors.teal[700],
 				accent: colors.amber[600],
-				hover: colors.blue[700],
 			},
 		},
 	},
