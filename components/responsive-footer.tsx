@@ -13,7 +13,11 @@ const ResponsiveFooter = () => {
 		return <CollapsibleFooterNav />;
 	}
 
-	return <StaticFooter />;
+	return (
+		<div className="mt-20">
+			<StaticFooter />
+		</div>
+	);
 };
 
 export default ResponsiveFooter;
