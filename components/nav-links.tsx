@@ -3,14 +3,14 @@
 import { usePathname } from "next/navigation";
 
 import Link from "@/components/link";
-import headerNavLinks from "@/data/header-nav-links";
+import navLinks from "@/data/nav-links";
 
 const NavLinks = () => {
 	const pathName = usePathname();
 
 	return (
 		<nav className="grid w-3/4 grid-cols-2 gap-2 text-center sm:w-1/2 md:flex md:w-full md:space-x-4">
-			{headerNavLinks
+			{navLinks
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)
 				.sort((a, b) => {
