@@ -1,4 +1,4 @@
-import Bee from "@/components/bee";
+import Bee from "@/components/icons/bee";
 import Link from "@/components/link";
 import ThemeSwitch from "@/components/theme-switch";
 import siteMetadata from "@/data/site-metadata";

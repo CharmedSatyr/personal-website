@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 
+import {
+	ChevronDoubleDown,
+	ChevronDoubleUp,
+} from "@/components/icons/chevrons";
 import NavLinks from "@/components/nav-links";
 import StaticFooter from "@/components/static-footer";
-
-import { ChevronDoubleDown, ChevronDoubleUp } from "./chevrons";
 
 const FooterNav = ({ showNav }) => {
 	if (!showNav) {

@@ -1,9 +1,9 @@
 import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
+import Lock from "@/components/icons/lock";
+import { GitHub, LinkedIn } from "@/components/icons/social";
 import Link from "@/components/link";
-import Lock from "@/components/lock";
 import PageTitle from "@/components/page-title";
-import { GitHub, LinkedIn } from "@/components/social-icons";
 import siteMetadata from "@/data/site-metadata";
 
 export const metadata = genPageMetadata({ title: "Contact" });
