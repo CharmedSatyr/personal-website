@@ -9,7 +9,7 @@ const NavLinks = () => {
 	const pathName = usePathname();
 
 	return (
-		<nav className="grid w-3/4 grid-cols-2 gap-2 text-center md:flex md:w-full md:space-x-4">
+		<nav className="grid w-3/4 grid-cols-2 gap-2 text-center sm:w-1/2 md:flex md:w-full md:space-x-4">
 			{headerNavLinks
 				.filter((link) => link.href !== "/")
 				.filter((link) => link.href !== pathName)

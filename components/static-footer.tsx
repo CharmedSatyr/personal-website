@@ -5,7 +5,7 @@ import siteMetadata from "@/data/site-metadata";
 
 const StaticFooter = () => {
 	return (
-		<footer className="flex w-screen items-center justify-center space-x-2 text-nowrap px-8 py-4 text-sm dark:text-dark-primary-400">
+		<footer className="flex w-screen items-center justify-center space-x-2 text-nowrap px-8 py-4 text-sm dark:text-dark-primary-400 md:text-base">
 			<section>
 				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
 			</section>

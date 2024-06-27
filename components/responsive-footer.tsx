@@ -18,7 +18,7 @@ const ResponsiveFooter = () => {
 	}
 
 	return (
-		<div className="mt-18">
+		<div className="mt-20">
 			<StaticFooter />
 		</div>
 	);
