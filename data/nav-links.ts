@@ -3,7 +3,7 @@ const navLinks = [
 	{ href: "/about", title: "About" },
 	{ href: "/contact", title: "Contact" },
 	{ href: "/games", title: "Games" },
-	{ href: "/field-notes", title: "Field Notes" },
+	{ href: "/words", title: "Words" },
 	{ href: "/now", title: "Now" },
 	{ href: "/code", title: "Code" },
 ];
