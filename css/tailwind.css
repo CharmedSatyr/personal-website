@@ -39,10 +39,6 @@
 		@apply leading-relaxed marker:text-accent dark:marker:text-dark-accent;
 	}
 
-	.list.list-decimal {
-		@apply marker:font-bold;
-	}
-
 	p {
 		@apply mb-4;
 	}

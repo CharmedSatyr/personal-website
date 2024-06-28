@@ -1,16 +1,20 @@
 import StackIcon from "tech-stack-icons";
 
+import { Signal } from "@/components/icons/social";
 import {
 	Debian,
 	Godot,
 	Kafka,
 	Koa,
+	LibreOffice,
 	Mdx,
+	Netlify,
 	Nextcloud,
 	Nginx,
 	Obsidian,
 	React,
 	Unity,
+	Zsh,
 } from "@/components/icons/tech";
 import Link from "@/components/link";
 
@@ -92,6 +96,13 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
+				href="https://mdxjs.com/"
+				className="flex items-center justify-between"
+			>
+				<Mdx className="mr-1 size-6 dark:invert" /> MDX
+			</Link>
+
+			<Link
 				href="https://kafka.apache.org/"
 				className="flex items-center justify-between"
 			>
@@ -99,10 +110,10 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
-				href="https://mdxjs.com/"
+				href="https://www.elastic.co/elasticsearch"
 				className="flex items-center justify-between"
 			>
-				<Mdx className="mr-1 size-6 dark:invert" /> MDX
+				<StackIcon name="elastic" className="mr-1 size-6" /> Elasticsearch
 			</Link>
 
 			<Link
@@ -125,6 +136,14 @@ export const AlsoUse = () => {
 			>
 				<Nginx className="mr-1 size-6 text-[#009900]" fill="currentColor" />{" "}
 				Nginx
+			</Link>
+
+			<Link
+				href="https://www.netlify.com/"
+				className="flex items-center justify-between"
+			>
+				<Netlify className="mr-1 size-6 text-[#32e6e2]" fill="currentColor" />{" "}
+				Netlify
 			</Link>
 		</section>
 	);
@@ -151,7 +170,7 @@ export const GameEngines = () => {
 	);
 };
 
-export const Tools = () => {
+export const Environment = () => {
 	return (
 		<section className="mb-16 flex flex-wrap justify-start gap-6">
 			<Link
@@ -175,6 +194,14 @@ export const Tools = () => {
 				<Debian className="mr-1 size-6 text-[#a80030]" fill="currentColor" />{" "}
 				Debian
 			</Link>
+
+			<Link
+				href="https://ohmyz.sh/"
+				className="flex items-center justify-between"
+			>
+				<Zsh className="mr-1 size-6 text-[#c5d928]" fill="currentColor" /> Oh My
+				Zsh
+			</Link>
 		</section>
 	);
 };
@@ -196,6 +223,32 @@ export const Productivity = () => {
 			>
 				<Obsidian className="mr-1 size-6 text-[#a88bfa]" fill="currentColor" />{" "}
 				Obsidian
+			</Link>
+
+			<Link
+				href="https://www.mozilla.org/en-US/firefox/new/"
+				className="flex items-center justify-between"
+			>
+				<StackIcon name="firefox" className="mr-1 size-6" /> Firefox
+			</Link>
+
+			<Link
+				href="https://signal.org/"
+				className="flex items-center justify-between"
+			>
+				<Signal className="mr-1 size-6 text-[#3a76f0]" fill="currentColor" />{" "}
+				Signal
+			</Link>
+
+			<Link
+				href="https://www.libreoffice.org/"
+				className="flex items-center justify-between"
+			>
+				<LibreOffice
+					className="mr-1 size-6 text-[#00a500]"
+					fill="currentColor"
+				/>{" "}
+				LibreOffice
 			</Link>
 		</section>
 	);
