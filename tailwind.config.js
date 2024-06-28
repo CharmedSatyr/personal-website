@@ -27,6 +27,7 @@ module.exports = {
 				primary: colors.slate,
 				secondary: colors.teal[700],
 				accent: colors.amber[600],
+				highlight: colors.blue[600],
 			},
 		},
 	},
