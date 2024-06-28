@@ -14,6 +14,7 @@ import {
 	Obsidian,
 	React,
 	Unity,
+	Vultr,
 	Zsh,
 } from "@/components/icons/tech";
 import Link from "@/components/link";
@@ -144,6 +145,14 @@ export const AlsoUse = () => {
 			>
 				<Netlify className="mr-1 size-6 text-[#32e6e2]" fill="currentColor" />{" "}
 				Netlify
+			</Link>
+
+			<Link
+				href="https://www.vultr.com"
+				className="flex items-center justify-between"
+			>
+				<Vultr className="mr-1 size-6 text-[#202fab]" fill="currentColor" />{" "}
+				Vultr
 			</Link>
 		</section>
 	);
