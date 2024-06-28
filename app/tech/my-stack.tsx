@@ -7,7 +7,9 @@ import {
 	Koa,
 	Mdx,
 	Nextcloud,
+	Nginx,
 	Obsidian,
+	React,
 	Unity,
 } from "@/components/icons/tech";
 import Link from "@/components/link";
@@ -104,6 +106,13 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
+				href="https://www.mongodb.com/"
+				className="flex items-center justify-between"
+			>
+				<StackIcon name="mongodb" className="mr-1 size-6" /> MongoDB
+			</Link>
+
+			<Link
 				href="https://www.docker.com/"
 				className="flex items-center justify-between"
 			>
@@ -111,10 +120,11 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
-				href="https://www.mongodb.com/"
+				href="https://nginx.org/"
 				className="flex items-center justify-between"
 			>
-				<StackIcon name="mongodb" className="mr-1 size-6" /> MongoDB
+				<Nginx className="mr-1 size-6 text-[#009900]" fill="currentColor" />{" "}
+				Nginx
 			</Link>
 		</section>
 	);
