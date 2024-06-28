@@ -127,7 +127,8 @@ export const GameEngines = () => {
 				href="https://godotengine.org/"
 				className="flex items-center justify-between"
 			>
-				<Godot className="mr-1 size-6 dark:invert" /> Godot
+				<Godot className="mr-1 size-6 text-[#478cbf]" fill="currentColor" />{" "}
+				Godot
 			</Link>
 
 			<Link
@@ -161,7 +162,8 @@ export const Tools = () => {
 				href="https://www.debian.org/"
 				className="flex items-center justify-between"
 			>
-				<Debian className="mr-1 size-6 dark:invert" /> Debian
+				<Debian className="mr-1 size-6 text-[#a80030]" fill="currentColor" />{" "}
+				Debian
 			</Link>
 		</section>
 	);
@@ -174,14 +176,16 @@ export const Productivity = () => {
 				href="https://nextcloud.com/"
 				className="flex items-center justify-between"
 			>
-				<Nextcloud className="mr-1 size-6 dark:invert" /> Nextcloud
+				<Nextcloud className="mr-1 size-6 text-[#14a2f0]" fill="currentColor" />{" "}
+				Nextcloud
 			</Link>
 
 			<Link
 				href="https://obsidian.md/"
 				className="flex items-center justify-between"
 			>
-				<Obsidian className="mr-1 size-6 dark:invert" /> Obsidian
+				<Obsidian className="mr-1 size-6 text-[#a88bfa]" fill="currentColor" />{" "}
+				Obsidian
 			</Link>
 		</section>
 	);
