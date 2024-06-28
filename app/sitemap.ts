@@ -41,7 +41,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
 			priority: 0.5,
 		},
 		{
-			url: `${siteMetadata.siteUrl}/tech`,
+			url: `${siteMetadata.siteUrl}/code`,
 			lastModified: new Date(),
 			changeFrequency: "monthly",
 			priority: 0.5,
