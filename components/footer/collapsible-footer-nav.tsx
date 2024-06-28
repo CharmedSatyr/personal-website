@@ -35,7 +35,7 @@ const CollapsibleFooterNav = () => {
 		);
 
 	return (
-		<div className="sticky bottom-0 mt-20 h-fit w-full">
+		<div className="sticky bottom-0 mt-16 h-fit w-full">
 			<div
 				className={`${height} absolute bottom-0 flex w-full transform flex-col border-t border-primary-400 bg-primary-50 drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
 			>
