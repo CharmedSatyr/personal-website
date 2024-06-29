@@ -22,7 +22,7 @@ module.exports = {
 					primary: colors.slate,
 					secondary: colors.amber[100],
 					accent: colors.teal[300],
-					highlight: colors.red[100],
+					highlight: colors.red[200],
 				},
 				primary: colors.slate,
 				secondary: colors.teal[700],
