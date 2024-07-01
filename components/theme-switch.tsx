@@ -20,6 +20,7 @@ const ThemeSwitch = () => {
 
 	return (
 		<button
+			data-testid="theme-switch-button"
 			className="h-5 w-5 text-accent dark:text-dark-accent"
 			aria-label="Theme Switch"
 			type="button"

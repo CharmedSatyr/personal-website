@@ -13,6 +13,7 @@ const FooterNav = ({ showNav }) => {
 	if (!showNav) {
 		return null;
 	}
+
 	return (
 		<div className="flex h-full flex-col items-center justify-between pt-4">
 			<NavLinks />
@@ -39,9 +40,9 @@ const CollapsibleFooterNav = () => {
 			<div
 				className={`${height} absolute bottom-0 flex w-full transform flex-col border-t border-primary-400 bg-primary-50 drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
 			>
-				{/* Button Container */}
 				<div className="my-2">
 					<button
+						data-testid="footer-menu-button"
 						onClick={() => setShowNav(!showNav)}
 						className="float-right mr-2 rounded border border-primary-400 px-2 py-px dark:border-primary-800"
 					>

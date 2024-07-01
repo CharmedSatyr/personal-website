@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export const useWindowSize = (): number => {
+const useWindowSize = (): number => {
 	const [mounted, setMounted] = useState<boolean>(false);
 	const [windowSize, setWindowSize] = useState<number>(0);
 
@@ -27,3 +27,5 @@ export const useWindowSize = (): number => {
 
 	return windowSize;
 };
+
+export default useWindowSize;
