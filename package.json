@@ -14,7 +14,7 @@
 		"prettier": "npx prettier --write .",
 		"start": "next start",
 		"test": "jest",
-		"test:staged": "jest --passWithNoTests --findRelatedTests --bail",
+		"test:staged": "jest --findRelatedTests --bail",
 		"test:watch": "jest --watch"
 	},
 	"license": "GPL-3.0",
@@ -65,11 +65,13 @@
 	},
 	"lint-staged": {
 		"*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-			"prettier --write",
-			"npm run test:staged"
+			"prettier --write"
 		],
 		"*.+(js|jsx|ts|tsx|json|md|mdx)": [
 			"eslint --fix"
+		],
+		"*.+(js|jsx|ts|tsx)": [
+			"npm run test:staged"
 		]
 	}
 }
