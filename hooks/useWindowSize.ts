@@ -14,16 +14,21 @@ const useWindowSize = (): number => {
 		if (!mounted) {
 			return;
 		}
+
 		setWindowSize(window.innerWidth), [];
 	}, [mounted, windowSize]);
 
 	useEffect(() => {
+		if (!mounted) {
+			return;
+		}
+
 		const updateWindowSize = () => setWindowSize(window.innerWidth);
 
 		window.addEventListener("resize", updateWindowSize);
 
 		return () => window.removeEventListener("resize", updateWindowSize);
-	}, [windowSize]);
+	}, [mounted]);
 
 	return windowSize;
 };
