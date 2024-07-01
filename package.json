@@ -9,7 +9,7 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
-		"lint": "next lint --fix .",
+		"lint": "next lint --fix . --dir .",
 		"prepare": "husky",
 		"prettier": "npx prettier --write .",
 		"start": "next start",
