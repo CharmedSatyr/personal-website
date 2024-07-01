@@ -1,4 +1,4 @@
-import useWindowSize from "@/hooks/useWindowSize";
+import useWindowSize from "@/hooks/use-window-size";
 import { act, renderHook, waitFor } from "@testing-library/react";
 
 describe("useWindowSize", () => {

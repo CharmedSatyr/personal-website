@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 import CollapsibleFooterNav from "@/components/footer/collapsible-footer-nav";
 import StaticFooter from "@/components/footer/static-footer";
-import useBreakpoints from "@/hooks/useBreakpoints";
-import useWindowSize from "@/hooks/useWindowSize";
+import useBreakpoints from "@/hooks/use-breakpoints";
+import useWindowSize from "@/hooks/use-window-size";
 
 const ResponsiveFooter = () => {
 	const [mounted, setMounted] = useState<boolean>();

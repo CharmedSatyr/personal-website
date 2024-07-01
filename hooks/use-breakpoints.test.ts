@@ -1,4 +1,4 @@
-import useBreakpoints from "@/hooks/useBreakpoints";
+import useBreakpoints from "@/hooks/use-breakpoints";
 import { renderHook } from "@testing-library/react";
 
 describe("useBreakpoints", () => {

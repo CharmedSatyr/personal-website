@@ -1,11 +1,11 @@
 import Footer from "@/components/footer";
-import useBreakpoints from "@/hooks/useBreakpoints";
-import useWindowSize from "@/hooks/useWindowSize";
+import useBreakpoints from "@/hooks/use-breakpoints";
+import useWindowSize from "@/hooks/use-window-size";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-jest.mock("@/hooks/useBreakpoints");
-jest.mock("@/hooks/useWindowSize");
+jest.mock("@/hooks/use-breakpoints");
+jest.mock("@/hooks/use-window-size");
 
 describe("Footer", () => {
 	afterEach(() => jest.clearAllMocks());
