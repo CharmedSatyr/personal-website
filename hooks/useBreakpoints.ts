@@ -3,8 +3,9 @@ const resolvedConfig = resolveConfig(tailwindConfig as Config);
 import * as tailwindConfig from "tailwind.config";
 import { Config } from "tailwindcss";
 
-type Breakpoint = "sm" | "md" | "lg" | "xl" | "2xl";
+type Breakpoint = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 interface Breakpoints {
+	xs: number;
 	sm: number;
 	md: number;
 	lg: number;
@@ -13,7 +14,12 @@ interface Breakpoints {
 }
 
 const useBreakpoints = (config = resolvedConfig): Breakpoints => {
+	if (!config) {
+		throw new Error("Config required to use breakpoints");
+	}
+
 	const screens: Breakpoints = {
+		xs: undefined,
 		sm: undefined,
 		md: undefined,
 		lg: undefined,
