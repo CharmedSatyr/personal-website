@@ -1,3 +1,3 @@
-const blogDir = "./data/words";
+const blogDir = "./data/field-notes";
 
 export default blogDir;

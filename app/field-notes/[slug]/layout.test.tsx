@@ -1,4 +1,4 @@
-import Layout from "@/app/words/[slug]/layout";
+import Layout from "@/app/field-notes/[slug]/layout";
 import { render, screen } from "@testing-library/react";
 
 describe("Layout", () => {
