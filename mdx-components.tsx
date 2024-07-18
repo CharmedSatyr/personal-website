@@ -11,6 +11,7 @@ export const useMDXComponents = (components: MDXComponents): MDXComponents => {
 		ul: ({ children }) => <ul className="list list-disc">{children}</ul>,
 		ol: ({ children }) => <ol className="list list-decimal">{children}</ol>,
 		a: ({ href, children }) => <Link href={href}>{children}</Link>,
+		hr: () => <hr className="my-10" />,
 		...components,
 	};
 };
