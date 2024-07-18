@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field Notes should not deviate unexpectedly from the last snapshot 1`] = `
+<div>
+  <h1
+    class="title"
+  >
+    Field Notes
+  </h1>
+  <section>
+    <a
+      class="mb-4 flex items-end justify-start gap-4"
+      href="/field-notes/how-i-learned-to-code"
+    >
+      <time>
+        2024-06-25
+      </time>
+      <h3
+        class="hyperlink"
+      >
+        How I Learned to Code
+      </h3>
+    </a>
+  </section>
+</div>
+`;
