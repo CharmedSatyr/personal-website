@@ -1,7 +1,6 @@
 {
 	"name": "personal-website",
 	"version": "0.1.0",
-	"private": true,
 	"engines": {
 		"node": "^20.12.2",
 		"npm": "^10.7.0"
