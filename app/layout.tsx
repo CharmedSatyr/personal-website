@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Asul, Poppins } from "next/font/google";
+import Script from "next/script";
 import dotenv from "dotenv";
 
 import ThemeProviders from "@/app/theme-providers";
@@ -11,6 +12,8 @@ import siteMetadata from "@/data/site-metadata";
 import "@/css/tailwind.css";
 
 dotenv.config();
+
+const { NODE_ENV, ANALYTICS_ID, ANALYTICS_URL } = process.env;
 
 /**
  * See https://nextjs.org/docs/app/building-your-application/optimizing/metadata
@@ -57,6 +60,11 @@ const serif = Asul({
 
 const ResponsiveFooter = dynamic(() => import("@/components/footer"));
 
+const Analytics = () =>
+	NODE_ENV === "production" ? (
+		<Script defer src={ANALYTICS_URL} data-website-id={ANALYTICS_ID} />
+	) : null;
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang={siteMetadata.locale} suppressHydrationWarning>
@@ -80,6 +88,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 						<ResponsiveFooter />
 					</Suspense>
 				</ThemeProviders>
+
+				<Analytics />
 			</body>
 		</html>
 	);
