@@ -5,11 +5,11 @@ import { Asul, Poppins } from "next/font/google";
 import dotenv from "dotenv";
 
 import ThemeProviders from "@/app/theme-providers";
+import Analytics from "@/components/analytics";
 import Header from "@/components/header";
 import siteMetadata from "@/data/site-metadata";
 
 import "@/css/tailwind.css";
-import Analytics from "@/components/analytics";
 
 dotenv.config();
 
