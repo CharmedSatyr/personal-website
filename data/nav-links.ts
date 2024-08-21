@@ -6,6 +6,7 @@ const navLinks = [
 	{ href: "/field-notes", title: "Field Notes" },
 	{ href: "/now", title: "Now" },
 	{ href: "/code", title: "Code" },
+	//{ href: "/projects", title: "Projects" },
 ];
 
 export default navLinks;
