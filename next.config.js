@@ -1,3 +1,5 @@
+// Should be out of canary soon: https://github.com/vercel/next.js/pull/63051
+/* eslint-disable-next-line @typescript-eslint/no-require-imports */
 const withMDX = require("@next/mdx")();
 
 const getBuildDate = () => {
