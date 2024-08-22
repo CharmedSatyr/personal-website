@@ -15,7 +15,7 @@ const useWindowSize = (): number => {
 			return;
 		}
 
-		setWindowSize(window.innerWidth), [];
+		setWindowSize(window.innerWidth);
 	}, [mounted, windowSize]);
 
 	useEffect(() => {
