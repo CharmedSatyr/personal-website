@@ -2,8 +2,8 @@
 	"name": "personal-website",
 	"version": "0.1.0",
 	"engines": {
-		"node": "^20.12.2",
-		"npm": "^10.7.0"
+		"node": "^20.17.0",
+		"npm": "^10.8.2"
 	},
 	"scripts": {
 		"build": "next build",
@@ -66,7 +66,7 @@
 		"*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
 			"prettier --write"
 		],
-		"*.+(js|jsx|ts|tsx|json|md|mdx)": [
+		"*.+(js|jsx|ts|tsx|md|mdx)": [
 			"eslint --fix"
 		],
 		"*.+(js|jsx|ts|tsx)": [
