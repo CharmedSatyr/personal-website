@@ -2,6 +2,7 @@ import StackIcon from "tech-stack-icons";
 
 import { Signal } from "@/components/icons/social";
 import {
+	Caddy,
 	Debian,
 	Godot,
 	Kafka,
@@ -14,6 +15,7 @@ import {
 	Obsidian,
 	React,
 	Unity,
+	Vercel,
 	Vultr,
 	Zsh,
 } from "@/components/icons/tech";
@@ -132,6 +134,14 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
+				href="https://caddyserver.com/"
+				className="flex items-center justify-between"
+			>
+				<Caddy className="mr-1 size-6 text-[#1F88C0]" fill="currentColor" />{" "}
+				Caddy
+			</Link>
+
+			<Link
 				href="https://nginx.org/"
 				className="flex items-center justify-between"
 			>
@@ -145,6 +155,13 @@ export const AlsoUse = () => {
 			>
 				<Netlify className="mr-1 size-6 text-[#32e6e2]" fill="currentColor" />{" "}
 				Netlify
+			</Link>
+
+			<Link
+				href="https://www.vercel.com/"
+				className="flex items-center justify-between"
+			>
+				<Vercel className="mr-1 size-6" fill="currentColor" /> Vercel
 			</Link>
 
 			<Link
