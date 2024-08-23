@@ -69,7 +69,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 			/>
 
 			<body
-				className={`${sans.variable} ${serif.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-primary-950`}
+				className={`${sans.variable} ${serif.variable} text flex h-screen flex-col items-center bg-primary-50 dark:bg-gradient-to-br dark:from-primary-900 dark:to-primary-950`}
 			>
 				<ThemeProviders>
 					<Header />
