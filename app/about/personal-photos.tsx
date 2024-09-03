@@ -10,7 +10,7 @@ const PersonalPhotos = () => {
 				<Image
 					className="image"
 					alt="Looking out a window at Karlštejn Castle, Czech Republic."
-					src="/static/images/joseph.webp"
+					src="/static/images/karlstejn.webp"
 					height={450}
 					width={600}
 					priority
