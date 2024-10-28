@@ -1,5 +1,6 @@
 import RecentlyPlayed from "@/app/games/recently-played";
 import genPageMetadata from "@/app/seo";
+import SteamId from "@/app/games/recently-played.constants";
 
 export const metadata = genPageMetadata({ title: "Games" });
 
@@ -52,4 +53,4 @@ Years ago, I made over 200 gameplay and tutorial videos for
 voice work for the
 [Skyrim Book Club](https://www.youtube.com/watch?v=8Nckf8AeBig&t=31s).
 
-<RecentlyPlayed adds={["384110", "1086940", "1426210"]} />
+<RecentlyPlayed adds={[SteamId.BALDURS_GATE_3, SteamId.IT_TAKES_TWO]} />
