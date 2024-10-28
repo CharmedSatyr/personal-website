@@ -1,4 +1,4 @@
-enum SteamId {
+export enum SteamId {
 	BALDURS_GATE_3 = "1086940",
 	PATHOLOGIC_CLASSIC_HD = "384110",
 	IT_TAKES_TWO = "1426210",
