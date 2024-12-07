@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import {
 	GameMetadataResponse,
 	Props,
@@ -7,7 +9,7 @@ import Image from "@/components/image";
 import Link from "@/components/link";
 import { SteamApi } from "@/constants/api";
 
-export const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
+const getRecentlyPlayed = async (): Promise<RecentlyPlayedResponse> => {
 	const url =
 		SteamApi.recentlyPlayed +
 		`?format=json&key=${process.env.STEAM_API_KEY}&steamid=${process.env.STEAM_USER_ID}`;
@@ -91,7 +93,9 @@ const RecentlyPlayed = async (props: Props) => {
 				Titles I've dipped into within the past two weeks.
 			</aside>
 
-			<ul className="list list-disc">{items}</ul>
+			<Suspense>
+				<ul className="list list-disc">{items}</ul>
+			</Suspense>
 		</div>
 	);
 };
