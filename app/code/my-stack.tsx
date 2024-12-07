@@ -77,6 +77,13 @@ export const GoTo = () => {
 			>
 				<StackIcon name="postgresql" className="mr-1 size-12" /> PostgreSQL
 			</Link>
+
+			<Link
+				href="https://www.vercel.com/"
+				className="flex items-center justify-between"
+			>
+				<Vercel className="mr-1 size-6" fill="currentColor" /> Vercel
+			</Link>
 		</section>
 	);
 };
@@ -158,18 +165,18 @@ export const AlsoUse = () => {
 			</Link>
 
 			<Link
-				href="https://www.vercel.com/"
-				className="flex items-center justify-between"
-			>
-				<Vercel className="mr-1 size-6" fill="currentColor" /> Vercel
-			</Link>
-
-			<Link
 				href="https://www.vultr.com"
 				className="flex items-center justify-between"
 			>
 				<Vultr className="mr-1 size-6 text-[#202fab]" fill="currentColor" />{" "}
 				Vultr
+			</Link>
+
+			<Link
+				href="https://aws.amazon.com"
+				className="flex items-center justify-between"
+			>
+				<StackIcon name="aws" className="mr-1 size-6 dark:invert" /> AWS
 			</Link>
 		</section>
 	);
