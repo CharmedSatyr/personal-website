@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import RecentlyPlayed from "@/app/games/recently-played";
 import { SteamId } from "@/app/games/recently-played.constants";
 import genPageMetadata from "@/app/seo";
@@ -52,4 +54,6 @@ Years ago, I made over 200 gameplay and tutorial videos for
 voice work for the
 [Skyrim Book Club](https://www.youtube.com/watch?v=8Nckf8AeBig&t=31s).
 
-<RecentlyPlayed adds={[SteamId.BALDURS_GATE_3]} />
+<Suspense>
+	<RecentlyPlayed adds={[SteamId.BALDURS_GATE_3]} />
+</Suspense>

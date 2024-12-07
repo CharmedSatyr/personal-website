@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-
 import {
 	GameMetadataResponse,
 	Props,
@@ -93,9 +91,7 @@ const RecentlyPlayed = async (props: Props) => {
 				Titles I've dipped into within the past two weeks.
 			</aside>
 
-			<Suspense>
-				<ul className="list list-disc">{items}</ul>
-			</Suspense>
+			<ul className="list list-disc">{items}</ul>
 		</div>
 	);
 };
