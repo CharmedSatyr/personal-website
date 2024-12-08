@@ -1,7 +1,9 @@
 type Props = {
 	className?: string;
 };
-const Skeleton = ({ className = "h-10 w-full" }: Props) => (
+
+// TODO: This fallback is confusing.
+const Skeleton = ({ className = "h-8 w-full" }: Props) => (
 	<div
 		className={`animate-pulse rounded-xl bg-secondary dark:bg-dark-primary-950 ${className}`}
 		role="status"
