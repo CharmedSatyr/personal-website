@@ -42,34 +42,36 @@ const ProjectsList = async () => {
 
 	return (
 		<section>
-			{projects.map((project) => (
-				<div key={project.slug}>
-					<div className="mb-4 flex flex-wrap justify-between">
-						<div className="flex gap-4">
-							<Link href={project.meta.url}>{project.meta.title}</Link>
+			<ul>
+				{projects.map((project) => (
+					<li key={project.slug}>
+						<div className="mb-4 flex flex-wrap justify-between">
+							<div className="flex gap-4">
+								<Link href={project.meta.url}>{project.meta.title}</Link>
 
-							<Link href={project.meta.repo}>
-								<GitHub className="inline h-6 w-6 text-accent transition-transform hover:scale-105 dark:text-dark-accent" />
-							</Link>
-						</div>
-
-						<time className="italic">{project.meta.date}</time>
-					</div>
-					<div>
-						<MDXRemote source={project.content} />
-					</div>
-					<div className="flex flex-wrap gap-1">
-						{project.meta.tags.map((tag: string) => (
-							<div
-								className="w-fit rounded border border-primary-800 bg-primary-950 px-2 text-primary-100 shadow"
-								key={tag}
-							>
-								{tag}
+								<Link href={project.meta.repo}>
+									<GitHub className="inline h-6 w-6 text-accent transition-transform hover:scale-105 dark:text-dark-accent" />
+								</Link>
 							</div>
-						))}
-					</div>
-				</div>
-			))}
+
+							<time className="italic">{project.meta.date}</time>
+						</div>
+						<div>
+							<MDXRemote source={project.content} />
+						</div>
+						<div className="flex flex-wrap gap-1">
+							{project.meta.tags.map((tag: string) => (
+								<div
+									className="w-fit rounded border border-primary-800 bg-primary-950 px-2 text-primary-100 shadow"
+									key={tag}
+								>
+									{tag}
+								</div>
+							))}
+						</div>
+					</li>
+				))}
+			</ul>
 		</section>
 	);
 };
