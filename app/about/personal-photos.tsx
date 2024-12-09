@@ -1,5 +1,5 @@
 import greatWall from "public/static/images/great-wall";
-import joseph from "public/static/images/joseph";
+import karlstejn from "public/static/images/karlstejn";
 
 import Image from "@/components/image";
 
@@ -15,7 +15,7 @@ const PersonalPhotos = () => {
 					width={600}
 					priority
 					placeholder="blur"
-					blurDataURL={joseph}
+					blurDataURL={karlstejn}
 				/>
 				<figcaption className="caption">
 					Karlštejn Castle, Czech Republic

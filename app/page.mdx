@@ -1,9 +1,11 @@
+import josephGlare from "public/static/images/joseph-glare";
+
 import Image from "@/components/image";
 import TreeImage from "@/components/tree-image";
 
 <div className="py-8" />
 
-# I'm <span className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-dark-secondary dark:to-red-300 text-accent">Joseph</span> <Image priority alt="Joseph circle portrait" src="/static/images/joseph-glare.webp" height="70" width="70" className="rounded-full image inline border-1 border-solid border-secondary dark:border-dark-accent" />, a software developer, game designer, and writer in Seattle.<TreeImage />
+# I'm <span className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-dark-secondary dark:to-red-300 text-accent">Joseph</span> <Image priority alt="Joseph circle portrait" src="/static/images/joseph-glare.webp" height="70" width="70" className="rounded-full image inline border-1 border-solid border-secondary dark:border-dark-accent" placeholder="blur" blurDataURL={josephGlare} />, a software developer, game designer, and writer in Seattle.<TreeImage />
 
 See what I'm up to [now](/now).
 
