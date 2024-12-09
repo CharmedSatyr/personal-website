@@ -36,7 +36,8 @@
 		"**/*.tsx",
 		"**/*.json",
 		"**/*.md",
-		"**/*.mdx"
+		"**/*.mdx",
+		"eslint.config.*"
 	],
 	"exclude": ["node_modules"]
 }
