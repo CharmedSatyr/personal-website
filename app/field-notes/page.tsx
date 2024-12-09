@@ -4,7 +4,7 @@ import path from "path";
 
 import Link from "@/components/link";
 import PageTitle from "@/components/page-title";
-import blogDir from "@/constants/blog-dir";
+import { blogDir } from "@/constants/directories";
 
 const getBlogs = () => {
 	const files = fs.readdirSync(path.join(blogDir));

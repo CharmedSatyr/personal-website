@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-import blogDir from "@/constants/blog-dir";
+import { blogDir } from "@/constants/directories";
 
 export const generateStaticParams = async () => {
 	const files = fs.readdirSync(path.join(blogDir));
