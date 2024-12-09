@@ -1,0 +1,14 @@
+import { Suspense } from "react";
+
+import ProjectsList, {
+	ProjectsListFallback,
+} from "@/app/projects/projects-list";
+import genPageMetadata from "@/app/seo";
+
+export const metadata = genPageMetadata({ title: "Projects" });
+
+# Projects
+
+<Suspense fallback={<ProjectsListFallback />}>
+	<ProjectsList />
+</Suspense>

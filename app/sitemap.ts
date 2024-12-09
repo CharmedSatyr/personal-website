@@ -52,12 +52,12 @@ const sitemap = (): MetadataRoute.Sitemap => {
 			changeFrequency: "yearly",
 			priority: 0.3,
 		},
-		/*{
+		{
 			url: `${siteMetadata.siteUrl}/projects`,
 			lastModified: new Date(),
-			changeFrequency: "monthly",
-			priority: 0.5,
-		},*/
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
 	];
 };
 
