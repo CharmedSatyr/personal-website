@@ -1,22 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense } from "react";
 import { useTheme } from "next-themes";
 
 import { Mode } from "@/constants/mode";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 const ThemeSwitch = () => {
-	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
-
-	useEffect(() => setMounted(true), []);
-
-	const SwitchIcon = () => (theme === Mode.light ? <SunIcon /> : <MoonIcon />);
-
-	if (!mounted) {
-		return null;
-	}
 
 	return (
 		<button
@@ -26,7 +17,13 @@ const ThemeSwitch = () => {
 			type="button"
 			onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}
 		>
-			<SwitchIcon />
+			<Suspense>
+				{theme === Mode.light ? (
+					<MoonIcon title="Use Dark Mode" />
+				) : (
+					<SunIcon title="Use Light Mode" />
+				)}
+			</Suspense>
 		</button>
 	);
 };
