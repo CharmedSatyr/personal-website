@@ -6,7 +6,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
     class="mb-16 flex flex-wrap justify-start gap-6"
   >
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://react.dev/"
       rel="noopener noreferrer"
       target="_blank"
@@ -71,7 +71,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        React
     </a>
     <a
-      class="flex items-center"
+      class="flex items-center justify-between hover:scale-105"
       href="https://redux.js.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -115,7 +115,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        Redux
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.typescriptlang.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -165,7 +165,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        TypeScript
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://nodejs.org/en"
       rel="noopener noreferrer"
       target="_blank"
@@ -215,7 +215,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        Node.js
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://nextjs.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -328,7 +328,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
       Next.js
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://koajs.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -349,7 +349,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        Koa
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://tailwindcss.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -393,7 +393,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        Tailwind CSS
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.postgresql.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -455,7 +455,7 @@ exports[`TechSections matches snapshots for all sections 1`] = `
        PostgreSQL
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.vercel.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -486,7 +486,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
     class="mb-16 flex flex-wrap justify-start gap-6"
   >
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.rust-lang.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -530,7 +530,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        Rust
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://dotnet.microsoft.com/en-us/languages/csharp"
       rel="noopener noreferrer"
       target="_blank"
@@ -598,7 +598,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        C#
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://mdxjs.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -619,7 +619,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        MDX
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://kafka.apache.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -640,7 +640,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        Apache Kafka
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.elastic.co/elasticsearch"
       rel="noopener noreferrer"
       target="_blank"
@@ -720,7 +720,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        Elasticsearch
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.mongodb.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -776,7 +776,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        MongoDB
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.docker.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -874,7 +874,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
        Docker
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://caddyserver.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -897,7 +897,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
       Caddy
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://nginx.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -920,7 +920,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
       Nginx
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.netlify.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -943,7 +943,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
       Netlify
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.vultr.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -966,7 +966,7 @@ exports[`TechSections matches snapshots for all sections 2`] = `
       Vultr
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://aws.amazon.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -1035,7 +1035,7 @@ exports[`TechSections matches snapshots for all sections 3`] = `
     class="mb-16 flex flex-wrap justify-start gap-6"
   >
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://godotengine.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1058,7 +1058,7 @@ exports[`TechSections matches snapshots for all sections 3`] = `
       Godot
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://unity.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1088,7 +1088,7 @@ exports[`TechSections matches snapshots for all sections 4`] = `
     class="mb-16 flex flex-wrap justify-start gap-6"
   >
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.vim.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1274,7 +1274,7 @@ exports[`TechSections matches snapshots for all sections 4`] = `
        Vim
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://code.visualstudio.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1336,7 +1336,7 @@ exports[`TechSections matches snapshots for all sections 4`] = `
        Visual Studio Code
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.debian.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1359,7 +1359,7 @@ exports[`TechSections matches snapshots for all sections 4`] = `
       Debian
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://ohmyz.sh/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1390,7 +1390,7 @@ exports[`TechSections matches snapshots for all sections 5`] = `
     class="mb-16 flex flex-wrap justify-start gap-6"
   >
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://nextcloud.com/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1413,7 +1413,7 @@ exports[`TechSections matches snapshots for all sections 5`] = `
       Nextcloud
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://obsidian.md/"
       rel="noopener noreferrer"
       target="_blank"
@@ -1436,7 +1436,7 @@ exports[`TechSections matches snapshots for all sections 5`] = `
       Obsidian
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.mozilla.org/en-US/firefox/new/"
       rel="noopener noreferrer"
       target="_blank"
@@ -2305,7 +2305,7 @@ exports[`TechSections matches snapshots for all sections 5`] = `
        Firefox
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://signal.org/"
       rel="noopener noreferrer"
       target="_blank"
@@ -2328,7 +2328,7 @@ exports[`TechSections matches snapshots for all sections 5`] = `
       Signal
     </a>
     <a
-      class="flex items-center justify-between"
+      class="flex items-center justify-between hover:scale-105"
       href="https://www.libreoffice.org/"
       rel="noopener noreferrer"
       target="_blank"
