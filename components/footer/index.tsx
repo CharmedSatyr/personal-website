@@ -9,15 +9,15 @@ const ResponsiveFooter = () => {
 	const { md } = useBreakpoints();
 	const windowSize = useWindowSize();
 
-	if (windowSize < md) {
-		return <CollapsibleFooterNav />;
+	if (windowSize === 0 || windowSize >= md) {
+		return (
+			<div className="mt-12">
+				<StaticFooter />
+			</div>
+		);
 	}
 
-	return (
-		<div className="mt-12">
-			<StaticFooter />
-		</div>
-	);
+	return <CollapsibleFooterNav />;
 };
 
 export default ResponsiveFooter;
