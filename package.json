@@ -61,13 +61,13 @@
 	},
 	"lint-staged": {
 		"*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-			"prettier --write"
+			"pnpm run prettier"
 		],
 		"*.+(js|jsx|ts|tsx|md|mdx)": [
-			"eslint --fix"
+			"pnpm run lint"
 		],
 		"*.+(js|jsx|ts|tsx)": [
-			"npm run test:staged"
+			"pnpm run test:staged"
 		]
 	}
 }
