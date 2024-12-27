@@ -69,6 +69,7 @@ const ProjectsList = async () => {
 								</div>
 							))}
 						</div>
+						<hr className="my-10" />
 					</li>
 				))}
 			</ul>
