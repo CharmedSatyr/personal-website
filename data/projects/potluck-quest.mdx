@@ -1,8 +1,9 @@
 ---
 date: In Development
-repo: https://github.com/CharmedSatyr/potluck-js
+repo: https://github.com/CharmedSatyr/potluck-quest
 tags:
   [
+    Turbo,
     Next.js,
     OpenAI SDK,
     Tailwind CSS,
@@ -11,6 +12,14 @@ tags:
     NextAuth,
     Drizzle ORM,
     PostgreSQL,
+    discord.js,
+    discord-interactions,
+    Express,
+    Luxon,
+    Chrono,
+    Node-Cache,
+    Vercel,
+    Railway,
   ]
 title: Potluck Quest
 url: https://potluck.quest
@@ -20,7 +29,14 @@ Devised after an evening with far too many varieties of potato salad,
 [Potluck Quest](https://potluck.quest) helps friend groups organize food for
 gatherings—from birthdays to holidays to game nights.
 
-My friends tend to use [Discord](https://discord.com) to keep in touch and don't
-want to type a lot of boilerplate, so I'm working to integrate this app with a
-[custom Discord bot](https://www.github.com/CharmedSatyr/potluck-bot) and
-suggestions from [OpenAI](https://openai.com/) to make planning quick and easy.
+My friends tend to use [Discord](https://discord.com) to keep in touch, so this
+application is a monorepo that dual-deploys a Next.js
+[website](https://potluck.quest) and a
+[Discord bot](https://discord.com/oauth2/authorize?client_id=1314705751381643308).
+Event-goers can do most of their planning and chatting on Discord or seamlessly
+take advantage of the additional functionality the website offers.
+
+Want some dish ideas, or not sure how many signup slots to create? The
+[OpenAI](https://openai.com/) integration makes it easy by generating
+suggestions based on your event details and dropping them into signup slots for
+you to use or edit.
