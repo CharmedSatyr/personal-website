@@ -16,7 +16,7 @@ describe("Footer", () => {
 
 		render(<Footer />);
 
-		const copyright = screen.getByText("© 2024 Joseph Wolfe");
+		const copyright = screen.getByText("© 2025 Joseph Wolfe");
 		const colophon = screen.getByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.getByTestId("theme-switch-button");
 
@@ -65,7 +65,7 @@ describe("Footer", () => {
 		await user.click(menuButton);
 
 		const navigation = screen.getByRole("navigation");
-		const copyright = screen.getByText("© 2024 Joseph Wolfe");
+		const copyright = screen.getByText("© 2025 Joseph Wolfe");
 		const colophon = screen.getByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.getByTestId("theme-switch-button");
 
