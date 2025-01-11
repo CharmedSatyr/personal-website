@@ -45,16 +45,16 @@ const ProjectsList = async () => {
 			<ul>
 				{projects.map((project) => (
 					<li key={project.slug}>
-						<div className="mb-4 flex flex-wrap justify-between">
-							<div className="flex gap-4">
+						<div className="mb-4 flex flex-wrap items-center justify-between">
+							<h3 className="title text-bold inline flex gap-4">
 								<Link href={project.meta.url}>{project.meta.title}</Link>
 
 								<Link href={project.meta.repo}>
 									<GitHub className="inline h-6 w-6 text-accent transition-transform hover:scale-105 dark:text-dark-accent" />
 								</Link>
-							</div>
+							</h3>
 
-							<time className="italic">{project.meta.date}</time>
+							<time className="inline italic">{project.meta.date}</time>
 						</div>
 						<div>
 							<MDXRemote source={project.content} />
