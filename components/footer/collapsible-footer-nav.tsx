@@ -44,7 +44,7 @@ const CollapsibleFooterNav = () => {
 					<button
 						data-testid="footer-menu-button"
 						onClick={() => setShowNav(!showNav)}
-						className="border-primary-400 dark:border-primary-800 float-right mr-2 rounded-sm border px-2 py-px"
+						className="dark:hover:bg-primary-900 border-primary-400 hover:bg-primary-100 dark:border-primary-800 float-right mr-2 cursor-pointer rounded-sm border px-2 py-px"
 					>
 						<div className="absolute top-1 -ml-4">
 							<div className="border-primary-400 bg-primary-50 text-accent dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent rounded-full border">

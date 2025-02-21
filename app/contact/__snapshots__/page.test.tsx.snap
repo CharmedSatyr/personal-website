@@ -18,7 +18,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent hover:scale-105 dark:text-dark-accent"
+          class="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
         target="_blank"
       >
         <svg
-          class="inline h-6 w-6 text-accent hover:scale-105 dark:text-dark-accent"
+          class="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="inline size-6 text-accent hover:scale-105 dark:text-dark-accent"
+          class="text-accent dark:text-dark-accent inline size-6 hover:scale-105"
           data-slot="icon"
           fill="currentColor"
           viewBox="0 0 24 24"
@@ -94,7 +94,7 @@ exports[`Contact should not deviate unexpectedly from the last snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="inline size-6 text-accent hover:scale-105 dark:text-dark-accent"
+          class="text-accent dark:text-dark-accent inline size-6 hover:scale-105"
           data-slot="icon"
           fill="currentColor"
           viewBox="0 0 24 24"

@@ -15,7 +15,7 @@ exports[`TreeImage should match the last snapshot 1`] = `
   />
   <img
     alt="tree"
-    class="-mt-3 inline hidden dark:inline-block"
+    class="-mt-3 hidden inline dark:inline-block"
     data-nimg="1"
     decoding="async"
     height="45"
