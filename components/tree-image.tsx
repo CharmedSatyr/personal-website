@@ -13,7 +13,7 @@ const TreeImage = () => {
 			/>
 			<Image
 				alt="tree"
-				className="-mt-3 inline hidden dark:inline-block"
+				className="-mt-3 hidden inline dark:inline-block"
 				src={`/static/images/tree.webp`}
 				width={45}
 				height={45}

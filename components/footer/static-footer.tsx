@@ -5,7 +5,7 @@ import { HeartIcon } from "@heroicons/react/24/solid";
 
 const StaticFooter = () => {
 	return (
-		<footer className="flex w-screen items-center justify-center space-x-2 text-nowrap px-8 py-4 text-sm dark:text-primary-400 md:text-base">
+		<footer className="dark:text-primary-400 flex w-screen items-center justify-center space-x-2 px-8 py-4 text-sm text-nowrap md:text-base">
 			<section>
 				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
 			</section>

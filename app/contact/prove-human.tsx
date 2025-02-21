@@ -19,7 +19,7 @@ const ProveHuman = ({ triggerChange }) => {
 				Wait a minute... Are you a human? Please type my first name. (It's
 				spelled out just above.)
 				<input
-					className="focus:shadow-outline focus:border-secondary-700 mb-10 mt-8 block w-full appearance-none rounded border-2 border-primary-300 bg-primary-50 px-2 py-2 text-primary-950 shadow-inner focus:outline-none dark:border-dark-accent md:px-3"
+					className="focus:shadow-outline focus:border-secondary-700 border-primary-300 bg-primary-50 text-primary-950 dark:border-dark-accent mt-8 mb-10 block w-full appearance-none rounded-sm border-2 px-2 py-2 shadow-inner focus:outline-hidden md:px-3"
 					onChange={(e) => setProof(e.target.value)}
 					type="text"
 					required

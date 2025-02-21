@@ -1,14 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-sans: var(--font-sans);
+	--font-serif: var(--font-serif);
+
+	--color-dark-primary-50: #f8fafc;
+	--color-dark-primary-100: #f1f5f9;
+	--color-dark-primary-200: #e2e8f0;
+	--color-dark-primary-300: #cbd5e1;
+	--color-dark-primary-400: #94a3b8;
+	--color-dark-primary-500: #64748b;
+	--color-dark-primary-600: #475569;
+	--color-dark-primary-700: #334155;
+	--color-dark-primary-800: #1e293b;
+	--color-dark-primary-900: #0f172a;
+	--color-dark-primary-950: #020617;
+
+	--color-dark-secondary: #fef3c7;
+	--color-dark-accent: #5eead4;
+	--color-dark-highlight: #fecaca;
+
+	--color-primary-50: #f8fafc;
+	--color-primary-100: #f1f5f9;
+	--color-primary-200: #e2e8f0;
+	--color-primary-300: #cbd5e1;
+	--color-primary-400: #94a3b8;
+	--color-primary-500: #64748b;
+	--color-primary-600: #475569;
+	--color-primary-700: #334155;
+	--color-primary-800: #1e293b;
+	--color-primary-900: #0f172a;
+	--color-primary-950: #020617;
+
+	--color-secondary: #2563eb;
+	--color-accent: #d97706;
+	--color-highlight: #0f766e;
+}
+
+@utility container {
+	margin-inline: auto;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-	.highlighted {
-		@apply text-primary-800 dark:text-dark-primary-200;
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
 	}
+}
 
+@utility highlighted {
+	@apply text-primary-800 dark:text-dark-primary-200;
+}
+
+@layer components {
 	.hyperlink {
-		@apply text-secondary underline decoration-accent decoration-dotted decoration-2 underline-offset-2 hover:font-semibold hover:decoration-solid dark:text-dark-secondary dark:decoration-dark-accent hover:dark:font-medium;
+		@apply text-secondary decoration-accent dark:text-dark-secondary dark:decoration-dark-accent underline decoration-dotted decoration-2 underline-offset-2 hover:font-semibold hover:decoration-solid dark:hover:font-medium;
 	}
 
 	.hyperlink.external {
@@ -24,7 +85,7 @@
 	}
 
 	h2.title {
-		@apply mb-4 mt-6 text-3xl xl:text-3xl;
+		@apply mt-6 mb-4 text-3xl xl:text-3xl;
 	}
 
 	h3.title {
@@ -32,11 +93,11 @@
 	}
 
 	.text {
-		@apply text-justify font-sans font-normal text-primary-700 dark:font-extralight dark:text-dark-primary-300;
+		@apply text-primary-700 dark:text-dark-primary-300 text-justify font-sans font-normal dark:font-extralight;
 	}
 
 	.list {
-		@apply leading-relaxed marker:text-accent dark:marker:text-dark-accent;
+		@apply marker:text-accent dark:marker:text-dark-accent leading-relaxed;
 	}
 
 	p {
@@ -44,11 +105,11 @@
 	}
 
 	.image {
-		@apply rounded-sm border border-primary-800 dark:border-dark-primary-200;
+		@apply border-primary-800 dark:border-dark-primary-200 rounded-xs border;
 	}
 
 	.caption,
 	.caption > p {
-		@apply mt-1 text-xs dark:text-dark-primary-400;
+		@apply dark:text-dark-primary-400 mt-1 text-xs;
 	}
 }

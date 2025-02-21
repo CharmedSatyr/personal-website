@@ -46,11 +46,11 @@ const ProjectsList = async () => {
 				{projects.map((project) => (
 					<li key={project.slug}>
 						<div className="mb-4 flex flex-wrap items-center justify-between">
-							<h3 className="title text-bold inline flex gap-4">
+							<h3 className="title text-bold flex inline gap-4">
 								<Link href={project.meta.url}>{project.meta.title}</Link>
 
 								<Link href={project.meta.repo}>
-									<GitHub className="inline h-6 w-6 text-accent transition-transform hover:scale-105 dark:text-dark-accent" />
+									<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 transition-transform hover:scale-105" />
 								</Link>
 							</h3>
 
@@ -62,7 +62,7 @@ const ProjectsList = async () => {
 						<div className="flex flex-wrap gap-1">
 							{project.meta.tags.map((tag: string) => (
 								<div
-									className="w-fit rounded border border-primary-800 bg-primary-950 px-2 text-primary-100 shadow"
+									className="border-primary-800 bg-primary-950 text-primary-100 w-fit rounded-sm border px-2 shadow-sm"
 									key={tag}
 								>
 									{tag}

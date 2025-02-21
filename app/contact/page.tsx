@@ -16,14 +16,14 @@ const Contact = () => {
 			<ol>
 				<li className="mb-8">
 					<Link href={siteMetadata.linkedin}>
-						<LinkedIn className="inline h-6 w-6 text-accent hover:scale-105 dark:text-dark-accent" />{" "}
+						<LinkedIn className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
 						Connect on LinkedIn
 					</Link>
 				</li>
 
 				<li className="mb-8">
 					<Link href={siteMetadata.github}>
-						<GitHub className="inline h-6 w-6 text-accent hover:scale-105 dark:text-dark-accent" />{" "}
+						<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
 						Collaborate on GitHub
 					</Link>
 				</li>
@@ -34,7 +34,7 @@ const Contact = () => {
 
 				<li>
 					<Link href="https://keys.openpgp.org/vks/v1/by-fingerprint/4BFDEC92BE41B3E455B8595206DC90228603707A">
-						<LockClosedIcon className="inline size-6 text-accent hover:scale-105 dark:text-dark-accent" />{" "}
+						<LockClosedIcon className="text-accent dark:text-dark-accent inline size-6 hover:scale-105" />{" "}
 						OpenPGP Key
 					</Link>
 				</li>

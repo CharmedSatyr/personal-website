@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
 	return (
 		<button
 			data-testid="theme-switch-button"
-			className="h-5 w-5 text-accent dark:text-dark-accent"
+			className="text-accent dark:text-dark-accent h-5 w-5"
 			aria-label="Theme Switch"
 			type="button"
 			onClick={() => setTheme(theme === Mode.dark ? Mode.light : Mode.dark)}

@@ -5,7 +5,7 @@ type Props = {
 // TODO: This fallback is confusing.
 const Skeleton = ({ className = "h-8 w-full" }: Props) => (
 	<div
-		className={`animate-pulse rounded-xl bg-secondary dark:bg-dark-primary-950 ${className}`}
+		className={`bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl ${className}`}
 		role="status"
 	/>
 );

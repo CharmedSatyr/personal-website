@@ -38,17 +38,17 @@ const CollapsibleFooterNav = () => {
 	return (
 		<div className="sticky bottom-0 mt-12 h-fit w-full">
 			<div
-				className={`${height} absolute bottom-0 flex w-full transform flex-col border-t border-primary-400 bg-primary-50 drop-shadow transition-all duration-300 ease-in-out dark:border-primary-800 dark:bg-primary-950`}
+				className={`${height} border-primary-400 bg-primary-50 dark:border-primary-800 dark:bg-primary-950 absolute bottom-0 flex w-full transform flex-col border-t drop-shadow-sm transition-all duration-300 ease-in-out`}
 			>
 				<div className="my-2">
 					<button
 						data-testid="footer-menu-button"
 						onClick={() => setShowNav(!showNav)}
-						className="float-right mr-2 rounded border border-primary-400 px-2 py-px dark:border-primary-800"
+						className="border-primary-400 dark:border-primary-800 float-right mr-2 rounded-sm border px-2 py-px"
 					>
 						<div className="absolute top-1 -ml-4">
-							<div className="rounded-full border border-primary-400 bg-primary-50 text-accent dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent">
-								<Chevron className="size-3.5 dark:text-dark-accent" />
+							<div className="border-primary-400 bg-primary-50 text-accent dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent rounded-full border">
+								<Chevron className="dark:text-dark-accent size-3.5" />
 							</div>
 						</div>
 						{text}
