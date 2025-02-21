@@ -1,5 +1,3 @@
-"use client";
-
 import CollapsibleFooterNav from "@/components/footer/collapsible-footer-nav";
 import StaticFooter from "@/components/footer/static-footer";
 
