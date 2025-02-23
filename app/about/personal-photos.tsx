@@ -1,5 +1,5 @@
-import greatWall from "public/static/images/great-wall";
-import karlstejn from "public/static/images/karlstejn";
+import greatWall from "public/static/images/great-wall.webp";
+import karlstejn from "public/static/images/karlstejn.webp";
 
 import Image from "@/components/image";
 
@@ -10,12 +10,9 @@ const PersonalPhotos = () => {
 				<Image
 					className="image"
 					alt="Looking out a window at Karlštejn Castle, Czech Republic."
-					src="/static/images/karlstejn.webp"
-					height={450}
-					width={600}
+					src={karlstejn}
 					priority
 					placeholder="blur"
-					blurDataURL={karlstejn}
 				/>
 				<figcaption className="caption">
 					Karlštejn Castle, Czech Republic
@@ -25,12 +22,9 @@ const PersonalPhotos = () => {
 				<Image
 					className="image"
 					alt="Standing in front of the Great Wall of China."
-					src="/static/images/great-wall.webp"
-					height={450}
-					width={600}
+					src={greatWall}
 					priority
 					placeholder="blur"
-					blurDataURL={greatWall}
 				/>
 				<figcaption className="caption">
 					The Great Wall near Beijing, China
