@@ -19,7 +19,8 @@
 			"@/constants/*": ["./constants/*"],
 			"@/css/*": ["./css/*"],
 			"@/data/*": ["./data/*"],
-			"@/hooks/*": ["./hooks/*"]
+			"@/hooks/*": ["./hooks/*"],
+			"@/public/*": ["./public/*"]
 		},
 		"plugins": [
 			{
