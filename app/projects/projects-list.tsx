@@ -43,35 +43,54 @@ const ProjectsList = async () => {
 	return (
 		<section>
 			<ul>
-				{projects.map((project) => (
-					<li key={project.slug}>
-						<div className="mb-4 flex flex-wrap items-center justify-between">
-							<h3 className="title text-bold flex inline gap-4">
-								<Link href={project.meta.url}>{project.meta.title}</Link>
-								&nbsp;
-								<Link href={project.meta.repo}>
-									<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 transition-transform hover:scale-105" />
-								</Link>
-							</h3>
+				{projects
+					.sort((a, b) => {
+						const first = new Date(a.meta.date);
+						const second = new Date(b.meta.date);
 
-							<time className="inline italic">{project.meta.date}</time>
-						</div>
-						<div>
-							<MDXRemote source={project.content} />
-						</div>
-						<div className="flex flex-wrap gap-1">
-							{project.meta.tags.map((tag: string) => (
-								<div
-									className="border-primary-800 bg-primary-950 text-primary-100 w-fit rounded-sm border px-2 shadow-sm"
-									key={tag}
-								>
-									{tag}
-								</div>
-							))}
-						</div>
-						<hr className="my-10" />
-					</li>
-				))}
+						if (isNaN(first.valueOf())) {
+							return -1;
+						}
+
+						if (first < second) {
+							return 1;
+						}
+
+						if (second > first) {
+							return -1;
+						}
+
+						return 0;
+					})
+					.map((project) => (
+						<li key={project.slug}>
+							<div className="mb-4 flex flex-wrap items-center justify-between">
+								<h3 className="title text-bold flex inline gap-4">
+									<Link href={project.meta.url}>{project.meta.title}</Link>
+									&nbsp;
+									<Link href={project.meta.repo}>
+										<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 transition-transform hover:scale-105" />
+									</Link>
+								</h3>
+
+								<time className="inline italic">{project.meta.date}</time>
+							</div>
+							<div>
+								<MDXRemote source={project.content} />
+							</div>
+							<div className="flex flex-wrap gap-1">
+								{project.meta.tags.map((tag: string) => (
+									<div
+										className="border-primary-800 bg-primary-950 text-primary-100 w-fit rounded-sm border px-2 shadow-sm"
+										key={tag}
+									>
+										{tag}
+									</div>
+								))}
+							</div>
+							<hr className="my-10" />
+						</li>
+					))}
 			</ul>
 		</section>
 	);
