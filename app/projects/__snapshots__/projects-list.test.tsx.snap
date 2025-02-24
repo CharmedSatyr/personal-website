@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsList should render the expected fallback 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-8"
+  >
+    <div
+      class="flex flex-col gap-4"
+    >
+      <div
+        class="flex justify-between"
+      >
+        <div
+          class="flex gap-4"
+        >
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-36"
+            role="status"
+          />
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-12"
+            role="status"
+          />
+        </div>
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-44"
+          role="status"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-2"
+      >
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-3/4"
+          role="status"
+        />
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-4"
+    >
+      <div
+        class="flex justify-between"
+      >
+        <div
+          class="flex gap-4"
+        >
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-36"
+            role="status"
+          />
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-12"
+            role="status"
+          />
+        </div>
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-44"
+          role="status"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-2"
+      >
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-3/4"
+          role="status"
+        />
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-4"
+    >
+      <div
+        class="flex justify-between"
+      >
+        <div
+          class="flex gap-4"
+        >
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-36"
+            role="status"
+          />
+          <div
+            class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-12"
+            role="status"
+          />
+        </div>
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-44"
+          role="status"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-2"
+      >
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-full"
+          role="status"
+        />
+        <div
+          class="bg-secondary dark:bg-dark-primary-950 animate-pulse rounded-xl h-8 w-3/4"
+          role="status"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

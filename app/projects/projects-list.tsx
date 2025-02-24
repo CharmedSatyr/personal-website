@@ -45,18 +45,20 @@ const ProjectsList = async () => {
 			<ul>
 				{projects
 					.sort((a, b) => {
-						const first = new Date(a.meta.date);
-						const second = new Date(b.meta.date);
-
-						if (isNaN(first.valueOf())) {
-							return -1;
-						}
+						const first =
+							a.meta.date === "In Progress"
+								? new Date()
+								: new Date(a.meta.date);
+						const second =
+							b.meta.date === "In Progress"
+								? new Date()
+								: new Date(b.meta.date);
 
 						if (first < second) {
 							return 1;
 						}
 
-						if (second > first) {
+						if (first > second) {
 							return -1;
 						}
 
@@ -65,13 +67,14 @@ const ProjectsList = async () => {
 					.map((project) => (
 						<li key={project.slug}>
 							<div className="mb-4 flex flex-wrap items-center justify-between">
-								<h3 className="title text-bold flex inline gap-4">
-									<Link href={project.meta.url}>{project.meta.title}</Link>
-									&nbsp;
+								<div className="flex items-center justify-center gap-2">
+									<h3 className="title text-bold inline">
+										<Link href={project.meta.url}>{project.meta.title}</Link>
+									</h3>
 									<Link href={project.meta.repo}>
 										<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 transition-transform hover:scale-105" />
 									</Link>
-								</h3>
+								</div>
 
 								<time className="inline italic">{project.meta.date}</time>
 							</div>
