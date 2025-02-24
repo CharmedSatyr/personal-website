@@ -48,7 +48,7 @@ const ProjectsList = async () => {
 						<div className="mb-4 flex flex-wrap items-center justify-between">
 							<h3 className="title text-bold flex inline gap-4">
 								<Link href={project.meta.url}>{project.meta.title}</Link>
-
+								&nbsp;
 								<Link href={project.meta.repo}>
 									<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 transition-transform hover:scale-105" />
 								</Link>
