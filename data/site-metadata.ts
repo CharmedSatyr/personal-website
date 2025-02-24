@@ -5,6 +5,7 @@ const siteMetadata = {
 	github: "https://www.github.com/CharmedSatyr",
 	headerTitle: "Joseph Wolfe",
 	linkedin: "https://www.linkedin.com/in/joseph-wolfe",
+	itchio: "https://charmedsatyr.itch.io",
 	locale: "en-US",
 	siteUrl: "https://josephwolfe.com",
 	theme: "dark",

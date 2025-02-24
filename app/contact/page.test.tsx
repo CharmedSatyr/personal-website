@@ -31,10 +31,10 @@ describe("Contact", () => {
 		expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
 	});
 
-	it("renders three links", () => {
+	it("renders four links", () => {
 		render(<Contact />);
 
-		expect(screen.getAllByRole("link")).toHaveLength(3);
+		expect(screen.getAllByRole("link")).toHaveLength(4);
 	});
 
 	it("renders a button", () => {

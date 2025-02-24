@@ -1,6 +1,6 @@
 import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
-import { GitHub, LinkedIn } from "@/components/icons/social";
+import { GitHub, Itchio, LinkedIn } from "@/components/icons/social";
 import Link from "@/components/link";
 import PageTitle from "@/components/page-title";
 import siteMetadata from "@/data/site-metadata";
@@ -25,6 +25,13 @@ const Contact = () => {
 					<Link href={siteMetadata.github}>
 						<GitHub className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
 						Collaborate on GitHub
+					</Link>
+				</li>
+
+				<li className="mb-8">
+					<Link href={siteMetadata.itchio}>
+						<Itchio className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
+						Play my games on Itch.io
 					</Link>
 				</li>
 
