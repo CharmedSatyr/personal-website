@@ -67,17 +67,17 @@
 	@apply text-primary-800 dark:text-dark-primary-200;
 }
 
-@layer components {
-	.hyperlink {
-		@apply text-secondary decoration-accent dark:text-dark-secondary dark:decoration-dark-accent underline decoration-dotted decoration-2 underline-offset-2 hover:font-semibold hover:decoration-solid dark:hover:font-medium;
-	}
+@utility hyperlink {
+	@apply text-secondary decoration-accent dark:text-dark-secondary dark:decoration-dark-accent underline decoration-dotted decoration-2 underline-offset-2 hover:font-semibold hover:decoration-solid dark:hover:font-medium;
+}
 
+@utility title {
+	@apply highlighted text-left font-serif leading-tight;
+}
+
+@layer components {
 	.hyperlink.external {
 		@apply after:content-['_↗︎'];
-	}
-
-	.title {
-		@apply highlighted text-left font-serif leading-tight;
 	}
 
 	h1.title {

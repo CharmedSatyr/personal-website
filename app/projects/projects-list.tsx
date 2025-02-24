@@ -46,11 +46,11 @@ const ProjectsList = async () => {
 				{projects
 					.sort((a, b) => {
 						const first =
-							a.meta.date === "In Progress"
+							a.meta.date === "In Development"
 								? new Date()
 								: new Date(a.meta.date);
 						const second =
-							b.meta.date === "In Progress"
+							b.meta.date === "In Development"
 								? new Date()
 								: new Date(b.meta.date);
 
@@ -67,7 +67,7 @@ const ProjectsList = async () => {
 					.map((project) => (
 						<li key={project.slug}>
 							<div className="mb-4 flex flex-wrap items-center justify-between">
-								<div className="flex items-center justify-center gap-2">
+								<div className="flex items-center gap-2">
 									<h3 className="title text-bold inline">
 										<Link href={project.meta.url}>{project.meta.title}</Link>
 									</h3>
@@ -78,7 +78,7 @@ const ProjectsList = async () => {
 
 								<time className="inline italic">{project.meta.date}</time>
 							</div>
-							<div>
+							<div className="prose-a:hyperlink">
 								<MDXRemote source={project.content} />
 							</div>
 							<div className="flex flex-wrap gap-1">

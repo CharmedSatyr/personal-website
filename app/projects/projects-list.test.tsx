@@ -73,7 +73,8 @@ describe("ProjectsList", () => {
 	it("sorts projects by date in descending order", async () => {
 		const mockFiles = [
 			"project1.mdx",
-			"project2.mdx",
+			"project2a.mdx",
+			"project2b.mdx",
 			"project3.mdx",
 			"current-project.mdx",
 		];
@@ -99,15 +100,24 @@ describe("ProjectsList", () => {
 			{
 				data: {
 					date: "2024-09-15",
-					repo: "https://github.com/user/repo2",
+					repo: "https://github.com/user/repo2a",
 					tags: [],
-					title: "Project Two",
+					title: "Project Two A",
 				},
-				content: "Content Two",
+				content: "Content Two A",
 			},
 			{
 				data: {
-					date: "In Progress",
+					date: "2024-09-15",
+					repo: "https://github.com/user/repo2b",
+					tags: [],
+					title: "Project Two B",
+				},
+				content: "Content Two B",
+			},
+			{
+				data: {
+					date: "In Development",
 					repo: "https://github.com/user/repocurrent",
 					tags: [],
 					title: "Current Project",
@@ -134,7 +144,8 @@ describe("ProjectsList", () => {
 		expect(sortedTitles).toEqual([
 			"Current Project",
 			"Project Three",
-			"Project Two",
+			"Project Two A",
+			"Project Two B",
 			"Project One",
 		]);
 	});
