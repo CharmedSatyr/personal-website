@@ -88,7 +88,7 @@ const RecentlyPlayed = async (props: Props) => {
 		<div>
 			<h2 className="title">Recently Played</h2>
 			<aside className="italic">
-				Titles I've dipped into within the past two weeks.
+				Titles I've dipped into within the past two weeks, according to Steam.
 			</aside>
 
 			<ul className="list list-disc">{items}</ul>
