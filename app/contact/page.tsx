@@ -1,6 +1,6 @@
 import EmailManager from "@/app/contact/email-manager";
 import genPageMetadata from "@/app/seo";
-import { GitHub, Itchio, LinkedIn } from "@/components/icons/social";
+import { Bluesky, GitHub, Itchio, LinkedIn } from "@/components/icons/social";
 import Link from "@/components/link";
 import PageTitle from "@/components/page-title";
 import siteMetadata from "@/data/site-metadata";
@@ -14,6 +14,12 @@ const Contact = () => {
 			<PageTitle>Contact</PageTitle>
 
 			<ol>
+				<li className="mb-8">
+					<Link href={siteMetadata.bluesky}>
+						<Bluesky className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
+						Skeet at me on Bluesky
+					</Link>
+				</li>
 				<li className="mb-8">
 					<Link href={siteMetadata.linkedin}>
 						<LinkedIn className="text-accent dark:text-dark-accent inline h-6 w-6 hover:scale-105" />{" "}
