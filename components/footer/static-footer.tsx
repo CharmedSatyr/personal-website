@@ -13,7 +13,9 @@ const StaticFooter = () => {
 			</section>
 
 			<section className="flex w-screen items-center justify-center space-x-2 px-8 py-4">
-				{`© ${new Date().getFullYear()}`} {siteMetadata.author}
+				<span>
+					{`© ${new Date().getFullYear()}`} {siteMetadata.author}
+				</span>
 				<HeartIcon className="size-2" />
 				<Link href="/colophon">Colophon</Link>
 				<HeartIcon className="size-2" />
