@@ -8,7 +8,7 @@ import SocialsContainer from "../socials-container";
 const StaticFooter = () => {
 	return (
 		<footer className="dark:text-primary-400 flex w-screen flex-col items-center justify-center space-x-2 px-8 py-4 text-sm text-nowrap md:text-base">
-			<section>
+			<section className="hidden md:block">
 				<SocialsContainer />
 			</section>
 

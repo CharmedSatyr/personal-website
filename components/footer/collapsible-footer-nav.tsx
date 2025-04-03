@@ -9,6 +9,8 @@ import {
 	ChevronDoubleUpIcon,
 } from "@heroicons/react/24/solid";
 
+import SocialsContainer from "../socials-container";
+
 const FooterNav = ({ showNav }) => {
 	if (!showNav) {
 		return null;
@@ -16,6 +18,9 @@ const FooterNav = ({ showNav }) => {
 
 	return (
 		<div className="flex h-full flex-col items-center justify-between pt-4">
+			<div className="mb-4 md:hidden">
+				<SocialsContainer />
+			</div>
 			<NavLinks />
 			<StaticFooter />
 		</div>
