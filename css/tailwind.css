@@ -75,7 +75,7 @@
 	}
 
 	.animate-draw {
-		animation: draw 1s linear forwards;
+		animation: draw 3500ms linear forwards;
 	}
 
 	.hyperlink {
@@ -84,6 +84,42 @@
 
 	.title {
 		@apply highlighted text-left font-serif leading-tight;
+	}
+
+	@keyframes slideInUp {
+		from {
+			transform: translateY(100%);
+			opacity: 0;
+			visibility: hidden;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.animate-slide-in-up {
+		animation: slideInUp 1s ease-out both;
+	}
+
+	.delay-1000 {
+		animation-delay: 1000ms;
+	}
+	.delay-1500 {
+		animation-delay: 1500ms;
+	}
+	.delay-2000 {
+		animation-delay: 2000ms;
+	}
+	.delay-2500 {
+		animation-delay: 2500ms;
+	}
+
+	.slide-container {
+		display: inline-block;
+		overflow: hidden;
+		vertical-align: top;
 	}
 }
 
