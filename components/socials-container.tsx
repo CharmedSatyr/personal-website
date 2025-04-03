@@ -31,13 +31,16 @@ const SocialsContainer = () => {
 			</li>
 
 			<li>
-				<Link href="/contact">
+				<Link href="/contact" title="Email">
 					<EnvelopeIcon className="text-accent dark:text-dark-accent inline size-5 hover:scale-105 md:size-6" />{" "}
 				</Link>
 			</li>
 
 			<li>
-				<Link href="https://keys.openpgp.org/vks/v1/by-fingerprint/4BFDEC92BE41B3E455B8595206DC90228603707A">
+				<Link
+					href="https://keys.openpgp.org/vks/v1/by-fingerprint/4BFDEC92BE41B3E455B8595206DC90228603707A"
+					title="PGP Key"
+				>
 					<LockClosedIcon className="text-accent dark:text-dark-accent inline size-5 hover:scale-105 md:size-6" />{" "}
 				</Link>
 			</li>

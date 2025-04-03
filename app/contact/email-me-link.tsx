@@ -9,7 +9,10 @@ interface Props {
 const EmailMeLink = ({ triggerChange }: Props) => {
 	return (
 		<button className="hyperlink" onClick={() => triggerChange()}>
-			<EnvelopeIcon className="text-accent dark:text-dark-accent inline size-6 hover:scale-105" />{" "}
+			<EnvelopeIcon
+				className="text-accent dark:text-dark-accent inline size-6 cursor-pointer hover:scale-105"
+				title="Email"
+			/>{" "}
 			Send me an email
 		</button>
 	);

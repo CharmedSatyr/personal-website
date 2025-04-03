@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import ProfileWithBorder from "@/components/profile-with-border";
-import SocialsContainer from "@/components/socials-container";
 import TreeImage from "@/components/tree-image";
 
 const words = [
