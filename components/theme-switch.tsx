@@ -7,7 +7,7 @@ import { Mode } from "@/constants/mode";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 const ThemeSwitch = () => {
-	const { theme, setTheme } = useTheme();
+	const { theme = Mode.dark, setTheme } = useTheme();
 
 	return (
 		<button
