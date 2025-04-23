@@ -31,7 +31,7 @@ const AnimatedWord = ({
 	text,
 }: AnimatedWordProps) => (
 	<span
-		className={`animate-slide-in-up inline-block ${
+		className={`animate-slide-in-up inline-block pt-1 ${
 			delay ? `delay-${delay}` : ""
 		} ${accent ? "dark:from-dark-secondary text-accent dark:bg-linear-to-r dark:to-red-300 dark:bg-clip-text dark:text-transparent" : ""}`}
 	>
