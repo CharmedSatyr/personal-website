@@ -21,7 +21,7 @@ const ProfileWithBorder = () => {
 					r="46%"
 					fill="none"
 					stroke="currentColor"
-					strokeWidth="4"
+					strokeWidth="5"
 					strokeDasharray="408"
 					strokeDashoffset="408"
 					strokeLinecap="round"
