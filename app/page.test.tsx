@@ -24,12 +24,12 @@ describe("Page", () => {
 		const images = screen.getAllByRole("img");
 
 		expect(images[0]).toHaveAttribute("alt", "Joseph circle portrait");
-		expect(images[1]).toHaveAttribute("alt", "tree");
+		expect(images[1]).toHaveAttribute("alt", "light tree");
 		expect(images[1]).toHaveAttribute(
 			"class",
 			expect.stringContaining("dark:hidden"),
 		);
-		expect(images[2]).toHaveAttribute("alt", "tree");
+		expect(images[2]).toHaveAttribute("alt", "dark tree");
 		expect(images[2]).toHaveAttribute(
 			"class",
 			expect.stringContaining("dark:inline-block"),

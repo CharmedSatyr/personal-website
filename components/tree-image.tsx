@@ -6,14 +6,14 @@ const TreeImage = () => {
 	return (
 		<>
 			<Image
-				alt="tree"
+				alt="light tree"
 				className="-mt-3 inline dark:hidden"
 				src={treeContrast}
 				priority
 			/>
 			<Image
-				alt="tree"
-				className="-mt-3 hidden inline dark:inline-block"
+				alt="dark tree"
+				className="-mt-3 hidden dark:inline-block"
 				src={tree}
 				priority
 			/>
