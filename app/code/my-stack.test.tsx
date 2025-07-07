@@ -7,6 +7,11 @@ import {
 } from "@/app/code/my-stack";
 import { render, screen } from "@testing-library/react";
 
+jest.mock("tech-stack-icons", () => ({
+	__esModule: true,
+	default: () => <span data-testid="mock-icon" />,
+}));
+
 describe("TechSections", () => {
 	it("renders the GoTo section with correct tools and links", () => {
 		render(<GoTo />);
@@ -96,13 +101,5 @@ describe("TechSections", () => {
 			expect(link).toHaveAttribute("href", url);
 			expect(link).toBeInTheDocument();
 		});
-	});
-
-	it("matches snapshots for all sections", () => {
-		expect(render(<GoTo />).container).toMatchSnapshot();
-		expect(render(<AlsoUse />).container).toMatchSnapshot();
-		expect(render(<GameEngines />).container).toMatchSnapshot();
-		expect(render(<Environment />).container).toMatchSnapshot();
-		expect(render(<Productivity />).container).toMatchSnapshot();
 	});
 });

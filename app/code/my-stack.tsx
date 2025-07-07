@@ -28,7 +28,7 @@ export const GoTo = () => {
 				href="https://react.dev/"
 				className="flex items-center justify-between hover:scale-105"
 			>
-				<StackIcon name="reactjs" className="mr-1 size-12" /> React
+				<StackIcon name="react" className="mr-1 size-12" /> React
 			</Link>
 
 			<Link
