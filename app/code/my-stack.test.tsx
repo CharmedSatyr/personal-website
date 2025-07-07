@@ -9,7 +9,11 @@ import { render, screen } from "@testing-library/react";
 
 jest.mock("tech-stack-icons", () => ({
 	__esModule: true,
-	default: () => <span data-testid="mock-icon" />,
+	default: (props: Record<string, string>) => (
+		<svg {...props}>
+			<title>{props.name}</title>
+		</svg>
+	),
 }));
 
 describe("TechSections", () => {
@@ -101,5 +105,13 @@ describe("TechSections", () => {
 			expect(link).toHaveAttribute("href", url);
 			expect(link).toBeInTheDocument();
 		});
+	});
+
+	it("matches snapshots for all sections", () => {
+		expect(render(<GoTo />).container).toMatchSnapshot();
+		expect(render(<AlsoUse />).container).toMatchSnapshot();
+		expect(render(<GameEngines />).container).toMatchSnapshot();
+		expect(render(<Environment />).container).toMatchSnapshot();
+		expect(render(<Productivity />).container).toMatchSnapshot();
 	});
 });
