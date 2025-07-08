@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
 import { Asul, Poppins } from "next/font/google";
-import dotenv from "dotenv";
 
 import ThemeProviders from "@/app/theme-providers";
 import Analytics from "@/components/analytics";
@@ -10,8 +9,6 @@ import Header from "@/components/header";
 import siteMetadata from "@/data/site-metadata";
 
 import "@/css/tailwind.css";
-
-dotenv.config();
 
 /**
  * See https://nextjs.org/docs/app/building-your-application/optimizing/metadata
