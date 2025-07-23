@@ -15,7 +15,9 @@ export const generateStaticParams = async () => {
 	return paths;
 };
 
-const getPost = ({ slug }: { slug: string }) => {
+const getPost = async (params: Promise<{ slug: string }>) => {
+	const { slug } = await params;
+
 	const markdownFile = fs.readFileSync(
 		path.join(blogDir, slug + ".mdx"),
 		"utf-8",
@@ -30,8 +32,8 @@ const getPost = ({ slug }: { slug: string }) => {
 	};
 };
 
-const Post = ({ params }) => {
-	const props = getPost(params);
+const Post = async ({ params }) => {
+	const props = await getPost(params);
 
 	return <MDXRemote source={props.content} />;
 };
