@@ -45,7 +45,7 @@ const config = [
 
 			parserOptions: {
 				project: true,
-				tsconfigRootDir: "__dirname",
+				tsconfigRootDir: __dirname,
 				extraFileExtensions: [".md", ".mdx"],
 			},
 		},
