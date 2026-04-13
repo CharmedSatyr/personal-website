@@ -7,7 +7,7 @@ describe("StaticFooter", () => {
 	it("renders a static footer", () => {
 		render(<Footer />);
 
-		const copyright = screen.getByText("© 2025 Joseph Wolfe");
+		const copyright = screen.getByText("© 2026 Joseph Wolfe");
 		const colophon = screen.getByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.getByTestId("theme-switch-button");
 
