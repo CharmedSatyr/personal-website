@@ -11,7 +11,7 @@ const PersonalPhotos = () => {
 					className="image"
 					alt="Looking out a window at Karlštejn Castle, Czech Republic."
 					src={karlstejn}
-					priority
+					preload
 					placeholder="blur"
 				/>
 				<figcaption className="caption">
@@ -23,7 +23,7 @@ const PersonalPhotos = () => {
 					className="image"
 					alt="Standing in front of the Great Wall of China."
 					src={greatWall}
-					priority
+					preload
 					placeholder="blur"
 				/>
 				<figcaption className="caption">
