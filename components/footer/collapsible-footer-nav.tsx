@@ -27,18 +27,21 @@ const FooterNav = ({ showNav }) => {
 	);
 };
 
+const Chevron = ({
+	showNav,
+	...props
+}: SVGProps<SVGSVGElement> & { showNav: boolean }) =>
+	showNav ? (
+		<ChevronDoubleDownIcon {...props} />
+	) : (
+		<ChevronDoubleUpIcon {...props} />
+	);
+
 const CollapsibleFooterNav = () => {
 	const [showNav, setShowNav] = useState(false);
 
 	const height = showNav ? "h-60" : "h-12";
 	const text = showNav ? "Close Navigation" : "Open Navigation";
-
-	const Chevron = (props: SVGProps<SVGSVGElement>) =>
-		showNav ? (
-			<ChevronDoubleDownIcon {...props} />
-		) : (
-			<ChevronDoubleUpIcon {...props} />
-		);
 
 	return (
 		<div className="sticky bottom-0 mt-12 h-fit w-full">
@@ -53,7 +56,10 @@ const CollapsibleFooterNav = () => {
 					>
 						<div className="absolute top-1 -ml-4">
 							<div className="border-primary-400 bg-primary-50 text-accent dark:border-primary-800 dark:bg-primary-950 dark:text-dark-accent rounded-full border">
-								<Chevron className="dark:text-dark-accent size-3.5" />
+								<Chevron
+									showNav={showNav}
+									className="dark:text-dark-accent size-3.5"
+								/>
 							</div>
 						</div>
 						{text}

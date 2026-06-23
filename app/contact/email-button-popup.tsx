@@ -1,26 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 import Link from "@/components/link";
 
+const email =
+	process.env.NEXT_PUBLIC_USERNAME + "@" + process.env.NEXT_PUBLIC_DOMAIN;
+
 const MailPopup = () => {
 	const router = useRouter();
 
-	const [email, setEmail] = useState("");
-
 	useEffect(() => {
-		setEmail(
-			process.env.NEXT_PUBLIC_USERNAME + "@" + process.env.NEXT_PUBLIC_DOMAIN,
-		);
-	}, []);
-
-	useEffect(() => {
-		if (email) {
-			router.push(`mailto:${email}`);
-		}
-	}, [email, router]);
+		router.push(`mailto:${email}`);
+	}, [router]);
 
 	return (
 		<>

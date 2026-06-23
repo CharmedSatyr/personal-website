@@ -1,34 +1,32 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
+import nextCoreWebVitalsConfig from "eslint-config-next/core-web-vitals";
+import * as mdx from "eslint-plugin-mdx";
+import prettierRecommended from "eslint-plugin-prettier/recommended";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
+import tseslint from "typescript-eslint";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
-});
+
+// Reuse the jsx-a11y plugin instance already registered by nextCoreWebVitalsConfig
+// to avoid ESLint's "Cannot redefine plugin" error while still allowing rule overrides.
+const jsxA11yPlugin = nextCoreWebVitalsConfig[0].plugins["jsx-a11y"];
 
 const config = [
-	...compat.extends(
-		"eslint:recommended",
-		"plugin:@typescript-eslint/eslint-recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:jsx-a11y/recommended",
-		"plugin:prettier/recommended",
-		"next",
-		"next/core-web-vitals",
-	),
+	js.configs.recommended,
+	...tseslint.configs.recommended,
+	...nextCoreWebVitalsConfig,
+	prettierRecommended,
 	{
 		plugins: {
 			"@typescript-eslint": typescriptEslint,
+			"jsx-a11y": jsxA11yPlugin,
 			"simple-import-sort": simpleImportSort,
 		},
 
@@ -40,13 +38,19 @@ const config = [
 			},
 
 			parser: tsParser,
-			ecmaVersion: 5,
-			sourceType: "commonjs",
+			ecmaVersion: "latest",
+			sourceType: "module",
 
 			parserOptions: {
 				project: true,
 				tsconfigRootDir: __dirname,
 				extraFileExtensions: [".md", ".mdx"],
+			},
+		},
+
+		settings: {
+			react: {
+				version: "19",
 			},
 		},
 
@@ -73,12 +77,11 @@ const config = [
 			"@typescript-eslint/ban-ts-comment": "off",
 		},
 	},
-	...compat
-		.extends("plugin:mdx/recommended", "plugin:prettier/recommended")
-		.map((config) => ({
-			...config,
-			files: ["**/*.md", "**/*.mdx"],
-		})),
+	mdx.flat,
+	{
+		files: ["**/*.md", "**/*.mdx"],
+		...prettierRecommended,
+	},
 	{
 		files: ["**/*.js", "**/*.ts", "**/*.tsx"],
 
