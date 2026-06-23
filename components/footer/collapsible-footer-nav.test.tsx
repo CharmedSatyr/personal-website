@@ -9,7 +9,9 @@ describe("CollapsibleFooterNav", () => {
 		render(<Footer />);
 
 		const navigation = screen.queryByRole("navigation");
-		const copyright = screen.queryByText("© 2024 Joseph Wolfe");
+		const copyright = screen.queryByText(
+			`© ${new Date().getFullYear()} Joseph Wolfe`,
+		);
 		const colophon = screen.queryByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.queryByTestId("theme-switch-button");
 
@@ -34,7 +36,9 @@ describe("CollapsibleFooterNav", () => {
 		await user.click(menuButton);
 
 		const navigation = screen.getByRole("navigation");
-		const copyright = screen.getByText("© 2026 Joseph Wolfe");
+		const copyright = screen.getByText(
+			`© ${new Date().getFullYear()} Joseph Wolfe`,
+		);
 		const colophon = screen.getByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.getByTestId("theme-switch-button");
 
@@ -58,7 +62,9 @@ describe("CollapsibleFooterNav", () => {
 		await user.click(menuButton);
 
 		const navigation = screen.queryByRole("navigation");
-		const copyright = screen.queryByText("© 2024 Joseph Wolfe");
+		const copyright = screen.queryByText(
+			`© ${new Date().getFullYear()} Joseph Wolfe`,
+		);
 		const colophon = screen.queryByRole("link", { name: "Colophon" });
 		const themeSwitch = screen.queryByTestId("theme-switch-button");
 
