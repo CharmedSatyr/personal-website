@@ -1,5 +1,6 @@
 import Image from "next/image";
-import josephGlare from "public/static/images/joseph-glare.webp";
+
+import josephGlare from "@/public/static/images/joseph-glare.webp";
 
 const ProfileWithBorder = () => {
 	return (

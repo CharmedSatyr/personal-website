@@ -1,7 +1,6 @@
-import greatWall from "public/static/images/great-wall.webp";
-import karlstejn from "public/static/images/karlstejn.webp";
-
 import Image from "@/components/image";
+import greatWall from "@/public/static/images/great-wall.webp";
+import karlstejn from "@/public/static/images/karlstejn.webp";
 
 const PersonalPhotos = () => {
 	return (
