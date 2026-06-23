@@ -33,7 +33,6 @@ const Blog = () => {
 					<Link
 						className="mb-4 flex items-end justify-start gap-4"
 						href={"/field-notes/" + blog.slug}
-						passHref
 						key={blog.slug}
 					>
 						<time>{blog.meta.date}</time>
