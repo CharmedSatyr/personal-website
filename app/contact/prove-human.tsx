@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-const ProveHuman = ({ triggerChange }) => {
+const expected = process.env.NEXT_PUBLIC_PROOF;
+if (!expected) throw new Error("NEXT_PUBLIC_PROOF is not set");
+
+const ProveHuman = ({ triggerChange }: { triggerChange: () => void }) => {
 	const [proof, setProof] = useState("");
 
 	useEffect(() => {
-		if (proof.toLowerCase() !== process.env.NEXT_PUBLIC_PROOF.toLowerCase()) {
+		if (proof.toLowerCase() !== expected.toLowerCase()) {
 			return;
 		}
 
