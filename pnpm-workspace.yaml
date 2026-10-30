@@ -1,0 +1,6 @@
+allowBuilds:
+  "@parcel/watcher": true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - eslint-mdx@3.8.3
+  - eslint-plugin-mdx@3.8.3
