@@ -1,3 +1,5 @@
+import type { NextConfig } from "next";
+
 import withMDX from "@next/mdx";
 
 const getBuildDate = () => {
@@ -10,7 +12,7 @@ const getBuildDate = () => {
 	return [year, month.padStart(2, "0"), day.padStart(2, "0")].join("-");
 };
 
-const nextConfig: import("next").NextConfig = {
+const nextConfig: NextConfig = {
 	images: {
 		remotePatterns: [
 			{
