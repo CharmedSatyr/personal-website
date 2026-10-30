@@ -25,4 +25,4 @@ const nextConfig: import("next").NextConfig = {
 	},
 };
 
-module.exports = withMDX()(nextConfig);
+export default withMDX()(nextConfig);
