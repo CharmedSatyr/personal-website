@@ -2,7 +2,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import js from "@eslint/js";
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import nextCoreWebVitalsConfig from "eslint-config-next/core-web-vitals";
 import * as mdx from "eslint-plugin-mdx";
