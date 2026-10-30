@@ -1,6 +1,4 @@
-// Should be out of canary soon: https://github.com/vercel/next.js/pull/63051
-/* eslint-disable-next-line @typescript-eslint/no-require-imports */
-const withMDX = require("@next/mdx")();
+import withMDX from "@next/mdx";
 
 const getBuildDate = () => {
 	const date = new Date();
@@ -12,8 +10,7 @@ const getBuildDate = () => {
 	return [year, month.padStart(2, "0"), day.padStart(2, "0")].join("-");
 };
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: import("next").NextConfig = {
 	images: {
 		remotePatterns: [
 			{
@@ -28,4 +25,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = withMDX(nextConfig);
+module.exports = withMDX()(nextConfig);
