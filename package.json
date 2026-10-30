@@ -2,7 +2,7 @@
 	"name": "personal-website",
 	"version": "1.0.1",
 	"engines": {
-		"node": ">=22",
+		"node": ">=24",
 		"pnpm": ">=9"
 	},
 	"scripts": {
