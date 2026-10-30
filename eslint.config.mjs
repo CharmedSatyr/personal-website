@@ -25,7 +25,6 @@ const config = [
 	prettierRecommended,
 	{
 		plugins: {
-			"@typescript-eslint": typescriptEslint,
 			"jsx-a11y": jsxA11yPlugin,
 			"simple-import-sort": simpleImportSort,
 		},
